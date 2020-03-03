@@ -6,15 +6,21 @@ summary:    Reproducibility in Machine Learning and Deep Reinforcement Learning 
 categories: jekyll
 permalink: how_many_random_seeds
 use_math: true
-
+authors: 
+  - name: 'Cédric Colas'
+    link: 'mailto:cedric.colas@inria.fr'
+    next: ' and '
+  - name: 'Pierre-Yves Oudeyer'
+    link: 'mailto:pierre-yves oudeyer@inria.fr'
+    next: ''
 ---
 
 Reproducibility in Machine Learning and Deep Reinforcement Learning in particular has become a serious issue in the recent years. Reproducing an RL paper can turn out to be much more complicated than you thought, see this blog post about [lessons learned from reproducing a deep RL paper](http://amid.fish/reproducing-deep-rl). Indeed, codebases are not always released and scientific papers often omit parts of the implementation tricks. Recently, Henderson et al. conducted a thorough investigation of various parameters causing this reproducibility crisis [[Henderson et al., 2017]](https://arxiv.org/abs/1709.06560). They used trendy deep RL algorithms such as DDPG, ACKTR, TRPO and PPO with OpenAI Gym popular benchmarks such as Half-Cheetah, Hopper and Swimmer to study the effects of the codebase, the size of the networks, the activation function, the reward scaling or the random seeds. Among other results, they showed that different implementations of the same algorithm with the same set of hyperparameters led to drastically different results. 
 
 Perhaps the most surprising thing is this: running the same algorithm 10 times with the same hyper-parameters using 10 different random seeds and averaging performance over two splits of 5 seeds can lead to learning curves seemingly coming from different statistical distributions. Then, they present this table:
 
-<div align="center">
-<img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/8/899a492f80f4d77be643094fffdc99375c02275b.png" height="150" />
+ <div align="center" style="margin-bottom:20px"> 
+ <img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/8/899a492f80f4d77be643094fffdc99375c02275b.png" height="150" />
 <div>
 <sub>
 <i>Figure 1: Number of trials reported during evaluation in various works, from [Henderson et al., 2017].</i></sub>
@@ -62,8 +68,8 @@ framework](https://gym.openai.com/). The actual algorithms used are not so impor
 for each and plot the results in Figure 2. This figure shows the average learning curves, with the $$95\%$$ confidence interval. Each point of a learning curve is the average 
 cumulated reward over $$10$$ evaluation episodes. The _measure of performance_ of an algorithm is the average performance over the last $$10$$ points (i.e. last $$100$$ evaluation episodes). From the figure, it seems that $$Algo1$$ performs better than $$Algo2$$. Moreover, the confidence intervals do not overlap much at the end. Of course, we need to run statistical tests before drawing any conclusion.
 
-<div align="center">
-<img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/e/e5e46b3919dba623d48357cf0abb05c2d14d2fd3.jpg" height="300"  />
+ <div align="center" style="margin-bottom:20px"> 
+ <img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/e/e5e46b3919dba623d48357cf0abb05c2d14d2fd3.jpg" height="300"  />
 <div>
 <sub>
 <i>Figure 2: Algo1 versus Algo2 on Half-Cheetah. Mean and confidence intervals for 5 seeds</i></sub>
@@ -170,8 +176,8 @@ $$
 $$
 
 
-<div align="center">
-<img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/7/703b9d4e3037b266e8fc6b20e020eb84d4405a80.png" height="220"  />
+ <div align="center" style="margin-bottom:20px"> 
+ <img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/7/703b9d4e3037b266e8fc6b20e020eb84d4405a80.png" height="220"  />
 <div>
 <sub>
 <i>Figure 3: Representation of H0 and Ha under the t-test assumptions. Areas under the distributions represented in red, dark blue and light blue correspond to the probability of type-I error alpha, type-II error beta and the statistical power 1-beta respectively. </i></sub>
@@ -224,8 +230,8 @@ Here, the type-I error requirement is set to $$\alpha=0.05$$. Running the Welch'
 each leads to a $$p$$-value of $$0.031$$ and a bootstrap confidence interval such that $$P\big(\mu_{\text{diff}} \in [259, 1564]\big) = 0.05$$. Since the $$p$$-value is below the significance level $$\alpha$$ and the $$CI_1$$ confidence interval does not include $$0$$, both test passed. This means both tests found a significant difference between the performances of $$Algo1$$ and $$Algo2$$ with a $$95\%$$ confidence. There should have been only $$5\%$$ chance to conclude a significant difference if it did not exist. 
 In fact, we did encounter a type-I error. I know that for sure because:
 
-<div align=center>
-<b>
+ <div align="center" style="margin-bottom:20px"> 
+ <b>
 Algo 1 and Algo 2 are the exact same algorithm
 </b>
 </div>
@@ -266,8 +272,8 @@ Here we run both algorithms with $$n=5$$. We find empirical means $$(\overline{x
 Running preliminary statistical tests at level $$\alpha=0.05$$ lead to a $$p$$-value of $$0.1$$ for the Welch's $$t$$-test, and a bootstrapped confidence interval of $$CI_1=[795, 2692]$$ for the  value of $$\overline{x}_{\text{diff}} = 1382$$. The Welch's $$t$$-test does not reject $$H_0$$ ($$p$$-value $$>\alpha$$) but the bootstrap test does ($$0\not\in CI_1$$). One should compute $$\beta$$ to estimate the chance that the Welch's $$t$$-test missed an underlying performance difference (type-II error).
 
 
-<div align="center">
-<img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/2/27f05ba5144eb210118dce202db75232d546f628.png" height="300"  />
+ <div align="center" style="margin-bottom:20px"> 
+ <img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/2/27f05ba5144eb210118dce202db75232d546f628.png" height="300"  />
 <div>
 <sub>
 <i>Figure 4: DDPG with action perturbation versus DDPG with parameter perturbation tested in Half-Cheetah. Mean and 95% confidence interval computed over 5 seeds are reported. The figure shows a small difference in the empirical mean performances.</i></sub>
@@ -284,8 +290,8 @@ For $$N$$ in $$[2,50]$$ and $$\epsilon$$ in $$[0.1,..,1]\times\overline{x}_1$$, 
 
 
 
-<div align="center">
-<img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/3/3a3d72a9dbef925bdfa272530e9cf45fc4239c8f.png" height="300"  />
+ <div align="center" style="margin-bottom:20px"> 
+ <img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/3/3a3d72a9dbef925bdfa272530e9cf45fc4239c8f.png" height="300"  />
 <div>
 <sub>
 <i>Figure 5: Evolution of the probability of type-II error as a function of the sample size N for various effect sizes epsilon, when (s1, s2)= (1341, 990) and alpha=0.05. The requirement 0.2 is represented by the horizontal dashed black line.  </i></sub>
@@ -305,8 +311,8 @@ Both algorithms should be run so as to obtain a sample $$x_{\text{diff}}$$ of si
 Here, we take $$N=10$$ and run both the Welch's $$t$$-test and the bootstrap test. We now find empirical means $$(\overline{x}_1, \overline{x}_2) = (3690, 5323)$$ and empirical standard deviations $$(s_1, s_2) = (1086, 1454)$$ for $$Algo1$$ and $$Algo2$$ respectively. Both tests rejected $$H_0$$, with a $$p$$-value of $$0.0037$$ for the Welch's $$t$$-test and a confidence interval for the difference $$\mu_{\text{diff}} \in [732,2612]$$ for the bootstrap test. Both tests passed. In Figure 7, plots for $$N=5$$ and $$N=10$$ can be compared. With a larger number of seeds, the difference that was not found significant with $$N=5$$ is now more clearly visible. With a larger number of seeds, the estimate $$\overline{x}_{\text{diff}}$$ is more robust, more evidence is available to support the claim that $$Algo2$$ outperforms $$Algo1$$, which translates to tighter confidence intervals represented in the figures.
 \end{myex}
 
-<div align="center">
-<img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/a/a763133041a1aa96d8a3ed6b9fabb4724d522ae5.png" height="300"  />
+ <div align="center" style="margin-bottom:20px"> 
+ <img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/a/a763133041a1aa96d8a3ed6b9fabb4724d522ae5.png" height="300"  />
 <div>
 <sub>
 <i>Figure 7: Performance of DDPG with action perturbation (Algo1) and parameter perturbation (Algo2) with N=5 seeds (left) and N=10 seeds (right). The 95% confidence intervals on the right are smaller, because more evidence is available (N larger). The underlying difference appears when N grows. </i></sub>
@@ -345,8 +351,8 @@ Remember, type-I errors occur when the null hypothesis ($$H_0$$) is rejected in 
 **_Example 3_**
 We use $$Algo1$$ from Example 2. From $$42$$ available measures of performance, the above procedure is run for $$N$$ in $$[2,21]$$. Figure 8 presents the results. For small values of $$N$$, empirical estimations of the false positive rate are much larger than the supposedly enforced value $$\alpha=0.05$$.
 
-<div align="center">
-<img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/d/de434feebaf9e814b05bdeadc97d593ec4cf3285.png" height="300"  />
+ <div align="center" style="margin-bottom:20px"> 
+ <img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/d/de434feebaf9e814b05bdeadc97d593ec4cf3285.png" height="300"  />
 <div>
 <sub>
 <i>Figure 8: Empirical estimations of the false positive rate on experimental data (Example 3) when N varies, using the Welch's t-test (blue) and the bootstrap confidence interval test (orange).  </i></sub>
@@ -363,8 +369,8 @@ The Welch's $$t$$-test computes $$t$$-statistics and the degree of freedom $$\nu
 
 
 
-<div align="center">
-<img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/b/bc0a4ca746dbe03c78182969c67ca2bd8a015e80.png" height="300"  />
+ <div align="center" style="margin-bottom:20px"> 
+ <img src="https://openlab-flowers.inria.fr/uploads/default/original/2X/b/bc0a4ca746dbe03c78182969c67ca2bd8a015e80.png" height="300"  />
 <div>
 <sub>
 <i>Figure 9: Evolution of the probability of type-II error as a function of the sample size N and the effect size epsilon, when (s1, s2)= (1-error, 1-error) and alpha=0.05. Left: error=0, this is the ideal case. Right: error=0.40, a large error that can be made when evaluating s over n=5 samples. The compared distributions are normal, one is centered on 3, the other on 3+\epsilon. </i></sub>
