@@ -5,11 +5,17 @@ permalink: /publications/
 tags: publications
 ---
  
-## Publications
-
 My Google Scholar page can be found [here](https://scholar.google.fr/citations?hl=fr&user=VBz8gZ4AAAAJ&view_op=list_works&sortby=pubdate).
 
+**Evolutionary Computation**
+
+* **Colas, C.**, Huizinga, J., Madhavan, V., & Clune, J. (2020). [Scaling MAP-Elites to Deep Neuroevolution](https://arxiv.org/pdf/2003.01825.pdf). Under review.
+
+
 **Reinforcement Learning**
+
+* Portelas, R., **Colas, C.**, Weng, L., Hofmann, K., Oudeyer, P. Y. (2020). [Automatic Curriculum Learning For Deep RL: A Short Survey](https://arxiv.org/abs/2003.04664). Under 
+review.
 
 * **Colas, C.**, Karch, T., Lair, N., Dussoux, J. M., Moulin-Frier, C., Dominey, P. F., & Oudeyer, P. Y. (2020). [Language as a Cognitive Tool to Imagine Goals in Curiosity-Driven 
 Exploration](https://arxiv.org/pdf/2002.09253.pdf). Under review.

@@ -16,10 +16,12 @@
 
 .site-nav {
   padding-top: $nav-padding;
+    font-size: 30px;
 }
 
 .site-header nav a {
   color: $nav-color;
+    font-size: 30px;
 }
 
 .site-header nav a:hover,
@@ -35,10 +37,13 @@
 
 .site-header nav a.nav-active {
   border-bottom: $nav-active-border-bottom;
+  font-size: 30px;
 }
 
 .site-nav a + a {
   margin-left: $nav-link-padding-x;
+    font-size: 30px;
+
 }
 
 .site-header a:hover,

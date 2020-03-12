@@ -9,16 +9,15 @@ abbr {
 
 p {
     color: #333;
-  line-height: 1.5;
-    font-size: 15px;
+    font-size: $base-font-size;
     line-height: 2;
 }
 
 li{
-    font-size: 15px;
-    line-height: 2;
+  font-size: $base-font-size;
+  //font-weight:$base-font-weight;
+  line-height: 2;
 }
-
 small,
 .small {
   font-size: 0.707rem;
