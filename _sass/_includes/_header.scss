@@ -50,10 +50,17 @@
 	}
 }
 
+//.header__logo__img {
+//	width: 100%;
+//	height: auto;
+//}
+
 .header__logo__img {
-	width: 100%;
-	height: auto;
+  margin-top: 20px;
+  width: $logo-width;
+  height: auto;
 }
+
 
 .header__title {
 	font-size: $sitetitle-small;
@@ -74,6 +81,7 @@
 		font-size: $sitetitle-large;
 	}
 }
+
 
 .header__tagline {
 	margin-top: 20px;

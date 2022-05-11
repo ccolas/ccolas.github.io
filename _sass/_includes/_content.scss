@@ -356,6 +356,31 @@
   width: 20%;
 }
 
+.row {
+  display: flex;
+}
+.col-lg-8 {
+  flex: 0 0 525px;
+}
+.col-sm-4 {
+  flex: 0 0 275px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: $text-dark-color !important;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
 .legend {
   display: block;
   margin-left: auto;

@@ -1,14 +1,20 @@
 ---
-title: 'Language as a Cognitive Tool: Dall-E, Humans and Vygotskian RL Agents'
+title: 'Vygotskian Autotelic AI: Using Language as a Cognitive Tool'
 date:  2021-03-02
-description:  This blog post presents a supra-communicative view of language and advocates for the use of language as a cognitive tool to organize the cognitive development of intrinsically motivated artificial agents. We go over studies revealing the cognitive functions of language in humans, cover similar uses of language in the design of artificial agents and advocate for the pursuit of Vygotskian embodied agents - artificial agents that leverage language as a cognitive tool to structure their continuous experience, form abstract representations, reason, imagine creative goals, plan towards them and simulate future possibilities.
+description: Vygotskian Autotelic AI is about immersing autonomous artificial agents into rich socio-cultural worlds; about letting them develop new cognitive functions from linguistic interactions. 
 featured_image: '/images/posts/vygo/language-swiss-army-knife.png'
 ---
 
-<sub>
-_By Cédric Colas, Tristan Karch, Clément Moulin-Frier & Pierre-Yves Oudeyer._</sub>
+<p><i>In collaboration with Tristan Karch, Clément Moulin-Frier & Pierre-Yves Oudeyer.</i></p>
+<br>
 
-<hr>
+
+<center>
+<a href="https://google.com" class="btn">Paper</a>
+</center>
+
+<br>
+
 Have you heard about DALL-E? Beyond the funny mashup between Pixar’s robot and the surrealist painter, Dall-E is OpenAI’s new transformer trained to compose images from text descriptions [[DALL-E](https://openai.com/blog/dall-e/)]. Most people agree, DALL-E’s ability to blend concepts into natural images is remarkable; it often composes just like you would. Look at these avocado-chairs:
 
 
@@ -30,7 +36,7 @@ Ask anyone what language is about. Chances are, they will answer something along
   [Clark, 1998](https://era.ed.ac.uk/bitstream/handle/1842/1311/magic.pdf?sequence=1&isAllowed=y), [Carruthers, 2002](https://drum.lib.umd.edu/bitstream/handle/1903/4339/Cognitive.Functions.of.Language.pdf?sequence=3) and [Lupyan, 2012](http://sapir.psych.wisc.edu/papers/lupyan_2012_languageAugmentedThought.pdf)].
 
 
-<img class="image" src="/images/posts/imagine/vygo.jpg" alt="Vygotsky"/>
+<img class="smaller-image" src="/images/posts/imagine/vygo.jpg" alt="Vygotsky"/>
 <p class="legend">
 <i><b>Lev Vygostky and his socio-cultural theory of cognitive development. </b>
 Vygotsky is mainly known for two ideas. First, although language is initially learned through and for communication with others, it is later internalized and used as a cognitive tool to organize thoughts. As a consequence, important aspects of high-level cognitive functions have social origins. Second, caretakers often setup a <b>Zone of Proximal Development</b> to facilitate children learning. This can take the form of a scaffolding of the environment, demonstrations or linguistic aids adapted to the current level of the child---as the child progresses, caretakers propose new challenges just beyond their current capabilities.</i></p>
@@ -45,20 +51,13 @@ Let us start with words. Words are invitations to form categories [[Waxman and M
 <p class="legend">
 <i>The Language Swiss Army Knife -- key cognitive functions enhanced by language.</i></p>
 
+More generally, the language we speak seems to strongly shape the way we think. <a href="https://www.youtube.com/watch?v=RKK7wGAYP6k"> [Lera Boroditsky’s Ted Talk]</a>  presents some examples of these effects. The perception of colors, for instance, is directly affected by the color-related words our language contains <a href="https://www.pnas.org/content/pnas/104/19/7780.full.pdf"> [Winawer et al., 2007] </a>. Whether your language uses one word for each number or simply categorizes one, two and many will impact your ability to reason with numbers abstractly and thus to develop abilities for math and science <a href="https://www.sciencedirect.com/science/article/pii/S0010027708001042?casa_token=SCkMeHibf_YAAAAA:BonfbLRNN9-eymEOohJK_ijP6MbOWawddS2uxsSDDsjXMidUN1OyfNuDAJIo1-qbTfj0pTEGVQ"> [Frank et al., 2008] </a>.
 
-
-
-<div class="content">
-<div class="row">
-    <div class="col-lg-8">
-           <p>More generally, the language we speak seems to strongly shape the way we think. <a href="https://www.youtube.com/watch?v=RKK7wGAYP6k"> [Lera Boroditsky’s Ted Talk]</a>  presents some examples of these effects. The perception of colors, for instance, is directly affected by the color-related words our language contains <a href="https://www.pnas.org/content/pnas/104/19/7780.full.pdf"> [Winawer et al., 2007] </a>. Whether your language uses one word for each number or simply categorizes one, two and many will impact your ability to reason with numbers abstractly and thus to develop abilities for math and science <a href="https://www.sciencedirect.com/science/article/pii/S0010027708001042?casa_token=SCkMeHibf_YAAAAA:BonfbLRNN9-eymEOohJK_ijP6MbOWawddS2uxsSDDsjXMidUN1OyfNuDAJIo1-qbTfj0pTEGVQ"> [Frank et al., 2008] </a>. </p>
-    </div>
-    <div class="col-sm-4" style="border-left: 4px solid #13428f; margin-left: 20px; align-self: center;">
-           <p style="margin-left:20px;color:#13428f"><big><i>Vygotsky, Berk and others showed that private speech was instrumental to the ability of children to reason and solve tasks</i></big></p>
-    </div>
+<br>
+<div class="col-sm-4" style="border-left: 4px solid #003965; margin-left: 80px; align-self: center;">
+       <p style="margin-left:20px;color:#13428f"><big><i>Vygotsky, Berk and others showed that private speech was instrumental to the ability of children to reason and solve tasks</i></big></p>
 </div>
-</div>
-
+<br>
 
 
 Language can also be used as a tool to solve problems. Piaget first described that two-to-seven-year old children often use private speech or self-talk to describe their on-going activities and organize themselves, but thought this was a sign of cognitive immaturity [[Piaget, 1923](https://newlearningonline.com/literacies/chapter-14/piaget-on-the-language-and-thought-of-the-child)]. Vygotsky, Berk and others showed that private speech was instrumental to the ability of children to reason and solve tasks: the harder the task, the more intensively children used it for planning [[Vygotsky, 1934](https://mitpress.mit.edu/books/thought-and-language), [Berk, 1994](https://www.scientificamerican.com/article/why-children-talk-to-themselves/)]. Far from being left behind as children grow up, Vygotsky showed that private speech is internalized to become inner speech, the little voice in your head [[Vygotsky, 1934](https://mitpress.mit.edu/books/thought-and-language) and [Kohlberg et. al., 1968](https://www.jstor.org/stable/1126979?origin=crossref)].  Children that cannot formulate sentences like “at the left of the blue wall” show decreased spatial orientation capacities in such contexts compared to children who can. Interfering with adults' inner speech by asking them to repeat sentences also hinders their ability to orient spatially [[Hermer-Vazquez et al. 2001](https://www.researchgate.net/profile/Linda-Hermer-2/publication/12165254_Language_space_and_the_development_of_cognitive_flexibility_in_humans_The_case_of_two_spatial_memory_tasks/links/5c2e1ecba6fdccd6b58f7d23/Language-space-and-the-development-of-cognitive-flexibility-in-humans-The-case-of-two-spatial-memory-tasks.pdf)].
@@ -73,20 +72,19 @@ When PFS works, it seems to be easily triggered by language. The embodied simula
 
 In a nutshell, humans use language as a tool for many of their high-level cognitive skills including abstraction, analogies, planning, expressiveness, imagination, creativity and mental simulation.
 
+Language can only help if it is grounded in the physical world. Before drawing an avocado-chair, you need to know what avocados and chairs are; you need to know what drawing means. Our source of information comes from <b>aligned data</b>: as children, we observe and experience the physical world and hear corresponding linguistic descriptions. The mother could say: “This is a chair” when the infant is looking at it. The father could say: “Let’s put you on the chair” while the infant experiences being transported and sat on a chair.
+
+<br>
+<div class="col-sm-4" style="border-left: 4px solid #003965; margin-left: 80px; align-self: center;">
+       <p style="margin-left:20px;color:#13428f"><big><i>Aligning language and physical data might just be about transferring the discrete structure of language onto the continuous, messy real world.</i></big></p>
+</div>
+<br>
 
 ### Language-World Alignment
 
 
-<div class="content">
-<div class="row">
-    <div class="col-lg-8">
-           <p>Language can only help if it is grounded in the physical world. Before drawing an avocado-chair, you need to know what avocados and chairs are; you need to know what drawing means. Our source of information comes from <b>aligned data</b>: as children, we observe and experience the physical world and hear corresponding linguistic descriptions. The mother could say: “This is a chair” when the infant is looking at it. The father could say: “Let’s put you on the chair” while the infant experiences being transported and sat on a chair. </p>
-    </div>
-    <div class="col-sm-4" style="border-left: 4px solid #13428f; margin-left: 20px; align-self: center;">
-           <p style="margin-left:20px;color:#13428f"><big><i>Aligning language and physical data might just be about transferring the discrete structure of language onto the continuous, messy real world.</i></big></p>
-    </div>
-</div>
-</div>
+
+
 As infants hear about chairs while experiencing chairs (seeing them, sitting on them, bumping their feet against it), they strengthen the association and build their knowledge of chairs.
 
 It is now time to turn to artificial learning systems: AI systems also use aligned data! A basic example is the datasets of image and label pairs used by image classification algorithms. In language-conditioned reinforcement learning (LC-RL), engineers train learning agents to perform behaviors satisfying linguistic instructions: they reward agents when their state matches---is aligned---with the instruction. In real life however, children are not often provided with object-label pairs or explicit instructions. Caretakers mostly provide descriptive feedback, they describe events that are deemed novel or relevant for the child [[Tomasello, 2005](https://www.hup.harvard.edu/catalog.php?isbn=9780674017641) and [Bornstein et. al., 1992](https://www.jstor.org/stable/1131235?seq=1)].
@@ -117,7 +115,7 @@ LC-RL methods often investigate the ability of their agent in terms of systemati
 Let's consider an agent that learned to grasp plants and to feed animals by bringing them food. As it learned these skills, the agent acquired representations of the concepts of animals, plants, food and grasping. Can these concepts be leveraged to understand a new combination such as “feed the plant”? Here again, agents use aligned data (e.g. instruction-state or description-state) and are tested on their ability to project the compositional aspect of language (“feed the animal” + “grasp the plant” → “feed the plant”) to the behavioral space. Although it is not perfectly _systematic_, this type of generalization often works quite well, especially in settings where agents are exposed to a wide distribution of objects/words and perceive the world through an egocentric point of view that helps them isolate individual objects [[Hill et. al., 2019](https://deepmind.com/research/publications/Emergent-Systematic-Generalization-in-a-Situated-Agent)].
 
 
-<img class="image" src="/images/posts/imagine/policy-sketch.png" alt="Descriptive Feedback"/>
+<img class="small-image" src="/images/posts/imagine/policy-sketch.png" alt="Descriptive Feedback"/>
 <p class="legend">
 <i>The Policy Sketches approach: long-horizon behaviors are aligned
    with policy sketches, sequences of symbolic tokens segmenting 
@@ -138,21 +136,16 @@ Building on these generalization properties, language was also found to be a goo
 
 Creative exploration is about finding new ways to interact with the environment. Agents can efficiently organize their exploration by generating and pursuing their own goals <a href="https://arxiv.org/pdf/1708.02190.pdf">[Forestier et al., 2017]</a>.
 
-<div class="content">
-<div class="row">
-    <div class="col-lg-8">
-          <p>
-            Goal generation, however, is often limited to the generation of target representations that are <i>within</i> the distribution of previously-experienced representations. If we want to achieve <i>creative exploration</i>, we need agents to generate <i>out-of-distribution</i> goals, to imagine new possible interactions with their world. This is reminiscent of the way children generate their own creative goals during pretend play <a href="https://files.eric.ed.gov/fulltext/EJ1138861.pdf">[Vygotsky, 1930]</a>, a type of behavior that is argued to benefit children's ability to solve problems later on <a href="https://www.annualreviews.org/doi/pdf/10.1146/annurev-devpsych-070120-014806">[Chu and Schulz, 2020]</a>.
-          </p>
-    </div>
-    <div class="col-sm-4" style="border-left: 4px solid #13428f; margin-left: 20px; align-self: center;">
-           <p style="margin-left:20px;color:#13428f"><big><i>If we want to achieve <i>creative exploration</i>, we need agents to generate <i>out-of-distribution</i> goals, to imagine new possible interactions with their world.</i></big></p>
-    </div>
+Goal generation, however, is often limited to the generation of target representations that are <i>within</i> the distribution of previously-experienced representations. If we want to achieve <i>creative exploration</i>, we need agents to generate <i>out-of-distribution</i> goals, to imagine new possible interactions with their world. This is reminiscent of the way children generate their own creative goals during pretend play <a href="https://files.eric.ed.gov/fulltext/EJ1138861.pdf">[Vygotsky, 1930]</a>, a type of behavior that is argued to benefit children's ability to solve problems later on <a href="https://www.annualreviews.org/doi/pdf/10.1146/annurev-devpsych-070120-014806">[Chu and Schulz, 2020]</a>.
+
+<br>
+<div class="col-sm-4" style="border-left: 4px solid #003965; margin-left: 80px; align-self: center;">
+       <p style="margin-left:20px;color:#13428f"><big><i>If we want to achieve <i>creative exploration</i>, we need agents to generate <i>out-of-distribution</i> goals, to imagine new possible interactions with their world.</i></big></p>
 </div>
-</div>
+<br>
 
 
-<img class="image" src="/images/posts/imagine/thumbnail_v6.png" alt="Imagine"/>
+<img class="small-image" src="/images/posts/imagine/thumbnail_v6.png" alt="Imagine"/>
 <p class="legend">
 <i><b> The Imagine architecture as a Vygostkian Deep RL system. </b>
    Social interactions with a social peer enables the agent to learn to represent and understand language as a pre-existent social structure (left). Then, language is 
@@ -182,19 +175,41 @@ The embodied simulation hypothesis supports this idea. Humans seem to use langua
 
 Now if we look at the algorithms discussed above under that lens, we’ll find that many of them are conducting mental simulations triggered by language. Dall-E certainly does; it generates visual simulation (i.e. visualizes) language inputs. That’s also what LGB does, it visualizes specific semantic representation that might result from executing an instruction. In a weaker sense, all LC-RL algorithms also do that: given a language input, they generate what’s the next action to take to execute the instruction. Model-based versions of these algorithms would do so in a stronger sense---picturing whole trajectories matching language descriptions. Finally, learned reward functions offer verification systems for mental simulation: checking whether descriptions and state---imagined or real---match. 
 
+These approaches are only the first steps towards a more ambitious goal---<b>artificial agents that demonstrate a rich linguistic mental life</b>. Just like humans, autonomous agents should be able to describe what’s going on in the world with a form of inner speech. The other way around, these agents should be able to leverage the productivity of language, generate new sentences and ideas from known ones and project these linguistic representations into visual, auditive and behavioral simulations. Linguistic productivity can also drive pretend play, the imagination of creative made-up goals for the agent to practice its problem resolution skills. 
 
-<div class="content">
-<div class="row">
-    <div class="col-lg-8">
-          <p>
-           These approaches are only the first steps towards a more ambitious goal---<b>artificial agents that demonstrate a rich linguistic mental life</b>. Just like humans, autonomous agents should be able to describe what’s going on in the world with a form of inner speech. The other way around, these agents should be able to leverage the productivity of language, generate new sentences and ideas from known ones and project these linguistic representations into visual, auditive and behavioral simulations. Linguistic productivity can also drive pretend play, the imagination of creative made-up goals for the agent to practice its problem resolution skills. 
-          </p>
-    </div>
-    <div class="col-sm-4" style="border-left: 4px solid #13428f; margin-left: 20px; align-self: center;">
-           <p style="margin-left:20px;color:#13428f"><big><i>These approaches are only the first steps towards a more ambitious goal—artificial agents that demonstrate a rich linguistic mental life.</i></big></p>
-    </div>
+<br>
+<div class="col-sm-4" style="border-left: 4px solid #003965; margin-left: 80px; align-self: center;">
+   <p style="margin-left:20px;color:#13428f"><big><i>These approaches are only the first steps towards a more ambitious goal—artificial agents that demonstrate a rich linguistic mental life.</i></big></p>
 </div>
-</div>
+<br>
+
+[comment]: <> (<br>)
+
+[comment]: <> (<div class="content">)
+
+[comment]: <> (<div class="row">)
+
+[comment]: <> (    <div class="col-lg-8">)
+
+[comment]: <> (          <p>)
+
+[comment]: <> (           These approaches are only the first steps towards a more ambitious goal---<b>artificial agents that demonstrate a rich linguistic mental life</b>. Just like humans, autonomous agents should be able to describe what’s going on in the world with a form of inner speech. The other way around, these agents should be able to leverage the productivity of language, generate new sentences and ideas from known ones and project these linguistic representations into visual, auditive and behavioral simulations. Linguistic productivity can also drive pretend play, the imagination of creative made-up goals for the agent to practice its problem resolution skills. )
+
+[comment]: <> (          </p>)
+
+[comment]: <> (    </div>)
+
+[comment]: <> (    <div class="col-sm-4" style="border-left: 4px solid #003965; margin-left: 80px; align-self: center;">)
+
+[comment]: <> (           <p style="margin-left:20px;color:#13428f"><big><i>These approaches are only the first steps towards a more ambitious goal—artificial agents that demonstrate a rich linguistic mental life.</i></big></p>)
+
+[comment]: <> (    </div>)
+
+[comment]: <> (</div>)
+
+[comment]: <> (</div>)
+
+[comment]: <> (<br>)
 
 Only agents that conduct such an intensive alignment between language and the physical world can project linguistic structures onto their sensorimotor experience and learn to recognize the building blocks that will help them plan, compose, generalize and create.
 
@@ -222,8 +237,9 @@ We would like to give a special thanks to <a href="http://www.isir.upmc.fr/?op=v
 }
 ```
 
+<center>
 <button class="btn" type="button" onclick="copyToClipboard()"> Export Bibtex </button>
-
+</center>
 <script>
 
 function copyToClipboard() {
@@ -236,8 +252,6 @@ function copyToClipboard() {
     document.body.removeChild(dummy);
     alert("Copied to clipboard: " + text);
 }
-
-
 </script>
 
 
