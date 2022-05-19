@@ -7,6 +7,13 @@ featured_image: '/images/projects/color_world/medley.png'
 
 ![](/images/projects/color_world/medley_paysage.png)
 
+<center>
+<a href="https://github.com/ccolas/ColorfulWorld" class="btn">Code</a>
+</center>
+
+
+
+
 The Red-Blue-Green color space is designed to represent colors on the web. [0, 0, 0] is black, [1, 1, 1] white, [1, 0, 0] pure red, etc. Turning up one of the dimension 
 increases the luminance on the corresponding channel. Printers, on the other hand, work by mixing inks of 4 colors: cyan, magenta, yellow and black (CMYK). In fact, there are 
 many more ways to represent colors, all of which fall short of expressing the variety of colors humans can perceive. 

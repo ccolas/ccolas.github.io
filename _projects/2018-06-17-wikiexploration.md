@@ -9,6 +9,10 @@ featured_image: '/images/projects/wiki/wikipedia.jpg'
 <p class="legend">
 <i></i></p>
 
+<center>
+<a href="https://github.com/ccolas/wiki-calendar" class="btn">Code</a>
+</center>
+
 The _**Wikipedia Visual Exploration**_ project embarks you on a _visual random exploration_ of Wikipedia. 
 
 Wikipedia is a multi-lingual encyclopedia built on the massive collaborative efforts of millions of Wikipedians. It's perhaps the best example of successful collaborative 
@@ -22,7 +26,6 @@ This project proposes such random explorations of Wikipedia. Starting from the [
 day. Each day, it enters one of the links contained in the previous page and jumps to another, semantically related topic. Each day, it illustrates the topic with a 
 corresponding image taken from a google search. One after the other, for a year.
 
-Find the code [here](https://github.com/ccolas/wiki-calendar).
 
 ### Let's explore!
 

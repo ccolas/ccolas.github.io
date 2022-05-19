@@ -8,6 +8,7 @@ featured_image: '/images/projects/cppnworld/id1.jpg'
 ![](/images/projects/cppnworld/id1.jpg)
 
 
+
 In **Worlds of Colors** I create alternative worlds full of colors and open windows to let us get a peek at them. 
 
 ### Compositional Pattern Producing Networks

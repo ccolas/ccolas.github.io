@@ -21,6 +21,9 @@ featured_image: '/images/posts/worldoptim/results_standard_run.png'
 
 <img class="image" src="/images/posts/worldoptim/results_standard_run.png" alt="Evolution of World2 model in the 'business as usual' scenario."/>
 
+**Disclaimer: the codebase presented here is in development. I talk about it in case somehow wants to study this subject and wants to use the code. In its present states, 
+with the cost functions coded so far, it gives weird results (see discussion below).**
+
 ### Limits to Growth 
 
 In the early 1970s, an international group of researchers called the [club of Rome](https://www.clubofrome.org) was tasked to study the implication of a continued worldwide 
@@ -50,7 +53,7 @@ What do we need? First, we need an implementation of the world model. Here, I've
 [World2](https://github.com/cvanwynsberghe/pyworld2) and [World3](https://github.com/cvanwynsberghe/pyworld3) in Python. Read about his quest to make these models more 
 accessible on his [blog post](https://towardsdatascience.com/exploring-the-limits-to-growth-with-python-674133874eed). Second, we need an optimization 
 framework. To this end, I've adapted [_EpidemiOptim_](https://arxiv.org/pdf/2010.04452.pdf) a framework designed to explore mitigation strategies in the context of epidemics that 
-I presented [in this post](/_posts/2020-06-09-epidemioptim.md). 
+I presented [in this post](/blog/epidemioptim). 
 
 The resulting library is called [**WorldOptim**](https://github.com/ccolas/WorldOptim), an adaptation of EpidemiOptim that incorporates World2, allows to define new optimization 
 problems and to use pre-coded optimization algorithm to solve them. WorldOptim is a general framework from which many questions can be investigated. 

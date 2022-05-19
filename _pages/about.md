@@ -5,7 +5,7 @@ featured_image: /images/demo/demo-landscape.jpg
 
 <img class="image" src="/images/general/about_landscape.jpg" alt=""/>
 
-Hi! I'm Cédric Colas, AI researcher and explorer of digital spaces. 
+Hi! I'm Cédric Colas, AI researcher and digital artist. 
 
 #### Research
 
@@ -23,5 +23,5 @@ intrinsically motivated agents to grow open-ended repertoires of skills in partn
 
 #### Art
 
-I often think of ways to reuse the algorithms I encounter in my research for alternative _mostly useless_ purposes. This leads to the projects presented <a
-href="/project/" download>here</a>. 
+I often think of ways to reuse the algorithms I encounter in my research for alternative, _mostly useless_ purposes. This leads to the projects presented <a
+href="/">here</a>. 
