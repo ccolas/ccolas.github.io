@@ -342,11 +342,11 @@
   width: 100%;
 
   @include mq(tabletp) {
-    margin: 40%;
+    width: 40%;
   }
 
   @include mq(laptop) {
-    margin: 65%;
+    width: 65%;
   }
 }
 
@@ -357,11 +357,11 @@
   width: 80%;
 
   @include mq(tabletp) {
-    margin: 60%;
+    width: 60%;
   }
 
   @include mq(laptop) {
-    margin: 40%;
+    width: 40%;
   }
 }
 
@@ -372,11 +372,11 @@
   width: 40%;
 
   @include mq(tabletp) {
-    margin: 30%;
+    width: 30%;
   }
 
   @include mq(laptop) {
-    margin: 20%;
+    width: 20%;
   }
 }
 
@@ -409,8 +409,16 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
   font-size: small;
+  width: 90%;
+
+  @include mq(tabletp) {
+    width: 70%;
+  }
+
+  @include mq(laptop) {
+    width: 50%;
+  }
 }
 
 .MathJax { font-weight: 100 !important; }
