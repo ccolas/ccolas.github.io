@@ -12,7 +12,7 @@ Hi! I'm Cédric Colas, AI researcher and digital artist.
 I've obtained my PhD at the [Flowers Lab](https://flowers.inria.fr/) under the supervision of [Pierre-Yves Oudeyer](http://www.pyoudeyer.com/) and [Olivier Sigaud](https://www.isir.upmc.fr/personnel/sigaud/). 
 
 The title is: **Towards Vygotskian Autotelic Agents: Learning Skills with Goals, Language and Intrinsically Motivated Deep Reinforcement Learning** (<a 
-href="/data/cedric_colas_manuscript.pdf" download>manuscript</a>, [defense](https://www.youtube.com/watch?v=x4vS557rhAM)). In short, I'm interested in the study of _artificial  
+href="/data/cedric_colas_manuscript.pdf" download>manuscript</a>, [defense](https://www.youtube.com/watch?v=x4vS557rhAM)). In short, I'm interested in the study of _artificial 
 open-ended skill discovery_, the ability for an artificial agent to grow an open-ended repertoire of skills along its life. This leads me to focus on intrinsically motivated 
 agents that sets their own goals, a.k.a. [_autotelic agents_](https://arxiv.org/abs/2012.09830). 
 
