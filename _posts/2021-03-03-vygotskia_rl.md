@@ -226,7 +226,7 @@ We would like to give a special thanks to <a href="http://www.isir.upmc.fr/?op=v
 
 ```
 @misc{colas:hal-03159786,
-  TITLE = {{Language as a Cognitive Tool: Dall-E, Humans and Vygotskian RL Agents}},
+  TITLE = {Language as a Cognitive Tool: Dall-E, Humans and Vygotskian RL Agents},
   AUTHOR = {Colas, C{\'e}dric and Karch, Tristan and Moulin-Frier, Cl{\'e}ment and Oudeyer, Pierre-Yves},
   URL = {https://hal.archives-ouvertes.fr/hal-03159786},
   NOTE = {This blog post presents a supra-communicative view of language and advocates for the use of language as a cognitive tool to organize the cognitive development of intrinsically motivated artificial agents. We go over studies revealing the cognitive functions of language in humans, cover similar uses of language in the design of artificial agents and advocate for the pursuit of Vygotskian embodied agents - artificial agents that leverage language as a cognitive tool to structure their continuous experience, form abstract representations, reason, imagine creative goals, plan towards them and simulate future possibilities.},
@@ -245,7 +245,7 @@ We would like to give a special thanks to <a href="http://www.isir.upmc.fr/?op=v
 function copyToClipboard() {
     var dummy = document.createElement("textarea");
     document.body.appendChild(dummy);
-    var text = "@misc{colas:hal-03159786,  TITLE = {{Language as a Cognitive Tool: Dall-E, Humans and Vygotskian RL Agents}},  AUTHOR = {Colas, C{\'e}dric and Karch, Tristan and Moulin-Frier, Cl{\'e}ment and Oudeyer, Pierre-Yves}, URL = {https://hal.archives-ouvertes.fr/hal-03159786}, NOTE = {This blog post presents a supra-communicative view of language and advocates for the use of language as a cognitive tool to organize the cognitive development of intrinsically motivated artificial agents. We go over studies revealing the cognitive functions of language in humans, cover similar uses of language in the design of artificial agents and advocate for the pursuit of Vygotskian embodied agents - artificial agents that leverage language as a cognitive tool to structure their continuous experience, form abstract representations, reason, imagine creative goals, plan towards them and simulate future possibilities.}, YEAR = {2021}, MONTH = Mar, HAL_ID = {hal-03159786}, HAL_VERSION = {v1},}"
+    var text = "@misc{colas:hal-03159786,  TITLE = {Language as a Cognitive Tool: Dall-E, Humans and Vygotskian RL Agents},  AUTHOR = {Colas, C{\'e}dric and Karch, Tristan and Moulin-Frier, Cl{\'e}ment and Oudeyer, Pierre-Yves}, URL = {https://hal.archives-ouvertes.fr/hal-03159786}, NOTE = {This blog post presents a supra-communicative view of language and advocates for the use of language as a cognitive tool to organize the cognitive development of intrinsically motivated artificial agents. We go over studies revealing the cognitive functions of language in humans, cover similar uses of language in the design of artificial agents and advocate for the pursuit of Vygotskian embodied agents - artificial agents that leverage language as a cognitive tool to structure their continuous experience, form abstract representations, reason, imagine creative goals, plan towards them and simulate future possibilities.}, YEAR = {2021}, MONTH = Mar, HAL_ID = {hal-03159786}, HAL_VERSION = {v1},}"
     dummy.value = text;
     dummy.select();
     document.execCommand("copy");
