@@ -1,7 +1,7 @@
 site: Cédric Colas
 
-url: https://index.jekyllthemes.io
-baseurl:
+url: https://ccolas.github.io
+baseurl: https://ccolas.github.io
 
 collections:
   pages:
