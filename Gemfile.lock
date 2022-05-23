@@ -277,6 +277,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 208)
   jekyll-paginate
+  kramdown (>= 2.3.0)
 
 BUNDLED WITH
    2.3.11
