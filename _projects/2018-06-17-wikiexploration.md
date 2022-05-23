@@ -397,5 +397,4 @@ corresponding image taken from a google search. One after the other, for a year.
 	<img src="/images/projects/wiki/calendar/Day_364.jpg">
 </div>
 
-Process finished with exit code 0
 
