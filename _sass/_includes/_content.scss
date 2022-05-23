@@ -339,21 +339,45 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
-  width: 65%;
+  width: 100%;
+
+  @include mq(tabletp) {
+    margin: 40%;
+  }
+
+  @include mq(laptop) {
+    margin: 65%;
+  }
 }
 
 .small-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 80%;
+
+  @include mq(tabletp) {
+    margin: 60%;
+  }
+
+  @include mq(laptop) {
+    margin: 40%;
+  }
 }
 
 .smaller-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 20%;
+  width: 40%;
+
+  @include mq(tabletp) {
+    margin: 30%;
+  }
+
+  @include mq(laptop) {
+    margin: 20%;
+  }
 }
 
 .row {
