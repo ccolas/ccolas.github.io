@@ -1,8 +1,7 @@
 site: Cédric Colas
 
 url: https://ccolas.github.io
-baseurl:
-
+baseurl: https://ccolas.github.io
 
 collections:
   pages:
