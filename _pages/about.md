@@ -25,3 +25,8 @@ intrinsically motivated agents to grow open-ended repertoires of skills in partn
 #### Art
 
 I often think of ways to reuse the algorithms I encounter in my research for alternative, _mostly useless_ purposes. This leads to the projects presented <a href="/">here</a>. 
+
+
+#### Acknowledgment
+
+The website robot logo is modified from a *Flaticon* logo, created by Slidesgo.
