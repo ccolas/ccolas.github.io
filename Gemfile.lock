@@ -278,6 +278,7 @@ DEPENDENCIES
   github-pages
   jekyll-paginate
   kramdown
+  nokogiri (>= 1.13.6)
 
 BUNDLED WITH
    2.3.11
