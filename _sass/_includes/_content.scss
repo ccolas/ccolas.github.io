@@ -339,45 +339,45 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
-  width: 100%;
+  width: 65%;
 
-  @include mq(tabletp) {
-    width: 40%;
-  }
-
-  @include mq(laptop) {
-    width: 65%;
-  }
+  //@include mq(tabletp) {
+  //  width: 40%;
+  //}
+  //
+  //@include mq(laptop) {
+  //  width: 65%;
+  //}
 }
 
 .small-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 40%;
 
-  @include mq(tabletp) {
-    width: 60%;
-  }
-
-  @include mq(laptop) {
-    width: 40%;
-  }
+  //@include mq(tabletp) {
+  //  width: 60%;
+  //}
+  //
+  //@include mq(laptop) {
+  //  width: 40%;
+  //}
 }
 
 .smaller-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 20%;
 
-  @include mq(tabletp) {
-    width: 30%;
-  }
-
-  @include mq(laptop) {
-    width: 20%;
-  }
+  //@include mq(tabletp) {
+  //  width: 30%;
+  //}
+  //
+  //@include mq(laptop) {
+  //  width: 20%;
+  //}
 }
 
 .row {
@@ -410,15 +410,15 @@
   margin-left: auto;
   margin-right: auto;
   font-size: small;
-  width: 90%;
+  width: 60%;
 
-  @include mq(tabletp) {
-    width: 70%;
-  }
-
-  @include mq(laptop) {
-    width: 50%;
-  }
+  //@include mq(tabletp) {
+  //  width: 70%;
+  //}
+  //
+  //@include mq(laptop) {
+  //  width: 50%;
+  //}
 }
 
 .MathJax { font-weight: 100 !important; }
