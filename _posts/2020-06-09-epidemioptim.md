@@ -34,6 +34,7 @@ COVID19 epidemic in the French Ile-de-France region. Technical details can be fo
 </center>
 <br>
 
+#### Cite this blog post
 
 ```
 @article{colas2020epidemioptim,

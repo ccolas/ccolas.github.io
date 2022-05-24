@@ -5,7 +5,7 @@ description: Vygotskian Autotelic AI is about immersing autonomous artificial ag
 featured_image: '/images/posts/vygo/language-swiss-army-knife.png'
 ---
 
-<p><i>In collaboration with Tristan Karch, Clément Moulin-Frier & Pierre-Yves Oudeyer.</i></p>
+<p><i>In collaboration with Tristan Karch, Clément Moulin-Frier & Pierre-Yves Oudeyer. Reproduced from our <a href="http://developmentalsystems.org/language_as_cognitive_tool_vygotskian_rl"> team's blog </a>.</i></p>
 <br>
 
 
