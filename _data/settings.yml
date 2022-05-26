@@ -10,7 +10,7 @@ header_settings:
 menu_settings:
   menu_items:
     - title: 'Scientific blog'
-        url: '/blog/'
+      url: '/blog/'
     - title: 'Art projects'
       url: '/project/'
     - title: 'Publications'
