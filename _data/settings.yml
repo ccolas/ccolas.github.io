@@ -9,9 +9,9 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Projects'
-      url: '/'
-    - title: 'Blog'
+    - title: 'Art projects'
+      url: '/project/'
+    - title: 'Scientific blog'
       url: '/blog/'
     - title: 'Publications'
       url: '/publications'
