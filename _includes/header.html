@@ -3,7 +3,7 @@
 	<div class="header__content">
 
 		{% if site.data.settings.header_settings.logo_image %}
-        <a href="{{ site.baseurl }}/" class="header__title_bis">
+        <a href="{{ site.blog }}/" class="header__title_bis">
             {{ site.data.settings.basic_settings.site_title }}
         </a>
 
@@ -17,7 +17,7 @@
         </center>
 
 		{% else %}
-		<a href="{{ site.baseurl }}/" class="header__title">
+		<a href="/blog/" class="header__title">
 			{{ site.data.settings.basic_settings.site_title }}
 		</a>
 		{% endif %}
@@ -40,15 +40,15 @@
 			</div>
 		</div>
 
-		<div class="projects-menu">
-			<ul class="menu__list">
-				{% for project in site.projects reversed %}
-				<li class="menu__list__item">
-					<a href="{{ project.url | relative_url }}" class="menu__list__item__link">{{ project.title }}</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</div>
+<!--		<div class="projects-menu">-->
+<!--			<ul class="menu__list">-->
+<!--				{% for project in site.projects reversed %}-->
+<!--				<li class="menu__list__item">-->
+<!--					<a href="{{ project.url | relative_url }}" class="menu__list__item__link">{{ project.title }}</a>-->
+<!--				</li>-->
+<!--				{% endfor %}-->
+<!--			</ul>-->
+<!--		</div>-->
 
 		<div class="header__lower">
 
