@@ -22,6 +22,7 @@ My extended CV is <a href="/data/CV_Cedric_Colas.pdf" download>here</a>.
 
 #### Intrinsically Motivated Open-Ended Learning
 
+* **Colas, C.**, Karch, T., Moulin-Frier, C. & Oudeyer, P. Y. (2022). *[Vygotskian Autotelic Artificial Intelligence: Language and Culture Internalization for Human-Like AI](https://arxiv.org/pdf/2206.01134.pdf)*. In review. [Slides](https://docs.google.com/presentation/d/1x2nUZKTWhFIHOHBd5O-k9lzq85rmD_9C_2MVWckLEyc/edit#slide=id.g1271c36e3a6_0_1959).
 * Akakzia, A., Serris, O., Sigaud, 0. & **Colas, C.** (2022). *[Help Me Explore: Minimal Social Interventions for Graph-Based Autotelic Agents](https://arxiv.org/pdf/2202.05129.pdf)*. In review. [Code](https://github.com/akakzia/gangstr).
 * Sigaud, O., Caselles-Dupré, H., **Colas, C.**, Akakzia A., Oudeyer, P-Y. & Chetouani, M. (2021). *[Towards Teachable Autotelic Agents](https://arxiv.org/pdf/2105.11977.pdf)*. 
   In review.
