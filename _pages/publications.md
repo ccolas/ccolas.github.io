@@ -31,7 +31,7 @@ My extended CV is <a href="/data/CV_Cedric_Colas.pdf" download>here</a>.
 * Portelas, R., **Colas, C.**, Weng, L., Hofmann, K., Oudeyer, P. Y. (2020). *[Automatic Curriculum Learning For Deep RL: A Short Survey](https://arxiv.org/abs/2003.04664)*. 
   Accepted at IJCAI 2020. [Talk](https://www.youtube.com/watch?v=MnvhEJIme6k&t=16s).
 * **Colas, C.**, Karch, T., Lair, N., Dussoux, J. M., Moulin-Frier, C., Dominey, P. F., & Oudeyer, P. Y. (2020). *[Language as a Cognitive Tool to Imagine Goals in Curiosity-Driven
-  Exploration](https://arxiv.org/pdf/2002.09253.pdf)*. Accepted at NeurIPS 2020. [Talk](https://slideslive.com/38937386/language-as-a-cognitive-tool-to-imagine-goals-in-curiosity-driven-exploration?ref=speaker-28788-popular). [Code](https://github.com/flowersteam/curious).
+  Exploration](https://arxiv.org/pdf/2002.09253.pdf)*. Accepted at NeurIPS 2020. [Talk](https://slideslive.com/38937386/language-as-a-cognitive-tool-to-imagine-goals-in-curiosity-driven-exploration?ref=speaker-28788-popular). [Code](https://github.com/flowersteam/imagine).
 * Lair, N., **Colas, C.,** Portelas, R., Dussoux, J. M., Dominey, P. F., & Oudeyer, P. Y. (2019). *[Language Grounding through Social Interactions and Curiosity-Driven
   Multi-Goal Learning](https://hal.archives-ouvertes.fr/hal-02369866/document)*. Accepted at Visually Grounded Interaction and Language NeurIPS workshop, 2019. 
 * Portelas, R., **Colas, C.**, Hofmann, K., & Oudeyer, P. Y. (2019). *[Teacher Algorithms for Curriculum Learning of Deep RL in Continuously Parameterized Environments.](https://arxiv.org/pdf/1910.07224.pdf)* Accepted
