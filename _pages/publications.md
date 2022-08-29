@@ -59,4 +59,4 @@ My extended CV is [here]({{ site.url }}/data/CV_Cedric_Colas.pdf).
   International Conference on Biomedical Robotics and Biomechatronics (Biorob) (pp. 136-141). IEEE.
 
 #### Digital Art
-* **Colas, C.** (2022). *[TastyPiano: A Subjective Sound--Taste Synesthetic Machine.]({{ site.url }}/data/papers/Creativity_Workshop_TastyPiano_A_Subjective_Sound_Taste_Synesthetic_Machine.pdf)*
+* **Colas, C.** (2022). *[TastyPiano: A Subjective Sound--Taste Synesthetic Machine.]({{ site.url }}/data/papers/tastypiano.pdf)*
