@@ -13,7 +13,7 @@ featured_image: '/images/posts/epidemioptim/visu.gif'
 <center>
 <a href="https://arxiv.org/pdf/2010.04452.pdf" class="btn">Paper</a>  <span style="color: #003965;"> &#9679;</span> 
 <a href="https://github.com/flowersteam/epidemioptim" class="btn">Code</a>  <span style="color: #003965;"> &#9679;</span> 
-<a href="/data/slides_epidemioptim.pdf" class="btn">Slides</a>  <span style="color: #003965;"> &#9679;</span>
+<a href="{{ site.url }}/data/slides/slides_epidemioptim.pdf" class="btn">Slides</a>  <span style="color: #003965;"> &#9679;</span>
 <a href="https://epidemioptim.bordeaux.inria.fr/" class="btn">Demo</a>  
 
 </center>

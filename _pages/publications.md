@@ -5,15 +5,13 @@ tags: publications
 ---
 
 The most up-to-date list of publications can be found on my [Google Scholar page](https://scholar.google.fr/citations?hl=fr&user=VBz8gZ4AAAAJ&view_op=list_works&sortby=pubdate).
-My extended CV is <a href="/data/CV_Cedric_Colas.pdf" download>here</a>.
-
+My extended CV is [here]({{ site.url }}/data/CV_Cedric_Colas.pdf).
 
 ## Thesis
 
-* **Colas, Cédric**. (2021). *<a href="/data/cedric_colas_manuscript.pdf" download>Towards Vygotskian Autotelic Agents: Learning Skills with Goals,
-  Language and Intrinsically Motivated Deep Reinforcement Learning</a>*.  Received the PhD Thesis Award 2022 from the French AI association. <a 
-  href="/data/slides_colas_defense_june2021.pdf" download>Slides of the PhD 
-  defense</a>. [Video](https://www.youtube.com/watch?v=x4vS557rhAM).
+* **Colas, Cédric**. (2021). *[Towards Vygotskian Autotelic Agents: Learning Skills with Goals,
+  Language and Intrinsically Motivated Deep Reinforcement Learning]({{ site.url }}/data/cedric_colas_manuscript.pdf)*.  Received the PhD Thesis Award 2022 from the French 
+  AI association. [Slides of the PhD defense]({{ site.url }}/data/slides/slides_colas_defense_june2021.pdf). [Video](https://www.youtube.com/watch?v=x4vS557rhAM).
 
 <img class="small-image" src="/images/thesis.png" alt=""/>
 
@@ -22,7 +20,7 @@ My extended CV is <a href="/data/CV_Cedric_Colas.pdf" download>here</a>.
 
 #### Intrinsically Motivated Open-Ended Learning
 
-* **Colas, C.**, Karch, T., Moulin-Frier, C. & Oudeyer, P. Y. (2022). *[Vygotskian Autotelic Artificial Intelligence: Language and Culture Internalization for Human-Like AI](https://arxiv.org/pdf/2206.01134.pdf)*. In review. [Slides](https://docs.google.com/presentation/d/1x2nUZKTWhFIHOHBd5O-k9lzq85rmD_9C_2MVWckLEyc/edit#slide=id.g1271c36e3a6_0_1959).
+* **Colas, C.**, Karch, T., Moulin-Frier, C. & Oudeyer, P. Y. (2022). *[Vygotskian Autotelic Artificial Intelligence: Language and Culture Internalization for Human-Like AI](https://arxiv.org/pdf/2206.01134.pdf)*. In review. [Slides]({{ site.url }}/data/slides/slides_lcm_2022.pdf).
 * Akakzia, A., Serris, O., Sigaud, 0. & **Colas, C.** (2022). *[Help Me Explore: Minimal Social Interventions for Graph-Based Autotelic Agents](https://arxiv.org/pdf/2202.05129.pdf)*. In review. [Code](https://github.com/akakzia/gangstr).
 * Sigaud, O., Caselles-Dupré, H., **Colas, C.**, Akakzia A., Oudeyer, P-Y. & Chetouani, M. (2021). *[Towards Teachable Autotelic Agents](https://arxiv.org/pdf/2105.11977.pdf)*. 
   In review.
@@ -45,12 +43,12 @@ My extended CV is <a href="/data/CV_Cedric_Colas.pdf" download>here</a>.
 #### Optimization and Epidemiology
 
 * **Colas, C.**, Hejblum, B., Rouillon, S., Thiébaut, R., Oudeyer, P-Y., Moulin-Frier, C. & Prague, M. (2020). *[EpidemiOptim: A Toolbox for the Optimization of Control
-  Policies in Epidemiological Models](https://arxiv.org/pdf/2010.04452.pdf)*. Accepted to JAIR. <a href="/data/slides_epidemioptim.pdf" download>Slides</a>. [Demo](https://epidemioptim.bordeaux.inria.fr/). [Code](https://github.com/flowersteam/epidemioptim).
+  Policies in Epidemiological Models](https://arxiv.org/pdf/2010.04452.pdf)*. Accepted to JAIR. [Slides]({{ site.url }}/data/slides/slides_epidemioptim.pdf). [Demo](https://epidemioptim.bordeaux.inria.fr/). [Code](https://github.com/flowersteam/epidemioptim).
 
 #### Evolutionary Computation
 
-* **Colas, C.**, Huizinga, J., Madhavan, V., & Clune, J. (2020). *[Scaling MAP-Elites to Deep Neuroevolution](https://arxiv.org/pdf/2003.01825.pdf)*. Accepted at GECCO 2020. <a
-  href="/data/slides_mees.pdf" download>Slides</a>. [Talk](https://youtu.be/m2peevXlgKY). [Code](https://github.com/uber-research/Map-Elites-Evolutionary).
+* **Colas, C.**, Huizinga, J., Madhavan, V., & Clune, J. (2020). *[Scaling MAP-Elites to Deep Neuroevolution](https://arxiv.org/pdf/2003.01825.pdf)*. Accepted at GECCO 2020. 
+  [Slides]({{ site.url }}/data/slides/slides_mees.pdf). [Talk](https://youtu.be/m2peevXlgKY). [Code](https://github.com/uber-research/Map-Elites-Evolutionary).
 
 #### Statistics for RL
 * **Colas, C.**, Sigaud, O., Oudeyer, P. Y. (2019). *[A Hitchhiker's Guide to Statistical Comparisons of Reinforcement Learning Algorithms](https://openreview.net/forum?id=ryx0N3IaIV)*. [Code](https://github.com/flowersteam/rl_stats).
@@ -60,3 +58,5 @@ My extended CV is <a href="/data/CV_Cedric_Colas.pdf" download>here</a>.
 * Ortega, P., **Colas, C.**, & Faisal, A. A. (2018). *[Compact Convolutional Neural Networks for Multi-Class, Personalised, Closed-Loop EEG-BCI.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8487644)* In 2018 7th IEEE
   International Conference on Biomedical Robotics and Biomechatronics (Biorob) (pp. 136-141). IEEE.
 
+#### Digital Art
+* **Colas, C.** (2022). *[TastyPiano: A Subjective Sound--Taste Synesthetic Machine.]({{ site.url }}/data/papers/Creativity_Workshop_TastyPiano_A_Subjective_Sound_Taste_Synesthetic_Machine.pdf)*
