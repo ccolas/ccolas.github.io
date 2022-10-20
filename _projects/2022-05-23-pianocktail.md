@@ -7,7 +7,7 @@ featured_image: '/images/projects/pianocktail/pianocktail.jpg'
 
 <img class="image" src="/images/projects/pianocktail/pianocktail.jpg" alt=""/>
 <p class="legend">
-<i></i></p>
+<i>Pianocktail from Cie La Rumeur.</i></p>
 
 <center>
 <a href="https://huggingface.co/spaces/ccolas/TastyPiano" class="btn">Demo</a>
