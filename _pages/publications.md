@@ -17,7 +17,7 @@ The most up-to-date list of publications can be found on my [Google Scholar page
 
 #### Intrinsically Motivated Open-Ended Learning
 * Du, Y., Watkins, O., Wang, Z., **Colas, C.**, Darrell, T., Abbeel, P., Gupta, A., Andreas, J. (2023). *[Guiding Pretraining in Reinforcement Learning with Large Language Models](https://arxiv.org/pdf/2302.06692.pdf)*. ICML 2023.
-* * **Colas, C.**, Teodorescu, L., Oudeyer, P.-Y., Xingdi Y., Côté M-A. (2023). *[Augmenting Autotelic Agents with Large Language Models](https://arxiv.org/pdf/2305.12487.pdf)*. CoLLAs 2023. 
+* **Colas, C.**, Teodorescu, L., Oudeyer, P.-Y., Xingdi Y., Côté M-A. (2023). *[Augmenting Autotelic Agents with Large Language Models](https://arxiv.org/pdf/2305.12487.pdf)*. CoLLAs 2023. 
 * **Colas, C.**, Karch, T., Moulin-Frier, C. & Oudeyer, P. Y. (2022). *[Language and Culture Internalization for Human-Like AI](https://arxiv.org/pdf/2206.01134.pdf)*. Nature Machine Intelligence. [Slides]({{ site.url }}/data/slides/slides_lcm_2022.pdf).
 * Akakzia, A., Serris, O., Sigaud, 0. & **Colas, C.** (2022). *[Help Me Explore: Minimal Social Interventions for Graph-Based Autotelic Agents](https://arxiv.org/pdf/2202.05129.pdf)*. In review. [Code](https://github.com/akakzia/gangstr).
 * Sigaud, O., Caselles-Dupré, H., **Colas, C.**, Akakzia A., Oudeyer, P-Y. & Chetouani, M. (2021). *[Towards Teachable Autotelic Agents](https://arxiv.org/pdf/2105.11977.pdf)*. IEEE Transactions on Cognitive and Developmental Systems.
