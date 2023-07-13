@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
-# A simple Ruby Gem to bootstrap dependencies for setting up and
-# maintaining a local Jekyll environment in sync with GitHub Pages
-# https://github.com/github/pages-gem
-gem 'github-pages'
-gem 'jekyll-admin', group: :jekyll_plugins
+gem "github-pages"
+gem "nokogiri", ">= 1.13.6"
+gem "kramdown"
+gem "tzinfo", "~> 1.2.10"
+group :jekyll_plugins do
+  gem 'jekyll-paginate'
+#   gem 'jekyll-sitemap'
+end
