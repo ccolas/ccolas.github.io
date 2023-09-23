@@ -3,9 +3,9 @@ title: About
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
-<img class="image" src="/images/general/about_landscape.jpg" alt=""/>
+<img class="image" src="/images/general/me.jpg" alt=""/>
 
-Hi! I'm Cédric Colas, AI researcher and digital artist. 
+Hi! I'm Cédric Colas, AI researcher and digital tinkerer. 
 
 #### Research
 
