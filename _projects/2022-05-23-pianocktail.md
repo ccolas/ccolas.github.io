@@ -5,13 +5,23 @@ description: Taste--Music synethesia.
 featured_image: '/images/projects/pianocktail/pianocktail.jpg'
 ---
 
-<img class="image" src="/images/projects/pianocktail/pianocktail.jpg" alt=""/>
-<p class="legend">
+<img class="image" src="/images/projects/pianocktail/pianocktail.jpg" alt="" style="margin-bottom:1em;"/>
+<p class="legend" style="text-align:center; margin-top:1em;">
 <i>Pianocktail from Cie La Rumeur.</i></p>
 
+<br>
 <center>
 <a href="https://huggingface.co/spaces/ccolas/TastyPiano" class="btn">Demo</a>
 </center>
+
+<style>
+.page li {
+    margin-bottom: 0.3em;
+    text-indent: -1em; 
+    padding-left: 1em;
+    font-size:12pt;
+}
+</style>
 
 In his book *L'Écume des Jours*, the French author, singer, jazz musician and engineer Boris Vian invents the **Pianocktail**, a magical machine that turns any piano song 
 played on it into a sophisticated cocktail transmitting the same emotions. This is a phenomenon called *synethesia* where multiple senses interact to form cross-modal 

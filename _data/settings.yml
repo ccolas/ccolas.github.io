@@ -9,14 +9,14 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Scientific blog'
-      url: '/blog/'
-    - title: 'Art projects'
-      url: '/project/'
+    - title: 'Home'
+      url: '/home'
     - title: 'Publications'
       url: '/publications'
-    - title: 'About'
-      url: '/about'
+    - title: 'Art projects'
+      url: '/project/'
+    - title: 'Scientific blog'
+      url: '/blog/'
     - title: 'Contact'
       url: '/contact'
 
@@ -40,6 +40,7 @@ social_settings:
   vimeo_url: ''
   pinterest_url: ''
   medium_url: ''
+  gscholar_url:
   quora_url: ''
   amazon_url: ''
   apple_url: ''
