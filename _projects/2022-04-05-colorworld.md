@@ -1,7 +1,7 @@
 ---
-title: 'Colors of our World'
+title: "Chromatic Cartography"
 date: 2022-04-05 00:00:00
-description: Each place has its own feel, each place has its own color.
+description: Exploring the relationship between geographic coordinates and color perception through a visual mapping system.
 featured_image: '/images/projects/color_world/medley.png'
 ---
 
@@ -11,31 +11,56 @@ featured_image: '/images/projects/color_world/medley.png'
 <a href="https://github.com/ccolas/ColorfulWorld" class="btn">Code</a>
 </center>
 
+### Geography Through the Lens of Color
 
+What if every place on Earth had its own unique color signature? This project explores the conceptual and visual intersection between geographic space and color theory, creating a chromatic atlas where locations are translated into their corresponding colors.
 
+Just as every place has its distinct character --- shaped by climate, culture, terrain, and countless other factors --- this system assigns each location a unique color identity based purely on its position in the world.
 
-The Red-Blue-Green color space is designed to represent colors on the web. [0, 0, 0] is black, [1, 1, 1] white, [1, 0, 0] pure red, etc. Turning up one of the dimension 
-increases the luminance on the corresponding channel. Printers, on the other hand, work by mixing inks of 4 colors: cyan, magenta, yellow and black (CMYK). In fact, there are 
-many more ways to represent colors, all of which fall short of expressing the variety of colors humans can perceive. 
+### The Science of Color Perception
 
-The [Hue-Chroma-Luminance (HCL)](https://en.wikipedia.org/wiki/HCL_color_space) color space was specifically designed to better capture humans' way of perceiving colors. In 
-particular, it focuses on respecting perceptual distances between colors such that three equally-spaced colors in HCL space are perceived as equally distant by humans. 
+Color representation systems are numerous, each with different properties and purposes. The familiar RGB (Red-Green-Blue) color space was designed for digital displays: [0,0,0] represents black, [1,1,1] is white, and [1,0,0] is pure red. Printers use the CMYK (Cyan-Magenta-Yellow-Black) system, mixing inks to produce colors on physical media.
 
-Interestingly, the HCL coordinate system is close to a spherical one. Hue could correspond to the longitude, the luminance to the latitude and the chroma to the altitude. 
-Following this analogy, each place on Earth can be associated with a specific color in the HCL space. Just like each place has its own feel, each place has its own color. 
+However, neither of these systems accurately reflects how humans actually perceive color. Our visual system doesn't experience color differences in a linear fashion --- equal numerical changes in RGB values don't necessarily result in equally perceptible color changes.
 
-Here are the colors of 11 places over the world.
+This is where the **HCL color space** (Hue-Chroma-Luminance) becomes valuable. Specifically designed to better align with human perception, HCL creates a perceptually uniform space where:
+
+- **Hue** represents the color's position on the color wheel (red, yellow, green, etc.)
+- **Chroma** indicates color saturation or intensity
+- **Luminance** refers to the perceived brightness
+
+In HCL, equidistant colors appear equally different to the human eye, making it particularly useful for creating intuitive color gradients and mappings.
+
+### From Spherical Coordinates to Colors
+
+What makes this project conceptually compelling is that both our planet and the HCL color space can be represented using spherical coordinate systems. This geometric correspondence creates a natural mapping between location and color:
+
+- **Longitude** (east-west position) maps to **Hue** (color wheel position)
+- **Latitude** (north-south position) maps to **Luminance** (brightness)
+- **Altitude** (height above sea level) maps to **Chroma** (color intensity)
+
+Through this mapping, places on Earth transform into specific colors in the HCL space. Equatorial locations tend toward more saturated colors, while places near the poles appear lighter or darker. Higher elevations produce more vibrant colors, while places at sea level are more subdued.
+
+This system creates a visual language where geography becomes instantly expressible as color. The resulting "chromatic cartography" offers a new way to experience and visualize our world.
+
+### A Color Atlas of Global Locations
+
+Below are the colors of eleven significant locations around the world. Each image represents the unique color derived from that place's geographical coordinates:
 
 <div class="gallery" data-columns="3">
-	<img src="/images/projects/color_world/aukland.png">
-	<img src="/images/projects/color_world/boston.png">
-	<img src="/images/projects/color_world/cuzsco.png">
-	<img src="/images/projects/color_world/everest.png">
-	<img src="/images/projects/color_world/johannesburg.png">
-	<img src="/images/projects/color_world/kaboul.png">
-	<img src="/images/projects/color_world/lagos.png">
-	<img src="/images/projects/color_world/mariana_trench.png">
-	<img src="/images/projects/color_world/pahoa.png">
-	<img src="/images/projects/color_world/paris.png">
-	<img src="/images/projects/color_world/tokyo.png">
+    <img src="/images/projects/color_world/aukland.png">
+    <img src="/images/projects/color_world/boston.png">
+    <img src="/images/projects/color_world/cuzsco.png">
+    <img src="/images/projects/color_world/everest.png">
+    <img src="/images/projects/color_world/johannesburg.png">
+    <img src="/images/projects/color_world/kaboul.png">
+    <img src="/images/projects/color_world/lagos.png">
+    <img src="/images/projects/color_world/mariana_trench.png">
+    <img src="/images/projects/color_world/pahoa.png">
+    <img src="/images/projects/color_world/paris.png">
+    <img src="/images/projects/color_world/tokyo.png">
 </div>
+
+Some interesting patterns emerge from this visualization. Notice how locations near the equator (like Lagos) differ from those at extreme latitudes. Mountain peaks like Everest generate distinctly vibrant hues due to their elevation, while the Mariana Trench --- the lowest point on Earth --- produces a much more subdued color.
+
+

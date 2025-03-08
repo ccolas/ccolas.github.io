@@ -1,7 +1,7 @@
 ---
 title: 'Taste Music with the Pianocktail'
 date: 2022-05-23 00:00:00
-description: Taste--Music synethesia.
+description: A machine learning approach to taste-music synesthesia, inspired by Boris Vian's fictional invention.
 featured_image: '/images/projects/pianocktail/pianocktail.jpg'
 ---
 
@@ -23,88 +23,66 @@ featured_image: '/images/projects/pianocktail/pianocktail.jpg'
 }
 </style>
 
-In his book *L'Écume des Jours*, the French author, singer, jazz musician and engineer Boris Vian invents the **Pianocktail**, a magical machine that turns any piano song 
-played on it into a sophisticated cocktail transmitting the same emotions. This is a phenomenon called *synethesia* where multiple senses interact to form cross-modal 
-experiences: associating sounds and numbers, emotions and colors, music and taste.
+In *L'Écume des Jours* (Foam of the Days), the French polymath Boris Vian --- author, jazz musician, singer, and engineer --- imagined the **Pianocktail**, a magical device that transforms piano music into cocktails that capture the emotional essence of the performed piece. This wasn't merely a whimsical plot device but an exploration of *synesthesia* --- the neurological phenomenon where stimulation of one sensory pathway leads to automatic, involuntary experiences in another sensory pathway.
 
-Can such a machine be called to life? One way is to map each note to an ingredient and to turn any key press into a few drops. With this simple method people have built
-[wonderful](https://www.youtube.com/watch?v=pzsDOH-xtrs&list=PLC196AA37A2D1C066&index=3) [machines](https://www.youtube.com/watch?v=y0RJg7I2x34). But this only creates
-graveyard cocktails, diverse mixtures of all the ingredients corresponding to the scale used in the song---not great. Instead, I worked on a more 
-sophisticated implementation using recent machine learning methods. I call it **[TastyPiano]((https://huggingface.co/spaces/ccolas/TastyPiano))** a digital pianocktail turning 
-any piano song into a cocktail recipe. 
+What if we could actually create such a bridge between auditory and gustatory experiences? What if the melancholy of Chopin could be tasted, or the playfulness of Gershwin could be sipped?
 
-### How does it work?
+### Beyond One-Note-One-Drop
 
-Associations between music and taste are of course subjective, which is why there is no objective perfect mapping between piano songs and cocktail recipes. On the other hand, a 
-random mapping would be disappointing. So what are we looking for? Here are a few criteria that a pianocktail should satisfy:
+Previous attempts to realize Vian's invention have typically used mechanical approaches --- mapping individual piano keys to specific ingredients, dispensing a few drops with each keystroke. While these [physical implementations](https://www.youtube.com/watch?v=pzsDOH-xtrs&list=PLC196AA37A2D1C066&index=3) are impressive engineering feats, they typically produce "graveyard cocktails" --- chaotic mixtures containing traces of every ingredient corresponding to the notes used in the piece.
 
-* It should be able to generate good cocktails,
-* It should be able to generate new cocktails and not merely to map songs to a pre-defined list of recipes,
-* It should be able to map songs that are close together to cocktails that are close together, i.e. the mapping should be *smooth*.
-* With practice, a good pianist should be able to learn to *invert the mapping* and develop an intuition of what to play and how to play it to achieve a targeted type of cocktail.
+<img class="image" src="/images/projects/pianocktail/prototype_demo.png" alt="Physical Pianocktail prototype demonstration" style="width:20%; max-width:600px; margin:0 auto; display:block; margin-bottom:1em;"/>
+<p class="legend" style="text-align:center; margin-top:1em;">
+<i>My physical Pianocktail prototype demonstrated at a birthday gathering, where attendees could experience the music-to-taste transformation firsthand.</i></p>
+  
+I wanted to create something more sophisticated --- a system that could generate harmonious, balanced cocktails reflecting the overall character of a musical piece rather than its note-by-note composition. The result is **[TastyPiano](https://huggingface.co/spaces/ccolas/TastyPiano)**, a digital pianocktail using machine learning to transform any piano composition into a unique, tailored cocktail recipe.
 
-The simple *one--note--one--drop* mapping does not satisfy any of these criteria. Instead, we want to build music representations, cocktail representations and 
-cross-modal representations aligning music and cocktails into a shared representational space. A piano song would be mapped to a musical representation space, then to a 
-cross-modal representation space before being decoded into the cocktail space. 
+### Designing Musical Mixology
 
-#### Music representations
+Creating meaningful connections between music and taste poses significant challenges. Since these associations are inherently subjective, there's no objectively "correct" mapping between piano pieces and cocktail recipes. However, a completely random association would be equally unsatisfying. I established several criteria for a successful pianocktail:
 
-Here, I scrapped 30k midi files of piano songs from the web and used them to train a self-supervised transformer model. I used methods from the field of 
-  natural language processing: a tokenizer from [that paper](https://arxiv.org/abs/2107.05944), the [BERT](https://arxiv.org/abs/1810.04805) algorithm with note-wise masking, 
-  followed by a finetuning using [SentenceBERT](https://arxiv.org/abs/1908.10084). 
+* It should generate appealing, balanced cocktails
+* It should create novel recipes rather than simply matching songs to pre-existing cocktails
+* It should map similar musical pieces to similar cocktails --- a smooth, continuous transformation
+* With practice, a pianist should be able to develop intuition about how to play to achieve specific types of cocktails
 
-The tokenization transforms midi files into a sequence of tokens: pitch, duration, velocity and time-shift until the next note. Then, BERT masks up to 5 notes in a row (5*4 
-tokens) and trains to inpaint the masked information. This generates token-wise representations that are then aggregated at the song level with a mean pooling. SentenceBERT is 
-then used to finetune song representations using a contrastive loss: the algorithm learns to find two music clips coming from the same song among 256 music clips. Doing so, the 
-algorithm learns to represent musical styles and to represent music such that musical clips that could belong to the same piece are closer together.
+These principles guided the development of a sophisticated system that goes far beyond simple note-to-ingredient mapping, creating a genuine form of artificial synesthesia.
 
-<img class="image" src="/images/projects/pianocktail/tsne_b128_r768_represented.png" alt=""/>
+### The Architecture of Artificial Synesthesia
+
+#### Music Understanding
+
+The system begins by learning to understand music. I collected 30,000 MIDI files of piano compositions and trained a self-supervised transformer model to recognize musical patterns and styles. Using techniques from natural language processing --- including a specialized tokenizer, BERT with note-wise masking, and SentenceBERT fine-tuning --- the system learns to represent musical structure, style, and emotion in a high-dimensional space.
+
+<img class="image" src="/images/projects/pianocktail/tsne_b128_r768_represented.png"  style="width:30%; max-width:600px;" alt=""/>
 <p class="legend">
-<i>T-SNE of the music representation space for a few composers/musical genres.</i></p>
+<i>T-SNE visualization of the music representation space, showing how different composers and genres naturally cluster together.</i></p>
 
-#### Cocktail representations
+#### The Language of Taste
 
-Here again, I scrapped the web and obtained about 600 recipes all using ingredients from a pre-defined set of 35 ingredients. I then hand-defined a taste representation space 
-by aggregating taste representations of ingredients in proportion to their quantity in the drink. Taste representations include 13 features: percentage of alcohol, estimated 
-sourness, sweetness, bitterness, herbiness, fruitiness, oakyness, egginess, fizziness, spiciness, complexity (in terms of number of sub-ingredients), colorfulness and the final volume of 
-the drink. All these are estimated after dilution, which itself depends on the cocktail preparation type (built, stirred or shaken) and the initial percentage of alcohol. 
+For cocktails, I collected about 600 recipes using ingredients from a predefined set of 35 components. Each cocktail is represented in a "taste space" with 13 dimensions, including alcohol content, sourness, sweetness, bitterness, herbiness, fruitiness, complexity, and other attributes. These representations account for preparation methods, dilution effects, and the interplay between ingredients.
 
-#### Synesthetic representations
+#### Building Bridges Between Senses
 
-To convert music representations into taste representations, I used the [Latent Translation](https://arxiv.org/abs/1902.08261) approach. It trains a bi-modal variational 
-auto-encoder (VAE) that can take in either music representations or taste representations (flagged with a one-hot code) and generate in either of these spaces as well. In 
-addition of the traditional VAE setting, we use two other losses: 
-* A sliced-Wasserstein distance (SWD) to push the latent distributions of music and taste closer together. This makes both representation space *overlap* into the synetsthetic 
-  latent space of this translation VAE.
-* A set of classification losses to align the synethesia in a pre-define subjective way. To this end, I defined about 8 semantic labels that I could apply to both music and 
-  cocktails. *Cuban*, for instance both applies to latin jazz music and cocktails containing cuban rum and mint. During training, a classification head operating on the 
-  cross-modal representation space would learn to categorize both cuban music and cuban cocktails, such that the music and cocktail representations would need to align in that 
-  sub-space. This allowed me to orient the synesthesia of the pianocktail by grounding it in a few pre-defined points.
+The heart of the system is the creation of a shared representational space where music and taste can meaningfully interact. Using a Latent Translation approach with a bi-modal variational autoencoder, the system learns to map between musical representations and taste representations.
 
-Up to this point, we can encode piano songs into music representations, further encode them into cross-modal representations with the translation VAE and decode taste 
-representations. Now we need to generate full recipes.
+To guide this mapping in an intuitive direction, I defined semantic labels applicable to both domains --- such as "Cuban" for both Latin jazz and rum-mint cocktails, or "Romantic" for both Chopin nocturnes and complex, bittersweet drinks. These semantic anchors help align the two domains in ways that feel natural rather than arbitrary.
 
-#### Generating cocktail recipes
+#### Evolutionary Cocktail Creation
 
-The cocktail datasets contains recipes and associated taste representations. To close the loop, I needed an algorithm to turn new taste representations generated from the music 
-encoding and the translation VAE into definitive cocktail recipes. Here, I used a *genetic algorithm*. It generates a bunch of cocktail recipes at random by sampling between 2 
-and 8 ingredients and sampling quantities between the min and max quantities found in the dataset.  This forms the first generation of cocktails. For each cocktail, I can 
-compute its taste representation and compare it to my target taste representation to compute a score (closer is better).  I can now run a full evolutionary process. For 100 
-generations, I select the best individuals from the previous generation and mutate them to form a new one: adding and removing ingredients, adding noise on their quantity, 
-merging two cocktails together, etc.  After 100 generations, I obtain the best individual: a recipe which taste representation closely matches the targeted one.
+Once a musical piece is mapped to a position in the taste space, a genetic algorithm generates an actual recipe. Starting with random combinations of 2-8 ingredients, the system evolves recipes over 100 generations, selecting and mutating the ones that best match the target taste profile. Evolution operations include adding or removing ingredients, adjusting quantities, and combining successful "parent" recipes.
 
-To make sure that this is working, I can compare the distributions of taste features, number of ingredients, cocktail types, etc. between the dataset of cocktails and a 
-distribution of cocktails generated by the pianocktail when run on 500 pieces of piano. After a few tweaks, this works quite well!
+The result is a complete cocktail specification --- ingredients, quantities, glass type, and preparation method --- that captures the essence of the original musical piece in liquid form.
 
-#### Try it out!
-In addition, the pianocktail predicts a type of glass and a preparation type for the cocktail. With the concrete recipe, we have all we need to write a detailed recipe with 
-instructions. You can try the app by clicking the button below. With a YouTube url, an audio file or a midi file, taste the music!
 
+### Experience Taste-Music Synesthesia
+
+The digital version of the Pianocktail is now available for anyone to experience. By providing a YouTube URL, an audio file, or a MIDI file of piano music, you can discover what your favorite pieces taste like. Each recipe includes detailed preparation instructions, enabling you to craft these musical cocktails at home.
 
 <br>
-
 
 <center>
 <a href="https://huggingface.co/spaces/ccolas/TastyPiano" class="btn">Taste Music!</a>
 </center>
 
+Whether you're a musician curious about the flavor of your compositions, a mixologist looking for novel inspiration, or simply interested in the intersection of technology and art, the Pianocktail offers a unique window into the possibilities of artificial synesthesia --- bringing Boris Vian's imaginative invention into reality through the combination of machine learning and mixology.

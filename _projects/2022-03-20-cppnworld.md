@@ -1,34 +1,29 @@
 ---
-title: 'Worlds of Colors'
+title: 'Breeding Visual Universes'
 date: 2022-03-20 00:00:00
-description: Open windows to alternative worlds made of colors.
+description: Creating and evolving algorithmic universes of color through computational evolution.
 featured_image: '/images/projects/cppnworld/id1.jpg'
 ---
 
 ![](/images/projects/cppnworld/id1.jpg)
 
+### Creating Algorithmic Universes
 
+In this project, I explore the intersection of evolutionary algorithms and generative art by breeding alternative universes made entirely of colors. Each universe exists as a mathematical function, waiting to be visualized through windows that open at specific coordinates in our world.
 
-In **Worlds of Colors** I create alternative worlds full of colors and open windows to let us get a peek at them. 
+These visual universes aren't just random --- they're evolved through a process mimicking natural selection, where aesthetic qualities determine which universes reproduce and which features are passed on to the next generation.
 
-### Compositional Pattern Producing Networks
+### The Architecture of Alternative Worlds
 
-To create an alternative world, I use [Compositional Pattern Producing Networks](http://eplex.cs.ucf.edu/papers/stanley_gpem07.pdf) or CPPNs. CPPNs are mathematical functions 
-mapping a set of spatially organized inputs to a set of outputs. Here, we map spatial coordinates all over the Earth to corresponding colors in the RGB space.
+To create these color universes, I employ **Compositional Pattern Producing Networks** (CPPNs), which are mathematical functions mapping spatial coordinates to visual outputs. In my implementation, CPPNs transform GPS coordinates (latitude, longitude, altitude) along with local positional data into RGB color values.
 
 <img class="small-image" src="/images/projects/cppnworld/cppn2.png" alt=""/>
 <p class="legend">
-<i><b>Generating an image from a CPPN.</b> For each pixel (x, y) of the 2D image, the CPPN is applied to compute the corresponding color. (From the <a 
-href="http://eplex.cs.ucf.edu/papers/stanley_gpem07.pdf">original paper</a>).</i></p>
+<i><b>Generating an image from a CPPN.</b> For each pixel (x, y) of the 2D image, the CPPN computes a corresponding color. (From the <a href="http://eplex.cs.ucf.edu/papers/stanley_gpem07.pdf">original paper</a>).</i></p>
 
-In World of Colors, CPPNs take the GPS coordinates of your house (latitude, longitude, altitude) and relative coordinates of the location of the window to the other world. Each 
-CPPN thus defines an **alternative world** by giving a color value to any point in space. Applying the CPPN to a specific set of coordinates opens a window to that world. It 
-lets us peek at what's there, in this particular place.
+What makes CPPNs particularly powerful is that they don't just map pixels independently --- they create coherent patterns respecting spatial relationships. Each universe defined by a CPPN contains an infinite space of colors with internally consistent patterns and structures. When we apply the CPPN to a specific set of coordinates, we're essentially opening a window to that mathematical universe, revealing what exists at that particular point in the computed space.
 
-### Evolving Alternative Worlds
-
-What are these mathematical functions really? They are _computational graphs_, where each node aggregates its inputs (e.g. input coordinates, or the output of a previous node) 
-and applies an _activation function_ to the output.
+Under the hood, CPPNs are computational graphs where each node processes its inputs (either coordinates or outputs from previous nodes) through an activation function:
 
 <img class="smaller-image" src="/images/projects/cppnworld/cppn.png" alt=""/>
 <center>
@@ -36,34 +31,60 @@ and applies an _activation function_ to the output.
 <i><b>CPPN as computational graphs.</b> (From <a href="https://towardsdatascience.com/understanding-compositional-pattern-producing-networks-810f6bef1b88">this post</a>).
 </i></p></center>
 
-At first, we can sample a bunch of random graphs, each defining its specific world. Then, we can **breed worlds**. By iteratively selecting the prettiest worlds by hand and 
-applying an evolutionary algorithm called [NEAT](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf), we can evolve prettier and prettier alternative worlds. 
+These functions can include waves, symmetrical patterns, or threshold operations—each contributing different visual elements to the final output. The combination of these functions creates the intricate patterns seen in the generated worlds.
 
-### Opening Windows
+### Computational Evolution of Aesthetics
 
-For each world, I opened a bunch of windows located at my place and some of my friends' places. Just like in the real world, windows that are close together share similar 
-patterns while windows further away from each other are more different. 
+The development of these visual universes follows an evolutionary trajectory. I begin by generating a population of random computational graphs, each defining its own universe with unique properties and aesthetics. Then comes the fascinating part: **breeding universes**.
 
-Here are eighteen **Worlds of Colors** seen through 9 windows.
+Using the **NeuroEvolution of Augmenting Topologies** (NEAT) algorithm, I implemented a selective breeding process where:
 
+1. An initial population of random CPPNs is generated
+2. Each CPPN is visualized as a color pattern at selected coordinates
+3. I manually select the most visually appealing patterns (acting as the selection pressure)
+4. The selected networks reproduce, combining their computational structures
+5. Occasional mutations introduce new nodes or connections
+6. The process repeats with each generation progressively developing more complex and aesthetically interesting patterns
+
+What's fascinating about this approach is how it mirrors both natural evolution and traditional artistic refinement. Much like artists refine their technique through practice and iteration, these visual universes evolve through successive generations, inheriting and recombining successful visual elements.
+
+### Geospatial Windows Between Worlds
+
+A key aspect of this project is the relationship between real-world locations and the generated visuals. Each color universe exists as a complete mathematical entity, but we can only peek into it through "windows" placed at specific coordinates.
+
+When opening windows at nearby locations, we observe similar patterns—just as nearby windows in a physical building would reveal similar views. Windows opened in more distant locations show more divergent patterns, reflecting their separation in the input space of the generating function.
+
+For this project, I opened windows located at my own residence and at the homes of friends, creating a network of viewports into these alternative realities. The resulting collection of images forms a kind of visual geography --- a mapping between our physical world and these computational color spaces.
+
+### Gallery of Evolved Visual Universes
+
+Below are eighteen evolved universes, each shown through nine different windows. The diversity of patterns demonstrates how the evolutionary process generates a wide range of visual aesthetics—from organic, flowing forms to geometric, structured patterns.
 
 <div class="gallery" data-columns="3">
-	<img src="/images/projects/cppnworld/id2.jpg">
-	<img src="/images/projects/cppnworld/id3.jpg">
-	<img src="/images/projects/cppnworld/id4.jpg">
-	<img src="/images/projects/cppnworld/id5.jpg">
-	<img src="/images/projects/cppnworld/id6.jpg">
-	<img src="/images/projects/cppnworld/id7.jpg">
-	<img src="/images/projects/cppnworld/id8.jpg">
-	<img src="/images/projects/cppnworld/id9.jpg">
-	<img src="/images/projects/cppnworld/id10.jpg">
-	<img src="/images/projects/cppnworld/id11.jpg">
-	<img src="/images/projects/cppnworld/id12.jpg">
-	<img src="/images/projects/cppnworld/id13.jpg">
-	<img src="/images/projects/cppnworld/id14.jpg">
-	<img src="/images/projects/cppnworld/id15.jpg">
-	<img src="/images/projects/cppnworld/id16.jpg">
-	<img src="/images/projects/cppnworld/id17.jpg">
-	<img src="/images/projects/cppnworld/id18.jpg">
-	<img src="/images/projects/cppnworld/id19.jpg">
+    <img src="/images/projects/cppnworld/id2.jpg">
+    <img src="/images/projects/cppnworld/id3.jpg">
+    <img src="/images/projects/cppnworld/id4.jpg">
+    <img src="/images/projects/cppnworld/id5.jpg">
+    <img src="/images/projects/cppnworld/id6.jpg">
+    <img src="/images/projects/cppnworld/id7.jpg">
+    <img src="/images/projects/cppnworld/id8.jpg">
+    <img src="/images/projects/cppnworld/id9.jpg">
+    <img src="/images/projects/cppnworld/id10.jpg">
+    <img src="/images/projects/cppnworld/id11.jpg">
+    <img src="/images/projects/cppnworld/id12.jpg">
+    <img src="/images/projects/cppnworld/id13.jpg">
+    <img src="/images/projects/cppnworld/id14.jpg">
+    <img src="/images/projects/cppnworld/id15.jpg">
+    <img src="/images/projects/cppnworld/id16.jpg">
+    <img src="/images/projects/cppnworld/id17.jpg">
+    <img src="/images/projects/cppnworld/id18.jpg">
+    <img src="/images/projects/cppnworld/id19.jpg">
 </div>
+
+### The Intersection of Algorithm and Aesthetics
+
+This project exists at the convergence of computational techniques and artistic expression. While the NEAT algorithm provides the mechanism for evolution and the CPPNs provide the representational capacity, the selection criteria --- what I find visually appealing --- introduces the human element into this computational creative process.
+
+What emerges is a collaboration between human aesthetic judgment and algorithmic generation. The computational system proposes visual possibilities, while human selection guides the evolutionary trajectory toward increasingly complex and interesting visual outcomes.
+
+Through this process of computational breeding, these visual universes evolve into expressions that neither random generation nor direct human design would likely produce independently—demonstrating how evolutionary computation can serve as a tool for expanding creative possibilities in visual art.

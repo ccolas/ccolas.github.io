@@ -1,62 +1,59 @@
 ---
-title: 'Evolving Colors'
+title: 'Evolutionary Color Search'
 date: 2022-01-11 00:00:00
-description: Running an evolutionary process to find the right color. 
+description: Exploring the intersection of evolutionary algorithms and visual patterns through color evolution.
 featured_image: '/images/projects/color_evolution/evo_18.png'
 ---
 
-[comment]: <> (<center>)
+<center>
+<a href="https://github.com/ccolas/color_evolution" class="btn">Code</a>
+</center>
 
-[comment]: <> (<a href="https://github.com/ccolas/charabia" class="btn">Code</a>)
+### Digital Evolution as a Teaching Tool
 
-[comment]: <> (</center>)
+A while back I designed this small project with two 9th grade students during their week-long internship in my lab. The goal was to introduce evolutionary algorithms in an accessible, visual way.
 
-A while back I designed this little project with two 9th grade students visiting my lab for a week-long internship. The idea was to introduce evolutionary algorithms to them.
+I chose **colors** as our system --- something intuitive yet powerful for demonstrating computational evolution. Each individual in our population is represented by a color, with its genome being the RGB color code. Its fitness is calculated as the negative Euclidean distance between its RGB values and those of a target color. Generation after generation, the most fit individuals reproduce more frequently, gradually shifting the population toward the objective. Parents are selected from the highest performers and reproduce asexually, with random mutations applied to their color codes.
 
-I picked a simple system they could understand well, **colors**. The objective would be to evolve colors through generations towards a target color. Each individual is a color, 
-whose genome is the color code in the RGB space. It's reproductive success is computed as the negative Euclidean distance between its genome and the target genome. Generations 
-after generations, the best individuals reproduce more and shift the population towards its objective. Parents are selected amongst the best individuals, and reproduce 
-asexually by adding a random noise to their color code / genome.
+What makes this project compelling is how it transforms abstract computational concepts into immediate visual feedback. The evolutionary process becomes both a learning tool and a generator of striking visual patterns.
 
-It's cool because it's easy to visualize what's happening, and it's even pretty!
+### Visualizing the Evolutionary Process
 
-### Visualization
-
-Here, a patch represents an individual and it's color; a line represents a generation, and time goes up. The target is shown in the top line. 
+In our visualization system, each patch represents an individual and its color, while each horizontal line represents a generation. Time moves upward, with the target color displayed in the top line.
 
 ![](/images/projects/color_evolution/evo_1.png)
 
-This one is working pretty well, but let's look at what happens with smaller population size (below). Here, the initial diversity is reduced and the reduced number of 
-individual in the whole evolution process makes the exploration of the color space more difficult. In the end, the evolutionary process converges too fast and misses the target 
-color. 
+The example above shows a successful evolutionary run. The initial randomness of the population gradually gives way to convergence as selection pressure and reproduction drive the colors toward the target.
+
+### Parameter Space and Visual Diversity
+
+The interplay between parameter settings and visual outcomes becomes evident when we experiment with population size. Below, a smaller population reduces initial diversity and makes exploring the color space more difficult. The evolutionary process converges prematurely, missing the target color.
 
 ![](/images/projects/color_evolution/evo_pb1.png)
 
-To reintroduce some diversity and improve the exploration, we can crank up the mutation strength such that children look less alike their parents. You can spot the difference 
-in the diversity across individuals in the latest generations, they are less uniform than before. However, this increased diversity seems to solve the problem. 
+To address this limitation, we can increase mutation strength, allowing children to differ more significantly from their parents. This intervention reintroduces diversity and improves exploration. Notice the greater variation across individuals in the latest generations – this increased diversity helps solve the convergence problem.
 
 ![](/images/projects/color_evolution/evo_pb2.png)
 
-If you use much bigger population sizes, let's say 100, the diversity is so high that you can get away with using much smaller mutation strength. This leads to finer 
-convergences and lesser diversity inside the final generations. We can achieve almost perfect convergence.
+With larger populations (around 100 individuals), the inherent diversity allows for smaller mutation rates. This combination leads to finer convergence with less variation in the final generations, achieving nearly perfect alignment with the target color.
 
 ![](/images/projects/color_evolution/evo_big.png)
 
-I'll upload the code soon but feel free to ask for it in the meantime.
+### Evolution Gallery
 
-Here is a bunch of evolutionary processes: 
+Each of these evolutionary runs represents a different parameter configuration and starting condition. The resulting visual patterns reveal the underlying computational dynamics – how selection pressure, mutation rates, and population size interact to create different evolutionary trajectories.
 
 <div class="gallery" data-columns="3">
-	<img src="/images/projects/color_evolution/evo_0.png">
+    <img src="/images/projects/color_evolution/evo_0.png">
     <img src="/images/projects/color_evolution/evo_1.png">
-	<img src="/images/projects/color_evolution/evo_2.png">
-	<img src="/images/projects/color_evolution/evo_3.png">
-	<img src="/images/projects/color_evolution/evo_4.png">
-	<img src="/images/projects/color_evolution/evo_9.png">
-	<img src="/images/projects/color_evolution/evo_6.png">
-	<img src="/images/projects/color_evolution/evo_7.png">
-	<img src="/images/projects/color_evolution/evo_8.png">
-	<img src="/images/projects/color_evolution/evo_10.png">
-	<img src="/images/projects/color_evolution/evo_11.png">
-	<img src="/images/projects/color_evolution/evo_12.png">
+    <img src="/images/projects/color_evolution/evo_2.png">
+    <img src="/images/projects/color_evolution/evo_3.png">
+    <img src="/images/projects/color_evolution/evo_4.png">
+    <img src="/images/projects/color_evolution/evo_9.png">
+    <img src="/images/projects/color_evolution/evo_6.png">
+    <img src="/images/projects/color_evolution/evo_7.png">
+    <img src="/images/projects/color_evolution/evo_8.png">
+    <img src="/images/projects/color_evolution/evo_10.png">
+    <img src="/images/projects/color_evolution/evo_11.png">
+    <img src="/images/projects/color_evolution/evo_12.png">
 </div>

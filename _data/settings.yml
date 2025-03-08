@@ -13,7 +13,7 @@ menu_settings:
       url: '/home'
     - title: 'Publications'
       url: '/publications'
-    - title: 'Art projects'
+    - title: 'Fun projects'
       url: '/project/'
     - title: 'Scientific blog'
       url: '/blog/'
@@ -40,7 +40,7 @@ social_settings:
   vimeo_url: ''
   pinterest_url: ''
   medium_url: ''
-  gscholar_url:
+  gscholar_url: ''
   quora_url: ''
   amazon_url: ''
   apple_url: ''
