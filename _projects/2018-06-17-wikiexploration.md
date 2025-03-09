@@ -24,10 +24,18 @@ Well, we can start somewhere, anywhere. From there, we take a small step, in any
 
 This project proposes such random explorations of Wikipedia. Starting from the [Wikipedia page](https://en.wikipedia.org/wiki/Wikipedia), it takes a new step every 
 day. Each day, it enters one of the links contained in the previous page and jumps to another, semantically related topic. Each day, it illustrates the topic with a 
-corresponding image taken from a google search. One after the other, for a year.
+corresponding image taken from a Google search. One after the other, for a year.
 
+My sister <a href="https://julieecolas.com/">Julie Colas</a> worked on a physical form of this project: a paper tear-off calendar.
 
-### Let's explore!
+<br>
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 1em;">
+  <img class="image" src="/images/projects/wiki/P1060463.JPG" style="height: 300px; width: auto;"/>
+  <img class="image" src="/images/projects/wiki/P1060465.JPG" style="height: 300px; width: auto;"/>
+</div>
+
+### A year of wandering through Wikipedia
 
 <div class="gallery" data-columns="3">
 	<img src="/images/projects/wiki/calendar/Day_0.jpg">
