@@ -80,8 +80,8 @@ font_settings:
   font_embed: '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">'
   title_font: '"Inter", sans-serif'
   body_font: '"Inter", sans-serif'
-  regular_weight: 400
-  bold_weight: 700
+  regular_weight: 100
+  bold_weight: 900
   site_title:
     small_size: 20
     medium_size: 30
@@ -160,6 +160,7 @@ font_settings:
     medium_size: 14
     large_size: 17
     weight: 300
+    bold_weight: 900
     letter_spacing: 0
     line_height: 1.5
   blockquote:
