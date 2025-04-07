@@ -15,11 +15,11 @@ These visual universes aren't just random --- they're evolved through a process 
 
 ### The Architecture of Alternative Worlds
 
-To create these color universes, I employ **Compositional Pattern Producing Networks** (CPPNs), which are mathematical functions mapping spatial coordinates to visual outputs. In my implementation, CPPNs transform GPS coordinates (latitude, longitude, altitude) along with local positional data into RGB color values.
+Each universe is encoded by a specific **Compositional Pattern Producing Networks** (CPPNs): a mathematical functions mapping spatial coordinates to colors. In my implementation, CPPNs transform GPS coordinates (latitude, longitude, altitude) along with local positional data (x, y, z) into RGB color values.
 
 <img class="small-image" src="/images/projects/cppnworld/cppn2.png" alt=""/>
 <p class="legend">
-<i><b>Generating an image from a CPPN.</b> For each pixel (x, y) of the 2D image, the CPPN computes a corresponding color. (From the <a href="http://eplex.cs.ucf.edu/papers/stanley_gpem07.pdf">original paper</a>).</i></p>
+<i><b>Generating an image from a CPPN.</b> For each pixel (x, y) of a 2D image, the CPPN computes a corresponding color. (From the <a href="http://eplex.cs.ucf.edu/papers/stanley_gpem07.pdf" target="_blank" rel="noopener noreferrer">original paper</a>).</i></p>
 
 What makes CPPNs particularly powerful is that they don't just map pixels independently --- they create coherent patterns respecting spatial relationships. Each universe defined by a CPPN contains an infinite space of colors with internally consistent patterns and structures. When we apply the CPPN to a specific set of coordinates, we're essentially opening a window to that mathematical universe, revealing what exists at that particular point in the computed space.
 
@@ -28,10 +28,11 @@ Under the hood, CPPNs are computational graphs where each node processes its inp
 <img class="smaller-image" src="/images/projects/cppnworld/cppn.png" alt=""/>
 <center>
 <p class="legend">
-<i><b>CPPN as computational graphs.</b> (From <a href="https://towardsdatascience.com/understanding-compositional-pattern-producing-networks-810f6bef1b88">this post</a>).
+<i><b>CPPN as computational graphs.</b> (From <a href="https://towardsdatascience.com/understanding-compositional-pattern-producing-networks-810f6bef1b88" target="_blank" rel="noopener noreferrer">this post</a>).
 </i></p></center>
 
-These functions can include waves, symmetrical patterns, or threshold operations—each contributing different visual elements to the final output. The combination of these functions creates the intricate patterns seen in the generated worlds.
+
+These functions can include waves, symmetrical patterns, or threshold operations --- each contributing different visual elements to the final output. The combination of these functions creates the intricate patterns seen in the generated worlds.
 
 ### Computational Evolution of Aesthetics
 
@@ -46,19 +47,18 @@ Using the **NeuroEvolution of Augmenting Topologies** (NEAT) algorithm, I implem
 5. Occasional mutations introduce new nodes or connections
 6. The process repeats with each generation progressively developing more complex and aesthetically interesting patterns
 
-What's fascinating about this approach is how it mirrors both natural evolution and traditional artistic refinement. Much like artists refine their technique through practice and iteration, these visual universes evolve through successive generations, inheriting and recombining successful visual elements.
 
 ### Geospatial Windows Between Worlds
 
 A key aspect of this project is the relationship between real-world locations and the generated visuals. Each color universe exists as a complete mathematical entity, but we can only peek into it through "windows" placed at specific coordinates.
 
-When opening windows at nearby locations, we observe similar patterns—just as nearby windows in a physical building would reveal similar views. Windows opened in more distant locations show more divergent patterns, reflecting their separation in the input space of the generating function.
+When opening windows at nearby locations, we observe similar patterns --- just as nearby windows in a physical building would reveal similar views. Windows opened in more distant locations show more different patterns, reflecting their separation in the input space of the generating function.
 
-For this project, I opened windows located at my own residence and at the homes of friends, creating a network of viewports into these alternative realities. The resulting collection of images forms a kind of visual geography --- a mapping between our physical world and these computational color spaces.
+For this project, I opened windows located at my own residence and at the homes of friends, creating a network of openings into these alternative realities. The resulting collection of images forms a kind of visual geography --- a mapping between our physical world and these computational color spaces.
 
 ### Gallery of Evolved Visual Universes
 
-Below are eighteen evolved universes, each shown through nine different windows. The diversity of patterns demonstrates how the evolutionary process generates a wide range of visual aesthetics—from organic, flowing forms to geometric, structured patterns.
+Below are eighteen evolved universes, each shown through nine different windows. The diversity of patterns demonstrates how the evolutionary process generates a wide range of visual aesthetics --- from organic, flowing forms to geometric, structured patterns.
 
 <div class="gallery" data-columns="3">
     <img src="/images/projects/cppnworld/id2.jpg">
@@ -81,10 +81,3 @@ Below are eighteen evolved universes, each shown through nine different windows.
     <img src="/images/projects/cppnworld/id19.jpg">
 </div>
 
-### The Intersection of Algorithm and Aesthetics
-
-This project exists at the convergence of computational techniques and artistic expression. While the NEAT algorithm provides the mechanism for evolution and the CPPNs provide the representational capacity, the selection criteria --- what I find visually appealing --- introduces the human element into this computational creative process.
-
-What emerges is a collaboration between human aesthetic judgment and algorithmic generation. The computational system proposes visual possibilities, while human selection guides the evolutionary trajectory toward increasingly complex and interesting visual outcomes.
-
-Through this process of computational breeding, these visual universes evolve into expressions that neither random generation nor direct human design would likely produce independently—demonstrating how evolutionary computation can serve as a tool for expanding creative possibilities in visual art.

@@ -5,9 +5,9 @@ description: Having fun with long exposure.
 featured_image: '/images/projects/light_impressions/img_17.jpg'
 ---
 
-Photography has two ways of capturing more light: opening the diaphragm wider, or keeping the shutter open longer. When you keep the shutter open, the image becomes an average of everything the camera sees during that time. This technique allows you to capture movement in a single frame rather than freezing an instant. I use this to record the paths that light creates --- sometimes from lights that are actually moving, like car headlights or spinning carnival rides, and sometimes from the way I deliberately move the camera while capturing mostly stationary lights. In this way, photography goes beyond simply documenting what's there --- it creates visual phenomena that don't exist in our normal perception, revealing patterns and movements invisible to the naked eye.
+Photography has two ways of capturing more light: opening the diaphragm wider, or keeping the shutter open longer. Keeping the shutter open creates images that are the superposition of everything the camera saw; capturing patterns and movements we could not have perceived directly. 
 
-Most of these shots were taken using the darkest settings available on my phone --- minimum ISO, smallest aperture, and a shutter speed that balances capturing movement without overexposing the image (typically between 1/8 and 1/2 secs). Some images feature an additional element: diffracting paper that creates the rainbow-like effects by splitting light into its spectrum of colors.
+Most of these shots were taken using the darkest settings available on my phone --- minimum ISO, smallest aperture, and a shutter speed that balances capturing movement without overexposing the image (typically between 1/8 and 1/2 secs). Some images feature an additional element: diffracting paper that creates rainbow-like effects by splitting light into its spectrum of colors.
 
 <div class="gallery" data-columns="3">
     <img src="/images/projects/light_impressions/img_1.jpg">

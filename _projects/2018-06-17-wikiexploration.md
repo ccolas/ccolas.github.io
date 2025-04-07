@@ -10,23 +10,20 @@ featured_image: '/images/projects/wiki/wikipedia.jpg'
 <i></i></p>
 
 <center>
-<a href="https://github.com/ccolas/wiki-calendar" class="btn">Code</a>
+<a href="https://github.com/ccolas/wiki-calendar" target="_blank" rel="noopener noreferrer" class="btn">Code</a>
 </center>
 
 The _**Wikipedia Visual Exploration**_ project embarks you on a _visual random exploration_ of Wikipedia. 
 
-Wikipedia is a multi-lingual encyclopedia built on the massive collaborative efforts of millions of Wikipedians. It's perhaps the best example of successful collaborative 
-projects on the Internet. There, you can learn about almost everything, **EVERYTHING**. Scary, isn't it?
+Wikipedia is the result of the massive collaborative efforts of millions of Wikipedians --- perhaps the most successful collaborative project on the Internet. There, you can learn about almost everything, **EVERYTHING**. Scary, isn't it?
 
 When confronted to immensity, one can feel paralysed. Where should we start?
 
 Well, we can start somewhere, anywhere. From there, we take a small step, in any direction. Then, another one. 
 
-This project proposes such random explorations of Wikipedia. Starting from the [Wikipedia page](https://en.wikipedia.org/wiki/Wikipedia), it takes a new step every 
-day. Each day, it enters one of the links contained in the previous page and jumps to another, semantically related topic. Each day, it illustrates the topic with a 
-corresponding image taken from a Google search. One after the other, for a year.
+This project proposes such random explorations of Wikipedia. Starting from the <a href="https://en.wikipedia.org/wiki/Wikipedia" target="_blank" rel="noopener noreferrer">Wikipedia page</a>, it takes a new step every day. Each day, it enters one of the links contained in the previous page and jumps to another, semantically related topic. Each day, it illustrates the topic with a corresponding image taken from a Google search. One after the other, for a year.
 
-My sister <a href="https://julieecolas.com/">Julie Colas</a> worked on a physical form of this project: a paper tear-off calendar.
+My sister <a href="https://julieecolas.com/">Julie Colas</a> gave a cool physical form of this project: a paper tear-off calendar!
 
 <br>
 

@@ -394,8 +394,8 @@
 }
 
 .btn {
-  background-color: $text-dark-color !important;
-  color: white;
+  background-color: $accent-color !important;
+  color: $background-color;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -404,14 +404,19 @@
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 12px;
+  &:hover {
+    background-color: adjust-hue($accent-color, 15%); // or a specific color like #ff5fa6
+    color: white; // optional: for contrast on hover
+  }
 }
+
 
 .legend {
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-size: small;
-  width: 40%;
+  width: 60%;
 
   //@include mq(tabletp) {
   //  width: 70%;

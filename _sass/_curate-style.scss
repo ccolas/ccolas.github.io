@@ -1,0 +1,60 @@
+// Ensure header and menu appear on all pages
+.header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  background-color: $background-color !important;
+  padding: 20px 0 !important;
+  z-index: 9999 !important;
+}
+
+// Make sure menu stays visible
+.menu__wrap {
+  position: relative !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  overflow: visible !important;
+}
+
+// Horizontal menu layout
+.menu__list {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-end !important;
+}
+
+// Fix menu items
+.menu__list__item {
+  display: inline-block !important;
+  margin-left: 30px !important;
+}
+
+// Make sure the title is visible
+.header__title {
+  display: block !important;
+  visibility: visible !important;
+}
+
+// Adjust page content to make room for header
+.page__content {
+  margin-top: 80px !important;
+}
+
+// Remove left padding since header is now on top
+.page {
+  padding-left: 0 !important;
+}
+
+// Fix page titles being behind the header
+.intro {
+  padding-top: 120px !important;
+  margin-top: 0 !important;
+}
+
+// Also adjust main content to be below header
+.page__content {
+  margin-top: 100px !important;
+}

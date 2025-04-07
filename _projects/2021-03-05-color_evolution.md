@@ -11,11 +11,11 @@ featured_image: '/images/projects/color_evolution/evo_18.png'
 
 ### Digital Evolution as a Teaching Tool
 
-A while back I designed this small project with two 9th grade students during their week-long internship in my lab. The goal was to introduce evolutionary algorithms in an accessible, visual way.
+A while back I designed this small project for two 9th grade students during their week-long internship in my lab. The goal was to introduce evolutionary algorithms in an accessible, visual way.
 
 I chose **colors** as our system --- something intuitive yet powerful for demonstrating computational evolution. Each individual in our population is represented by a color, with its genome being the RGB color code. Its fitness is calculated as the negative Euclidean distance between its RGB values and those of a target color. Generation after generation, the most fit individuals reproduce more frequently, gradually shifting the population toward the objective. Parents are selected from the highest performers and reproduce asexually, with random mutations applied to their color codes.
 
-What makes this project compelling is how it transforms abstract computational concepts into immediate visual feedback. The evolutionary process becomes both a learning tool and a generator of striking visual patterns.
+This project transforms abstract computational concepts into immediate visual feedback. The evolutionary process becomes both a learning tool and a generator of cool visual patterns.
 
 ### Visualizing the Evolutionary Process
 
@@ -31,11 +31,11 @@ The interplay between parameter settings and visual outcomes becomes evident whe
 
 ![](/images/projects/color_evolution/evo_pb1.png)
 
-To address this limitation, we can increase mutation strength, allowing children to differ more significantly from their parents. This intervention reintroduces diversity and improves exploration. Notice the greater variation across individuals in the latest generations – this increased diversity helps solve the convergence problem.
+To increase diversity we can increase mutation strength, allowing children to differ more significantly from their parents. This intervention reintroduces diversity and improves exploration. Notice the greater variation across individuals in the latest generations --- this increased diversity helps solve the convergence problem.
 
 ![](/images/projects/color_evolution/evo_pb2.png)
 
-With larger populations (around 100 individuals), the inherent diversity allows for smaller mutation rates. This combination leads to finer convergence with less variation in the final generations, achieving nearly perfect alignment with the target color.
+With larger populations (around 100 individuals), the initial diversity allows for smaller mutation rates. This combination leads to finer convergence with less variation in the final generations, achieving nearly perfect alignment with the target color.
 
 ![](/images/projects/color_evolution/evo_big.png)
 

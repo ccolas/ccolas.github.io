@@ -1,27 +1,28 @@
 basic_settings:
   site_title: Cédric Colas
-  site_tagline: 'Academic and personal website.'
+  site_tagline: ''
   favicon_image: /images/favicon.png
 
 header_settings:
   logo_image:
-  logo_width: 75
+  logo_width: 50
 
 menu_settings:
   menu_items:
-    - title: 'Home'
-      url: '/home'
-    - title: 'Publications'
-      url: '/publications'
+    - title: 'About me'
+      url: '/'
     - title: 'Fun projects'
       url: '/project/'
-    - title: 'Scientific blog'
-      url: '/blog/'
+    - title: 'Photography'
+      url: '/photographs'
+    - title: 'Publications'
+      url: '/publications'
     - title: 'Contact'
       url: '/contact'
 
+
 grid_settings:
-  overlay_opacity: 0.8
+  overlay_opacity: 0.7
   grid_spacing: 20
 
 contact_settings:
@@ -33,7 +34,7 @@ contact_settings:
 social_settings:
   facebook_url: ''
   twitter_url: 'https://twitter.com/cedcolas'
-  instagram_url: ''
+  instagram_url: 'https://www.instagram.com/bkayf_'
   snapchat_url: ''
   youtube_url: ''
   google-plus_url: ''
@@ -60,28 +61,31 @@ social_settings:
   linkedin_url: ''
 
 color_settings:
-  background_color: '#ffffff'
-  background_alt_color: '#ffffff'
-  text_dark_color: '#003965'
-  text_medium_color: '#202020'
-  text_light_color: '#ABB7B7'
-  accent_color: '#0064b2'
-  border_color: '#dddddd'
-  overlay_background_color: '#0064b2'
-  overlay_text_color: '#ffffff'
-  overlay_accent_color: '#2A2F36'
-  error_color: '#D64541'
+  background_color: '#02012e'              # Deep oceanic blue-black
+  background_alt_color: '#02012e'          # Dark teal-navy shade
+  text_dark_color: '#dae9f5'               # Slightly cool white
+  text_medium_color: '#dae9f5'             # Pale steel-gray
+  text_light_color: '#dae9f5'              # Muted blue-gray
+  accent_color: '#FF3CAC'                  # Neon pink (unchanged)
+  link_color: '#535de6'                    # Bright electric blue
+  link_hover_color: '#60A5FA'              # Softer sky-blue on hover
+  border_color: '#1E3542'                  # Dark marine-blue border
+  overlay_background_color: '#050345'   # Semi-transparent deep oceanic
+  overlay_text_color: '#E6F0F8'            # Cool white
+  overlay_accent_color: '#FF3CAC'          # Neon pink accent
+  error_color: '#FF5F6D'                   # Vivid coral-red
+
 
 font_settings:
-  font_embed: '<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">'
-  title_font: '"Montserrat", sans-serif'
-  body_font: '"Montserrat", sans-serif'
-  regular_weight: 300
-  bold_weight: 500
+  font_embed: '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">'
+  title_font: '"Inter", sans-serif'
+  body_font: '"Inter", sans-serif'
+  regular_weight: 400
+  bold_weight: 700
   site_title:
-    small_size: 25
-    medium_size: 35
-    large_size: 45
+    small_size: 20
+    medium_size: 30
+    large_size: 40
     weight: 500
     letter_spacing: -0.02
   site_tagline:
@@ -152,12 +156,12 @@ font_settings:
     letter_spacing: 0
     line_height: 1.6
   p:
-    small_size: 14
-    medium_size: 16
-    large_size: 18
+    small_size: 13
+    medium_size: 14
+    large_size: 17
     weight: 300
     letter_spacing: 0
-    line_height: 1.6
+    line_height: 1.5
   blockquote:
     small_size: 25
     medium_size: 35
@@ -170,7 +174,7 @@ font_settings:
     letter_spacing: 0
 
 advanced_settings:
-  ajax_loading: true
+  ajax_loading: false
   analytics_code: ""
   custom_styles: ""
   header_js: ""

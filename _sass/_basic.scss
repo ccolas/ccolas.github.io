@@ -192,8 +192,7 @@ blockquote {
 
 a {
 	text-decoration: none;
-	color: $text-dark-color;
-	font-weight: $bold-weight;
+	color: $link-color;
 	@include transition(all 0.15s ease-in-out);
 
 	&:hover {
@@ -345,6 +344,7 @@ body.loading {
 	float: left;
 	clear: both;
 	width: 100%;
+	max-width: 1200px;
 }
 
 .page {
