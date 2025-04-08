@@ -61,23 +61,23 @@ For this project, I opened windows located at my own residence and at the homes 
 Below are eighteen evolved universes, each shown through nine different windows. The diversity of patterns demonstrates how the evolutionary process generates a wide range of visual aesthetics --- from organic, flowing forms to geometric, structured patterns.
 
 <div class="gallery" data-columns="3">
-    <img src="/images/projects/cppnworld/id2.jpg">
-    <img src="/images/projects/cppnworld/id3.jpg">
-    <img src="/images/projects/cppnworld/id4.jpg">
-    <img src="/images/projects/cppnworld/id5.jpg">
-    <img src="/images/projects/cppnworld/id6.jpg">
-    <img src="/images/projects/cppnworld/id7.jpg">
-    <img src="/images/projects/cppnworld/id8.jpg">
-    <img src="/images/projects/cppnworld/id9.jpg">
-    <img src="/images/projects/cppnworld/id10.jpg">
-    <img src="/images/projects/cppnworld/id11.jpg">
-    <img src="/images/projects/cppnworld/id12.jpg">
-    <img src="/images/projects/cppnworld/id13.jpg">
-    <img src="/images/projects/cppnworld/id14.jpg">
-    <img src="/images/projects/cppnworld/id15.jpg">
-    <img src="/images/projects/cppnworld/id16.jpg">
-    <img src="/images/projects/cppnworld/id17.jpg">
-    <img src="/images/projects/cppnworld/id18.jpg">
-    <img src="/images/projects/cppnworld/id19.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id2.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id3.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id4.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id5.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id6.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id7.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id8.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id9.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id10.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id11.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id12.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id13.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id14.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id15.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id16.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id17.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id18.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id19.jpg">
 </div>
 
