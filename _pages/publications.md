@@ -14,9 +14,6 @@ My extended CV is <a href="{{ site.url }}/data/CV_Cedric_Colas.pdf" target="_bla
 Received the PhD Thesis Award 2022 from the French AI association.  
 [<a href="{{ site.url }}/data/slides/slides_colas_defense_june2021.pdf" target="_blank" rel="noopener noreferrer">Slides of the PhD defense</a>] [<a href="https://www.youtube.com/watch?v=x4vS557rhAM" target="_blank" rel="noopener noreferrer">Video</a>].
 
-<a href="{{ site.url }}/data/slides/slides_colas_defense_june2021.pdf">
-<img class="small-image" src="/images/thesis.png" alt=""/>
-</a>
 
 <style>
 .page li {

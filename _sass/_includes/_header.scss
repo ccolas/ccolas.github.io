@@ -21,7 +21,7 @@
 		top: 0;
 		left: 0;
 		bottom: 0;
-		width: 30%;
+		width: 25%;
 		padding: 0;
 	}
 }
@@ -56,9 +56,10 @@
 //}
 
 .header__logo__img {
-  margin-top: 20px;
+  margin-top: 10px;
   width: $logo-width;
   height: auto;
+  margin-left: 10px;
 }
 
 
@@ -84,7 +85,7 @@
 
 
 .header__tagline {
-	margin-top: 20px;
+	margin-top: 0px;
 	font-size: $sitetagline-small;
 	font-weight: $sitetagline-weight;
 	letter-spacing: $sitetagline-spacing;
@@ -96,7 +97,7 @@
 	}
 
 	@include mq(laptop) {
-		margin-top: 30px;
+		margin-top: 0px;
 		font-size: $sitetagline-large;
 	}
 }
@@ -106,7 +107,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Menu
 
 .menu {
-	
+
 	@include mq(tabletl) {
 		margin-top: 20px;
 	}
