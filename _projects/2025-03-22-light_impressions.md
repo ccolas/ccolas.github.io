@@ -9,7 +9,7 @@ Photography has two ways of capturing more light: opening the diaphragm wider, o
 
 Most of these shots were taken using the darkest settings available on my phone --- minimum ISO, smallest aperture, and a shutter speed that balances capturing movement without overexposing the image (typically between 1/8 and 1/2 secs). Some images feature an additional element: diffracting paper that creates rainbow-like effects by splitting light into its spectrum of colors.
 
-<div class="gallery" data-columns="3" loading="lazy">
+<div class="gallery" data-columns="3">
     <img src="/images/projects/light_impressions/img_1.webp" loading="lazy">
      <img src="/images/projects/light_impressions/img_2.webp" loading="lazy">
      <img src="/images/projects/light_impressions/img_3.webp" loading="lazy">
@@ -49,4 +49,4 @@ Most of these shots were taken using the darkest settings available on my phone 
      <img src="/images/projects/light_impressions/img_38.webp" loading="lazy">
      <img src="/images/projects/light_impressions/img_39.webp" loading="lazy">
      <img src="/images/projects/light_impressions/img_40.webp" loading="lazy">
-</div loading="lazy">
+</div">
