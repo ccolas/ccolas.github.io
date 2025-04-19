@@ -9,44 +9,44 @@ Photography has two ways of capturing more light: opening the diaphragm wider, o
 
 Most of these shots were taken using the darkest settings available on my phone --- minimum ISO, smallest aperture, and a shutter speed that balances capturing movement without overexposing the image (typically between 1/8 and 1/2 secs). Some images feature an additional element: diffracting paper that creates rainbow-like effects by splitting light into its spectrum of colors.
 
-<div class="gallery" data-columns="3">
-    <img src="/images/projects/light_impressions/img_1.webp">
-     <img src="/images/projects/light_impressions/img_2.webp">
-     <img src="/images/projects/light_impressions/img_3.webp">
-     <img src="/images/projects/light_impressions/img_4.webp">
-     <img src="/images/projects/light_impressions/img_5.webp">
-     <img src="/images/projects/light_impressions/img_6.webp">
-     <img src="/images/projects/light_impressions/img_7.webp"> 
-     <img src="/images/projects/light_impressions/img_9.webp">
-     <img src="/images/projects/light_impressions/img_10.webp">
-     <img src="/images/projects/light_impressions/img_11.webp">
-     <img src="/images/projects/light_impressions/img_12.webp">
-     <img src="/images/projects/light_impressions/img_13.webp">
-     <img src="/images/projects/light_impressions/img_14.webp">
-     <img src="/images/projects/light_impressions/img_15.webp">
-     <img src="/images/projects/light_impressions/img_16.webp">
-     <img src="/images/projects/light_impressions/img_17.webp">
-     <img src="/images/projects/light_impressions/img_18.webp">
-     <img src="/images/projects/light_impressions/img_19.webp">
-     <img src="/images/projects/light_impressions/img_20.webp">
-     <img src="/images/projects/light_impressions/img_21.webp">
-     <img src="/images/projects/light_impressions/img_22.webp">
-     <img src="/images/projects/light_impressions/img_23.webp">
-     <img src="/images/projects/light_impressions/img_24.webp">
-     <img src="/images/projects/light_impressions/img_25.webp">
-     <img src="/images/projects/light_impressions/img_26.webp">
-     <img src="/images/projects/light_impressions/img_27.webp">
-     <img src="/images/projects/light_impressions/img_28.webp">
-     <img src="/images/projects/light_impressions/img_29.webp">
-     <img src="/images/projects/light_impressions/img_30.webp">
-     <img src="/images/projects/light_impressions/img_31.webp">
-     <img src="/images/projects/light_impressions/img_32.webp">
-     <img src="/images/projects/light_impressions/img_33.webp">
-     <img src="/images/projects/light_impressions/img_34.webp">
-     <img src="/images/projects/light_impressions/img_35.webp">
-     <img src="/images/projects/light_impressions/img_36.webp">
-     <img src="/images/projects/light_impressions/img_37.webp">
-     <img src="/images/projects/light_impressions/img_38.webp">
-     <img src="/images/projects/light_impressions/img_39.webp">
-     <img src="/images/projects/light_impressions/img_40.webp">
-</div>
+<div class="gallery" data-columns="3" loading="lazy">
+    <img src="/images/projects/light_impressions/img_1.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_2.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_3.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_4.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_5.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_6.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_7.webp" loading="lazy"> 
+     <img src="/images/projects/light_impressions/img_9.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_10.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_11.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_12.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_13.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_14.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_15.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_16.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_17.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_18.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_19.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_20.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_21.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_22.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_23.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_24.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_25.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_26.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_27.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_28.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_29.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_30.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_31.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_32.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_33.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_34.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_35.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_36.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_37.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_38.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_39.webp" loading="lazy">
+     <img src="/images/projects/light_impressions/img_40.webp" loading="lazy">
+</div loading="lazy">
