@@ -49,4 +49,4 @@ Most of these shots were taken using the darkest settings available on my phone 
      <img src="/images/projects/light_impressions/img_38.webp" loading="lazy">
      <img src="/images/projects/light_impressions/img_39.webp" loading="lazy">
      <img src="/images/projects/light_impressions/img_40.webp" loading="lazy">
-</div">
+</div>
