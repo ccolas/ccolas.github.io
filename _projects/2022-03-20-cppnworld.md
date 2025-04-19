@@ -2,10 +2,10 @@
 title: 'Breeding Visual Universes'
 date: 2022-03-20 00:00:00
 description: Creating and evolving algorithmic universes of color through computational evolution.
-featured_image: '/images/projects/cppnworld/id1.webp'
+featured_image: '/images/projects/cppnworld/id1.jpg'
 ---
 
-![](/images/projects/cppnworld/id1.webp)
+![](/images/projects/cppnworld/id1.jpg)
 
 ### Creating Algorithmic Universes
 
@@ -17,7 +17,7 @@ These visual universes aren't just random --- they're evolved through a process 
 
 Each universe is encoded by a specific **Compositional Pattern Producing Networks** (CPPNs): a mathematical functions mapping spatial coordinates to colors. In my implementation, CPPNs transform GPS coordinates (latitude, longitude, altitude) along with local positional data (x, y, z) into RGB color values.
 
-<img class="small-image" src="/images/projects/cppnworld/cppn2.webp" alt=""/>
+<img class="small-image" src="/images/projects/cppnworld/cppn2.png" alt=""/>
 <p class="legend">
 <i><b>Generating an image from a CPPN.</b> For each pixel (x, y) of a 2D image, the CPPN computes a corresponding color. (From the <a href="http://eplex.cs.ucf.edu/papers/stanley_gpem07.pdf" target="_blank" rel="noopener noreferrer">original paper</a>).</i></p>
 
@@ -25,7 +25,7 @@ What makes CPPNs particularly powerful is that they don't just map pixels indepe
 
 Under the hood, CPPNs are computational graphs where each node processes its inputs (either coordinates or outputs from previous nodes) through an activation function:
 
-<img class="smaller-image" src="/images/projects/cppnworld/cppn.webp" alt=""/>
+<img class="smaller-image" src="/images/projects/cppnworld/cppn.png" alt=""/>
 <center>
 <p class="legend">
 <i><b>CPPN as computational graphs.</b> (From <a href="https://towardsdatascience.com/understanding-compositional-pattern-producing-networks-810f6bef1b88" target="_blank" rel="noopener noreferrer">this post</a>).
@@ -61,23 +61,23 @@ For this project, I opened windows located at my own residence and at the homes 
 Below are eighteen evolved universes, each shown through nine different windows. The diversity of patterns demonstrates how the evolutionary process generates a wide range of visual aesthetics --- from organic, flowing forms to geometric, structured patterns.
 
 <div class="gallery" data-columns="3">
-    <img src="/images/projects/cppnworld/id2.webp">
-    <img src="/images/projects/cppnworld/id3.webp">
-    <img src="/images/projects/cppnworld/id4.webp">
-    <img src="/images/projects/cppnworld/id5.webp">
-    <img src="/images/projects/cppnworld/id6.webp">
-    <img src="/images/projects/cppnworld/id7.webp">
-    <img src="/images/projects/cppnworld/id8.webp">
-    <img src="/images/projects/cppnworld/id9.webp">
-    <img src="/images/projects/cppnworld/id10.webp">
-    <img src="/images/projects/cppnworld/id11.webp">
-    <img src="/images/projects/cppnworld/id12.webp">
-    <img src="/images/projects/cppnworld/id13.webp">
-    <img src="/images/projects/cppnworld/id14.webp">
-    <img src="/images/projects/cppnworld/id15.webp">
-    <img src="/images/projects/cppnworld/id16.webp">
-    <img src="/images/projects/cppnworld/id17.webp">
-    <img src="/images/projects/cppnworld/id18.webp">
-    <img src="/images/projects/cppnworld/id19.webp">
+    <img src="/images/projects/cppnworld/id2.jpg">
+    <img src="/images/projects/cppnworld/id3.jpg">
+    <img src="/images/projects/cppnworld/id4.jpg">
+    <img src="/images/projects/cppnworld/id5.jpg">
+    <img src="/images/projects/cppnworld/id6.jpg">
+    <img src="/images/projects/cppnworld/id7.jpg">
+    <img src="/images/projects/cppnworld/id8.jpg">
+    <img src="/images/projects/cppnworld/id9.jpg">
+    <img src="/images/projects/cppnworld/id10.jpg">
+    <img src="/images/projects/cppnworld/id11.jpg">
+    <img src="/images/projects/cppnworld/id12.jpg">
+    <img src="/images/projects/cppnworld/id13.jpg">
+    <img src="/images/projects/cppnworld/id14.jpg">
+    <img src="/images/projects/cppnworld/id15.jpg">
+    <img src="/images/projects/cppnworld/id16.jpg">
+    <img src="/images/projects/cppnworld/id17.jpg">
+    <img src="/images/projects/cppnworld/id18.jpg">
+    <img src="/images/projects/cppnworld/id19.jpg">
 </div>
 
