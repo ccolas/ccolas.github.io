@@ -5,7 +5,7 @@ description: A machine learning approach to taste-music synesthesia, inspired by
 featured_image: '/images/projects/pianocktail/pianocktail.jpg'
 ---
 
-<img class="image" src="/images/projects/pianocktail/pianocktail.jpg" alt="" style="margin-bottom:1em;"/>
+<img class="image" src="/images/projects/pianocktail/pianocktail.jpg"  class="responsive-image">>
 <p class="legend" style="text-align:center; margin-top:1em;">
 <i>Pianocktail from Cie La Rumeur.</i></p>
 
@@ -31,7 +31,7 @@ What if we could actually create such a bridge between auditory and gustatory ex
 
 Previous attempts to realize Vian's invention have typically used mechanical approaches --- mapping individual piano keys to specific ingredients; a few drops with each keystroke. While these <a href="https://www.youtube.com/watch?v=B9OYBkBXNi4" target="_blank" rel="noopener noreferrer">physical implementations</a> are impressive engineering feats, they typically produce "graveyard cocktails" --- chaotic mixtures containing traces of every ingredient corresponding to the notes used in the piece.
 
-<img class="image" src="/images/projects/pianocktail/prototype_demo.png" alt="Physical Pianocktail prototype demonstration" style="width:30%; max-width:600px; margin:0 auto; display:block; margin-bottom:1em;"/>
+<img class="image" src="/images/projects/pianocktail/prototype_demo.png" alt="Physical Pianocktail prototype demonstration" class="small-image"> 
 <p class="legend" style="text-align:center; margin-top:1em;">
 <i>Pianocktail prototype demonstrated at my birthday party, where friends could experience the music-to-taste transformation firsthand.</i></p>
   
@@ -52,7 +52,7 @@ These principles guided the development of a sophisticated system that goes far 
 
 The system begins by learning to understand music. I collected 30,000 MIDI files of piano compositions and trained a self-supervised transformer model to embed musical pieces using techniques from natural language processing, including a specialized tokenizer, BERT with note-wise masking, and SentenceBERT fine-tuning. The system learns to embed musical structure, style, and emotion in a high-dimensional space. The following figure shows projections of the learned embeddings: pieces from the same composer cluster together in a meaningful way, and nearest neighbors of a piece often are pieces from the same composer!
 
-<img class="image" src="/images/projects/pianocktail/tsne_b128_r768_represented.png"  style="width:40%; max-width:600px;" alt=""/>
+<img class="image" src="/images/projects/pianocktail/tsne_b128_r768_represented.png"  class="small-image">
 <p class="legend">
 <i>T-SNE visualization of the music representation space, showing how different composers and genres naturally cluster together.</i></p>
 

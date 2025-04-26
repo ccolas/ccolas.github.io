@@ -27,9 +27,9 @@ My sister <a href="https://julieecolas.com/">Julie Colas</a> gave a cool physica
 
 <br>
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 1em;">
-  <img class="image" src="/images/projects/wiki/P1060463.webp" style="height: 300px; width: auto;"/>
-  <img class="image" src="/images/projects/wiki/P1060465.webp   " style="height: 300px; width: auto;"/>
+<div class="image-pair">
+  <img class="image" src="/images/projects/wiki/P1060463.webp">
+  <img class="image" src="/images/projects/wiki/P1060465.webp">
 </div>
 
 ### A year of wandering through Wikipedia

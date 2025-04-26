@@ -10,7 +10,7 @@ featured_image: '/images/projects/dirty_mixer/dirty_mixer.png'
 
 I recently built a dirty video mixer --- a simple but effective device that intentionally corrupts and glitches video signals to create unpredictable and cool visual effects. It's a very simple device: just one potentiometer, two switches, two inputs, and one output (see instructions <a href="https://www.youtube.com/watch?v=iSRWvQf3u2c" target="_blank" rel="noopener noreferrer">here</a>).
 
-<img class="image" src="/images/projects/dirty_mixer/dirty_mixer_box.jpeg" style="width:30%; max-width:600px; margin:0 auto; display:block; margin-bottom:1em;"/>
+<img class="image" src="/images/projects/dirty_mixer/dirty_mixer_box.jpeg" class="small-image"/>
 
 The dirty mixer works by imperfectly combining video signals, creating glitches precisely because it's not doing the job of mixing properly. To try it out, I mixed two sources: a digital HDMI signal from my laptop and an analog source from a Lion King VHS tape, with the output displayed on an analog TV. The results were interesting: distorted colors, images that shifted position, horizontal stripe glitches, and others (see video below).
 

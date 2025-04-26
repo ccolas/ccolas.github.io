@@ -351,6 +351,53 @@
   //}
 }
 
+.responsive-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;  // Full width on mobile (smallest screens)
+  max-width: calc(100% - 20px);  // Minimal margin on mobile
+
+  @include mq(tabletp) {
+    width: 90%;  // Slightly reduced on tablets
+  }
+
+  @include mq(tabletl) {
+    width: 80%;  // Further reduced on larger tablets
+  }
+
+  @include mq(laptop) {
+    width: 70%;  // 70% width on laptops as requested
+  }
+}
+
+.image-pair {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 1em;
+  width: 100%;
+
+  img {
+    height: auto;
+    width: calc(40% - 10px); // Each image takes half the space minus gap
+    max-height: 70vh; // Limit height to 70% of viewport height
+    object-fit: contain;
+  }
+
+  // On very small screens, stack them
+  @media (max-width: 480px) {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      max-width: calc(100% - 20px);
+    }
+  }
+}
+
 .small-image {
   display: block;
   margin-left: auto;
