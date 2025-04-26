@@ -15,6 +15,8 @@ menu_settings:
       url: '/'
     - title: 'Fun projects'
       url: '/project/'
+    - title: 'Tangible Dreams'
+      url: '/blog/'
     - title: 'Photography'
       url: '/photographs'
     - title: 'Publications'
@@ -65,9 +67,9 @@ social_settings:
 color_settings:
   background_color: '#010138'              # Deep oceanic blue-black
   background_alt_color: '#010138'          # Dark teal-navy shade
-  text_dark_color: '#dae9f5'               # Slightly cool white
-  text_medium_color: '#dae9f5'             # Pale steel-gray
-  text_light_color: '#dae9f5'              # Muted blue-gray
+  text_dark_color: '#e0e0ffff'               # Slightly cool white
+  text_medium_color: '#e0e0ffff'             # Pale steel-gray
+  text_light_color: '#e0e0ffff'              # Muted blue-gray
   accent_color: '#fe4791'                  # Neon pink (unchanged)
   link_color: '#535de6'                    # Bright electric blue
   link_hover_color: '#60A5FA'              # Softer sky-blue on hover

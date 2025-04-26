@@ -1,2 +1,5 @@
 eval "$(rbenv init -)"
 bundle exec jekyll serve --livereload
+
+light background color: #e0e0ffff
+pink: #fe438e

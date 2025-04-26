@@ -5,7 +5,7 @@ description: Creating and evolving algorithmic universes of color through comput
 featured_image: '/images/projects/cppnworld/id1.jpg'
 ---
 
-![](/images/projects/cppnworld/id1.jpg)
+![](/images/projects/cppnworld/id2.jpg)
 
 ### Creating Algorithmic Universes
 

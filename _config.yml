@@ -1,6 +1,6 @@
 site: Cédric Colas
 
-url: https://ccolas.github.io
+url: https://cedriccolas.com
 baseurl:
 
 collections:
@@ -56,4 +56,3 @@ plugins:
 
 paginate: 6
 paginate_path: "/blog/page:num/"
-  
