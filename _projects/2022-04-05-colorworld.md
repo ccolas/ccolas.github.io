@@ -2,10 +2,10 @@
 title: "Chromatic Cartography"
 date: 2022-04-05 00:00:00
 description: Exploring the relationship between geographic coordinates and color perception through a visual mapping system.
-featured_image: '/images/projects/color_world/medley.png'
+featured_image: '/images/projects/color_world/medley.webp'
 ---
 
-![](/images/projects/color_world/medley_paysage.png)
+![](/images/projects/color_world/medley_paysage.webp)
 
 <center>
 <a href="https://github.com/ccolas/ColorfulWorld" class="btn">Code</a>
@@ -47,17 +47,17 @@ This system creates a visual language where geography becomes instantly expressi
 Below are the colors of eleven locations around the world. Each image represents the unique color derived from that place's geographical coordinates:
 
 <div class="gallery" data-columns="3">
-    <img src="/images/projects/color_world/aukland.png">
-    <img src="/images/projects/color_world/boston.png">
-    <img src="/images/projects/color_world/cuzsco.png">
-    <img src="/images/projects/color_world/everest.png">
-    <img src="/images/projects/color_world/johannesburg.png">
-    <img src="/images/projects/color_world/kaboul.png">
-    <img src="/images/projects/color_world/lagos.png">
-    <img src="/images/projects/color_world/mariana_trench.png">
-    <img src="/images/projects/color_world/pahoa.png">
-    <img src="/images/projects/color_world/paris.png">
-    <img src="/images/projects/color_world/tokyo.png">
+    <img src="/images/projects/color_world/aukland.webp">
+    <img src="/images/projects/color_world/boston.webp">
+    <img src="/images/projects/color_world/cuzsco.webp">
+    <img src="/images/projects/color_world/everest.webp">
+    <img src="/images/projects/color_world/johannesburg.webp">
+    <img src="/images/projects/color_world/kaboul.webp">
+    <img src="/images/projects/color_world/lagos.webp">
+    <img src="/images/projects/color_world/mariana_trench.webp">
+    <img src="/images/projects/color_world/pahoa.webp">
+    <img src="/images/projects/color_world/paris.webp">
+    <img src="/images/projects/color_world/tokyo.webp">
 </div>
 
 

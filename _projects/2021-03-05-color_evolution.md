@@ -2,7 +2,7 @@
 title: 'Evolutionary Color Search'
 date: 2022-01-11 00:00:00
 description: Exploring the intersection of evolutionary algorithms and visual patterns through color evolution.
-featured_image: '/images/projects/color_evolution/evo_18.png'
+featured_image: '/images/projects/color_evolution/evo_18.webp'
 ---
 
 <center>
@@ -21,7 +21,7 @@ This project transforms abstract computational concepts into immediate visual fe
 
 In our visualization system, each patch represents an individual and its color, while each horizontal line represents a generation. Time moves upward, with the target color displayed in the top line.
 
-![](/images/projects/color_evolution/evo_1.png)
+<img src="/images/projects/color_evolution/evo_1.webp" style="width: 60%; min-width: 400px;">
 
 The example above shows a successful evolutionary run. The initial randomness of the population gradually gives way to convergence as selection pressure and reproduction drive the colors toward the target.
 
@@ -29,31 +29,31 @@ The example above shows a successful evolutionary run. The initial randomness of
 
 The interplay between parameter settings and visual outcomes becomes evident when we experiment with population size. Below, a smaller population reduces initial diversity and makes exploring the color space more difficult. The evolutionary process converges prematurely, missing the target color.
 
-![](/images/projects/color_evolution/evo_pb1.png)
+<img src="/images/projects/color_evolution/evo_pb1.webp" style="width: 60%; min-width: 400px;">
 
 To increase diversity we can increase mutation strength, allowing children to differ more significantly from their parents. This intervention reintroduces diversity and improves exploration. Notice the greater variation across individuals in the latest generations --- this increased diversity helps solve the convergence problem.
 
-![](/images/projects/color_evolution/evo_pb2.png)
+<img src="/images/projects/color_evolution/evo_pb2.webp" style="width: 60%; min-width: 400px;">
 
 With larger populations (around 100 individuals), the initial diversity allows for smaller mutation rates. This combination leads to finer convergence with less variation in the final generations, achieving nearly perfect alignment with the target color.
 
-![](/images/projects/color_evolution/evo_big.png)
+<img src="/images/projects/color_evolution/evo_big.webp" style="width: 60%; min-width: 400px;">
 
 ### Evolution Gallery
 
 Each of these evolutionary runs represents a different parameter configuration and starting condition. The resulting visual patterns reveal the underlying computational dynamics – how selection pressure, mutation rates, and population size interact to create different evolutionary trajectories.
 
 <div class="gallery" data-columns="3">
-    <img src="/images/projects/color_evolution/evo_0.png">
-    <img src="/images/projects/color_evolution/evo_1.png">
-    <img src="/images/projects/color_evolution/evo_2.png">
-    <img src="/images/projects/color_evolution/evo_3.png">
-    <img src="/images/projects/color_evolution/evo_4.png">
-    <img src="/images/projects/color_evolution/evo_9.png">
-    <img src="/images/projects/color_evolution/evo_6.png">
-    <img src="/images/projects/color_evolution/evo_7.png">
-    <img src="/images/projects/color_evolution/evo_8.png">
-    <img src="/images/projects/color_evolution/evo_10.png">
-    <img src="/images/projects/color_evolution/evo_11.png">
-    <img src="/images/projects/color_evolution/evo_12.png">
+    <img src="/images/projects/color_evolution/evo_0.webp">
+    <img src="/images/projects/color_evolution/evo_1.webp">
+    <img src="/images/projects/color_evolution/evo_2.webp">
+    <img src="/images/projects/color_evolution/evo_3.webp">
+    <img src="/images/projects/color_evolution/evo_4.webp">
+    <img src="/images/projects/color_evolution/evo_9.webp">
+    <img src="/images/projects/color_evolution/evo_6.webp">
+    <img src="/images/projects/color_evolution/evo_7.webp">
+    <img src="/images/projects/color_evolution/evo_8.webp">
+    <img src="/images/projects/color_evolution/evo_10.webp">
+    <img src="/images/projects/color_evolution/evo_11.webp">
+    <img src="/images/projects/color_evolution/evo_12.webp">
 </div>
