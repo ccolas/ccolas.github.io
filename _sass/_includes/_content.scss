@@ -369,6 +369,10 @@
   @include mq(laptop) {
     width: 70%;  // 70% width on laptops as requested
   }
+
+  @media (min-width: 3840px) {  // 4K resolution threshold
+    width: 90%;  // 90% width on 4K screens as requested
+  }
 }
 
 .image-pair {
