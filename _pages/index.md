@@ -36,8 +36,5 @@ I'm currently working at MIT with <a href="https://mitibmwatsonailab.mit.edu/peo
 Beyond my research, I explore creative applications of algorithms through various side projects.  
 See some of these explorations <a href="/project/index.html" target="_blank" rel="noopener noreferrer"  >here</a>.
 
-### Acknowledgment
-
-The website robot logo is modified from a *Flaticon* logo, created by Slidesgo.
 
 <br>
