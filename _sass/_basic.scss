@@ -344,7 +344,7 @@ body.loading {
   float: left;
   clear: both;
   width: 100%;
-  max-width: 1500px; // Default for most screens
+  max-width: 1400px; // Default for most screens
 
   @media (min-width: 3840px) { // 4K resolution threshold
     max-width: 1700px; // Wider for 4K+ screens
