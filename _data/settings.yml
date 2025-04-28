@@ -2,7 +2,7 @@ basic_settings:
   site_title: Cédric Colas
   site_tagline: ''
   favicon_image: /images/favicon.png
-  site_description: 'Website of Cédric Colas'
+  site_description: ''
   default_featured_image: '/images/logo.png'
 
 header_settings:
