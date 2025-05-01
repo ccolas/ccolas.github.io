@@ -12,18 +12,18 @@ I'm thrilled to share some exciting news: my project *"Tangible Dreams: Explorin
 
 Lately, I've been having a lot of fun hacking on side projects---taking algorithms from my research and turning them into playful experiments. I've made a visual demo of <a href="/project/color-evolution" target="_blank" rel="noopener noreferrer">genetic algorithms that evolve colors</a>, built bots that <a href="/project/wikiexploration" target="_blank" rel="noopener noreferrer">wander through Wikipedia</a>, or created a <a href="/project/pianocktail" target="_blank" rel="noopener noreferrer">pianocktail</a>—a system that mixes custom cocktails based on the mood of a piano piece. You can check out more experiments <a href="/project/" target="_blank" rel="noopener noreferrer">here</a>.
 
-But one idea kept pulling me back: **interactive evolution**—a way for humans and algorithms to create together. The computer generates variations; the human picks favorites; over generations, unexpected and beautiful results emerge. <a href="https://nbenko1.github.io/#/" target="_blank" rel="noopener noreferrer">Picbreeder</a> by Ken Stanley was a huge inspiration. It let people evolve strange and fascinating images using something called <a href="https://link.springer.com/content/pdf/10.1007/s10710-007-9028-8.pdf" target="_blank" rel="noopener noreferrer">Compositional Pattern-Producing Networks (CPPNs)</a>.
+But one idea kept pulling me back: **interactive evolution**—a way for humans and algorithms to create together. The computer generates variations, the human picks favorites and, over generations, unexpected and beautiful results emerge. <a href="https://nbenko1.github.io/#/" target="_blank" rel="noopener noreferrer">Picbreeder</a> by Ken Stanley was a huge inspiration. It let people collaboratively evolve a specific kind of neural network called <a href="https://link.springer.com/content/pdf/10.1007/s10710-007-9028-8.pdf" target="_blank" rel="noopener noreferrer">Compositional Pattern-Producing Networks (CPPNs)</a> to create strange and fascinating images.
 
-So I tried my hand at evolving CPPNs digitally with a project called <a href="/project/cppnworld" target="_blank" rel="noopener noreferrer">CPPNWorld</a>. It was fun, but also frustrating: evolving networks in code was cool, but it also got me frustrated: I wanted to be able to *feel* the process. I wanted to get my hands in the system and morph these images myself.
+So I tried my hand at evolving CPPNs digitally with a project called <a href="/project/cppnworld" target="_blank" rel="noopener noreferrer">CPPNWorld</a>. Evolving these visual worlds in code was fun, but it also got me frustrated: I wanted to be able to *feel* the process. I wanted to get my hands in the system and help craft these images myself.
 
 <figure style="width: 80%; min-width: 400px; margin: 0 auto;">
   <img src="/images/posts/tangible_dreams/tangible_dreams_setup.png" class="responsive-image" style="width:100%">
-  <figcaption style="text-align: center; font-style: italic; margin-top: 8px;">A physical, interactive neural network generating images in real-time</figcaption>
+  <figcaption style="text-align: center; font-style: italic; margin-top: 8px;">A physical, interactive neural network generating images in real-time as players turn knobs, and reconnect the system</figcaption>
 </figure>
 
 ### From Code to Hardware
 
-That's when the idea hit: what if you could physically build and mutate a neural network? What if you could *see* the connections, *twist* the knobs to change parameters, *flip* switches to try crazy configurations?
+That's when the idea hit: what if you could physically build and mutate a neural network? What if you could *see* the connections, *twist* the knobs to change parameters, *flip* switches to try new configurations?
 
 That’s the concept behind *Tangible Dreams*: an installation where visitors can manipulate a neural network by plugging cables, turning knobs, and watching how these changes ripple through the system to generate colorful patterns projected on a wall.
 
@@ -46,7 +46,7 @@ I can’t wait to see students, faculty, and visitors explore it—and maybe eve
 
 ### What’s Next
 
-Over the next few months, I’ll be designing the physical system at the Metropolis Makerspace, developing the visual projection side, and putting everything together into a working installation.
+Over the next few months, I’ll be designing the physical system at the Metropolis makerspace, learning more about electronics,  and putting everything together into a working installation.
 
 I’ll be documenting the whole process here—so stay tuned!
 
