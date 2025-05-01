@@ -16,7 +16,7 @@ But one idea kept pulling me back: **interactive evolution**—a way for humans 
 
 So I tried my hand at evolving CPPNs digitally with a project called <a href="/project/cppnworld" target="_blank" rel="noopener noreferrer">CPPNWorld</a>. Evolving these visual worlds in code was fun, but it also got me frustrated: I wanted to be able to *feel* the process. I wanted to get my hands in the system and help craft these images myself.
 
-<figure style="width: 80%; min-width: 400px; margin: 0 auto;">
+<figure style="width: 90%;" class="responsive-image">
   <img src="/images/posts/tangible_dreams/tangible_dreams_setup.png" class="responsive-image" style="width:100%">
   <figcaption style="text-align: center; font-style: italic; margin-top: 8px;">A physical, interactive neural network generating images in real-time as players turn knobs, and reconnect the system</figcaption>
 </figure>
