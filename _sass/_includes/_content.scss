@@ -402,6 +402,48 @@
   }
 }
 
+.image-pair-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px; /* Constrain maximum width */
+  margin: 0 auto 20px auto; /* Center the container */
+}
+
+.image-pair-equal-height {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.image-pair-equal-height img {
+  height: 300px; /* Fixed same height for both images */
+  max-width: calc(50% - 10px); /* Ensure each image takes up to half the container width */
+  object-fit: contain; /* Ensures entire image is visible */
+}
+
+.image-pair-figure figcaption {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* On mobile devices */
+@media (max-width: 768px) {
+  .image-pair-equal-height {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-pair-equal-height img {
+    max-width: 100%;
+    height: auto; /* Height becomes auto on mobile */
+    max-height: 300px; /* Maximum height on mobile */
+  }
+}
+
 .small-image {
   display: block;
   margin-left: auto;
