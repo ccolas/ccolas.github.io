@@ -53,5 +53,3 @@ I’ll be documenting the whole process here—so stay tuned!
 <br>
 <br>
 Follow me on Twitter <a href="https://x.com/cedcolas/" target="_blank" rel="noopener noreferrer">@cedcolas</a> for updates!
-
-Follow <a href="https://x.com/ArtsatMIT" target="_blank" rel="noopener noreferrer">@ArtsatMIT</a> to hear more about other art projects at MIT!

@@ -77,4 +77,3 @@ This system keeps the physical part simple and robust: the complexity stays insi
 <br>
 If you're curious about behind-the-scenes updates as I build, follow me on Twitter at <a href="https://x.com/cedcolas/" target="_blank" rel="noopener noreferrer">@cedcolas</a>!
 
-Follow <a href="https://x.com/ArtsatMIT" target="_blank" rel="noopener noreferrer">@ArtsatMIT</a> to hear more about other art projects at MIT!
