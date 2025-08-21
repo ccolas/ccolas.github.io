@@ -32,6 +32,7 @@ With support from the [Council for the Arts at MIT (CAMIT)](https://arts.mit.edu
 
 
 <!-- Lightbox -->
+<center>
 <div id="lightbox" style="
   display:none; position:fixed; inset:0; background:rgba(0,0,0,.9);
   align-items:center; justify-content:center; z-index:1000;">
@@ -40,6 +41,7 @@ With support from the [Council for the Arts at MIT (CAMIT)](https://arts.mit.edu
   <div id="lightbox-prev" style="position:absolute; left:20px; top:50%; transform:translateY(-50%); font-size:48px; color:#fff; cursor:pointer;">◀</div>
   <div id="lightbox-next" style="position:absolute; right:20px; top:50%; transform:translateY(-50%); font-size:48px; color:#fff; cursor:pointer;">▶</div>
 </div>
+</center>
 
 <script>
 const OWNER   = "ccolas";       
@@ -56,8 +58,11 @@ let images = [], currentIndex = -1;
 (async function(){
   const r = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${FOLDER}?ref=${BRANCH}`);
   const data = await r.json();
-  images = data.filter(x => x.type==="file" && isImage(x.name))
-               .map(x => cdnUrl(x.path));
+  images = data
+  .filter(x => x.type==="file" && isImage(x.name))
+  .sort((a, b) => b.name.localeCompare(a.name))  // descending
+  .map(x => cdnUrl(x.path));
+
 
   const html = images.map((url,i)=>
     `<img src="${url}" data-idx="${i}" 
@@ -65,7 +70,16 @@ let images = [], currentIndex = -1;
           loading="lazy">`
   ).join("");
   document.getElementById("gallery").innerHTML =
-    `<div style="display:flex;flex-wrap:wrap">${html}</div>`;
+  `<div style="
+      display:flex;
+      flex-wrap:wrap;
+      gap:5px;
+      max-width:1000px;    /* control width */
+      margin:0 auto;      /* center the block */
+      justify-content:center; /* center thumbnails inside */
+    ">
+      ${html}
+   </div>`;
 
   document.querySelectorAll("#gallery img").forEach(img=>{
     img.addEventListener("click", ()=>openLightbox(+img.dataset.idx));
