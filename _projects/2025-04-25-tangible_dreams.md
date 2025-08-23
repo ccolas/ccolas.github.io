@@ -16,14 +16,19 @@ featured_image: '/images/posts/tangible_dreams/tangible_dreams.png'
 *Tangible Dreams* is an interactive art installation where visitors can **sculpt a neural network with their hands**—plugging cables, turning knobs, and flipping switches to shape how the system generates mesmerizing visuals in real time. It transforms an abstract algorithm (Compositional Pattern-Producing Networks) into something physical and playful: no code, no equations—just curiosity and exploration.  
 
 Find out more in earlier posts:  
-- [Tangible Dreams: From Neural Networks to Art Installation](/blog/tangible-dreams-camit)  
-- [Tangible Dreams: First Demo and Plan](/blog/tangible-dreams-demo)  
+- <a href="/blog/tangible-dreams-camit" target="_blank" rel="noopener noreferrer">Tangible Dreams: From Neural Networks to Art Installation</a>  
+- <a href="/blog/tangible-dreams-demo" target="_blank" rel="noopener noreferrer">Tangible Dreams: First Demo and Plan</a>  
 
 ## The Exhibition
 
-With support from the [Council for the Arts at MIT (CAMIT)](https://arts.mit.edu/camit/funding/), *Tangible Dreams* will be exhibited from August 25 to September 3, 2025 in MIT's Stata Center; R and D commons (4th floor, 32-G409).
+With support from the <a href="https://arts.mit.edu/camit/funding/" target="_blank" rel="noopener noreferrer">Council for the Arts at MIT (CAMIT)</a>, *Tangible Dreams* will be exhibited from August 25 to September 3, 2025 in MIT's Stata Center; R and D commons (4th floor, 32-G409).
 
 ## Images created by visitors
+
+Can't find the image you saved below? Check out the list of saved images organized by timestamps <a href="https://github.com/ccolas/tangible_dreams/tree/main/outputs/mit_stata" target="_blank" rel="noopener noreferrer">here</a>.
+
+
+
 
 <br>
 <br>
