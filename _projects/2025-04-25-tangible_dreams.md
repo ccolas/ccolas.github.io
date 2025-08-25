@@ -21,7 +21,7 @@ Find out more in earlier posts:
 
 ## The Exhibition
 
-With support from the <a href="https://arts.mit.edu/camit/funding/" target="_blank" rel="noopener noreferrer">Council for the Arts at MIT (CAMIT)</a>, *Tangible Dreams* will be exhibited from August 25 to September 3, 2025 in MIT's Stata Center; R and D commons (4th floor, 32-G409).
+With support from the <a href="https://arts.mit.edu/camit/funding/" target="_blank" rel="noopener noreferrer">Council for the Arts at MIT (CAMIT)</a>, *Tangible Dreams* will be exhibited from August 25 to 29, 2025 in MIT's Stata Center; R and D commons (4th floor, 32-G409).
 
 ## Images created by visitors
 
