@@ -33,7 +33,7 @@ I'm currently working at MIT with <a href="https://mitibmwatsonailab.mit.edu/peo
 
 ### Artistic explorations
 
-Beyond my research, I explore creative applications of algorithms through various side projects.  
+Beyond my research, I explore creative applications of algorithms through various hobby and artistic projects.  
 See some of these explorations <a href="/project/index.html" target="_blank" rel="noopener noreferrer"  >here</a>.
 
 

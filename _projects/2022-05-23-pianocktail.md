@@ -1,5 +1,5 @@
 ---
-title: 'Taste Music with the Pianocktail'
+title: 'Taste Music with Le Piano Ivre'
 date: 2022-05-23 00:00:00
 description: A machine learning approach to taste-music synesthesia, inspired by Boris Vian's fictional invention.
 featured_image: '/images/projects/pianocktail/pianocktail.jpg'
@@ -10,9 +10,12 @@ featured_image: '/images/projects/pianocktail/pianocktail.jpg'
 <i>Pianocktail from Cie La Rumeur.</i></p>
 
 <br>
-<center>
-<a href="https://huggingface.co/spaces/ccolas/TastyPiano" target="_blank" rel="noopener noreferrer" class="btn">Demo</a>
-</center>
+
+[//]: # (<center>)
+
+[//]: # (<a href="https://huggingface.co/spaces/ccolas/TastyPiano" target="_blank" rel="noopener noreferrer" class="btn">Demo</a>)
+
+[//]: # (</center>)
 
 <style>
 .page li {
@@ -27,15 +30,49 @@ In **L'Écume des Jours**, the French author, jazz musician, singer, and enginee
 
 What if we could actually create such a bridge between auditory and gustatory experiences? What if the melancholy of Chopin could be tasted, or the playfulness of Gershwin could be sipped?
 
+<br>
+
+<p style="text-align:center; font-style:italic; margin-bottom:8px;">
+  Here is a little demo!
+</p>
+
+<div
+  style="
+    width:525px;
+    height:840px;
+    overflow:hidden;
+    margin:0 auto -200px auto;
+  "
+>
+  <video
+    width="525"
+    height="900"
+    controls
+    preload="metadata"
+    style="
+      display:block;
+      position:relative;
+      top:-270px;
+    "
+  >
+    <source src="/images/projects/pianocktail/piano_ivre.mp4" type="video/mp4">
+  </video>
+</div>
+
+
 ### Beyond One-Note-One-Drop
 
 Previous attempts to realize Vian's invention have typically used mechanical approaches --- mapping individual piano keys to specific ingredients; a few drops with each keystroke. While these <a href="https://www.youtube.com/watch?v=B9OYBkBXNi4" target="_blank" rel="noopener noreferrer">physical implementations</a> are impressive engineering feats, they typically produce "graveyard cocktails" --- chaotic mixtures containing traces of every ingredient corresponding to the notes used in the piece.
 
+<br>
+<p style="text-align:center; font-style:italic; margin-bottom:8px;">
+  Older prototype with cocktail machine but less meaningful mapping
+</p>
+
 <img class="image" src="/images/projects/pianocktail/prototype_demo.png" alt="Physical Pianocktail prototype demonstration" class="small-image"> 
-<p class="legend" style="text-align:center; margin-top:1em;">
-<i>Pianocktail prototype demonstrated at my birthday party, where friends could experience the music-to-taste transformation firsthand.</i></p>
+
   
-I wanted to create something more sophisticated --- a system that could generate harmonious, balanced cocktails reflecting the overall character of a musical piece rather than its note-by-note composition. The result is  <a href="https://huggingface.co/spaces/ccolas/TastyPiano" target="_blank" rel="noopener noreferrer">Tasty Piano</a>, a digital pianocktail using machine learning to transform any piano composition into a unique, tailored cocktail recipe.
+I wanted to create something more sophisticated --- a system that could generate harmonious, balanced cocktails reflecting the overall character of a musical piece rather than its note-by-note composition. The result is **Le Piano Ivre**, a digital pianocktail using machine learning to transform any piano composition into a unique, tailored cocktail recipe, printed by a thermal printer.
 
 ### Desiderata for a Valid Synesthetic Experience
 
@@ -62,7 +99,7 @@ For cocktails, I collected about 600 high-quality recipes all using ingredients 
 
 ### Building Bridges Between Senses
 
-The heart of the system is the creation of a shared representational space where music and taste can meaningfully interact. Using a Latent Translation approach with a bi-modal variational autoencoder, the system learns to map between musical representations and taste representations.
+The heart of the system is the creation of a shared representational space where music and taste can meaningfully interact. Using a  <a href=" https://arxiv.org/pdf/1902.08261" target="_blank" rel="noopener noreferrer">latent translation</a> approach with a bi-modal variational autoencoder, the system learns to map between musical representations and taste representations.
 
 To guide this mapping in an intuitive direction, I defined semantic labels applicable to both domains --- such as "Cuban" for both Latin jazz and rum-mint cocktails, or "Romantic" for both Chopin nocturnes and complex, bittersweet drinks. These semantic anchors help align the two domains in ways that feel natural rather than arbitrary. After aligning the two domains in through a few constrained mapping, the trained auto-encoder encodes for a smooth generalization to every possible piece and cocktail. 
 
@@ -75,10 +112,14 @@ The result is a complete cocktail specification --- ingredients, quantities, gla
 
 ### Experience Taste-Music Synesthesia
 
-The digital version of the Pianocktail is now available for anyone to experience. By providing a YouTube URL, an audio file, or a MIDI file of piano music, you can discover what your favorite pieces taste like. Each recipe includes detailed preparation instructions, enabling you to craft these musical cocktails at home.
+The digital version of the Pianocktail is now available for anyone to experience. By providing a YouTube URL, an audio file, or a MIDI file of piano music, or recording piano from your microphone, you can discover what your favorite pieces taste like. Each recipe includes detailed preparation instructions, enabling you to craft these musical cocktails at home. 
+
+**Coming soon!**
 
 <br>
 
-<center>
-<a href="https://huggingface.co/spaces/ccolas/TastyPiano" target="_blank" rel="noopener noreferrer" class="btn">Taste Music!</a>
-</center>
+[//]: # (<center>)
+
+[//]: # (<a href="https://huggingface.co/spaces/ccolas/TastyPiano" target="_blank" rel="noopener noreferrer" class="btn">Taste Music!</a>)
+
+[//]: # (</center>)

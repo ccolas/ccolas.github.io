@@ -15,8 +15,6 @@ menu_settings:
       url: '/'
     - title: 'Fun projects'
       url: '/project/'
-    - title: 'Tangible Dreams'
-      url: '/blog/'
     - title: 'Photography'
       url: '/photographs'
     - title: 'Publications'
@@ -62,7 +60,7 @@ social_settings:
   soundcloud_url: ''
   spotify_url: 'https://open.spotify.com/user/bkayf?si=d20c664357934f21'
   bandcamp_url: ''
-  linkedin_url: ''
+  linkedin_url: 'https://www.linkedin.com/in/cedriccolas/'
 
 color_settings:
   background_color: '#010138'              # Deep oceanic blue-black
