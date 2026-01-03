@@ -19,7 +19,7 @@ Each universe is encoded by a specific **Compositional Pattern Producing Network
 
 <img class="small-image" src="/images/projects/cppnworld/cppn2.png" alt=""/>
 <p class="legend">
-<i><b>Generating an image from a CPPN.</b> For each pixel (x, y) of a 2D image, the CPPN computes a corresponding color. (From the <a href="http://eplex.cs.ucf.edu/papers/stanley_gpem07.pdf" target="_blank" rel="noopener noreferrer">original paper</a>).</i></p>
+<i><b>Generating an image from a CPPN.</b> For each pixel (x, y) of a 2D image, the CPPN computes a corresponding color. (From the <a href="https://gwern.net/doc/ai/nn/fully-connected/2007-stanley.pdf" target="_blank" rel="noopener noreferrer">original paper</a>).</i></p>
 
 What makes CPPNs particularly powerful is that they don't just map pixels independently --- they create coherent patterns respecting spatial relationships. Each universe defined by a CPPN contains an infinite space of colors with internally consistent patterns and structures. When we apply the CPPN to a specific set of coordinates, we're essentially opening a window to that mathematical universe, revealing what exists at that particular point in the computed space.
 

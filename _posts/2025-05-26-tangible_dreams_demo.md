@@ -25,7 +25,7 @@ A CPPN generates an image by mapping each pixel's coordinates—(x, y), distance
   </div>
   <figcaption style="margin-top: 20px">
     For each pixel (x, y) of a 2D image, the CPPN computes a corresponding color (here only a grey level, left). It does so by composing simple mathematical functions to build complex ones (right).
-    <a href="http://eplex.cs.ucf.edu/papers/stanley_gpem07.pdf" target="_blank" rel="noopener noreferrer">source 1</a>, 
+    <a href="https://gwern.net/doc/ai/nn/fully-connected/2007-stanley.pdf" target="_blank" rel="noopener noreferrer">source 1</a>, 
     <a href="https://towardsdatascience.com/understanding-compositional-pattern-producing-networks-810f6bef1b88" target="_blank" rel="noopener noreferrer">source 2</a>.
   </figcaption>
 </figure>
