@@ -9,6 +9,10 @@ featured_image: '/images/projects/pianocktail/pianocktail.jpg'
 <p class="legend" style="text-align:center; margin-top:1em;">
 <i>Pianocktail from Cie La Rumeur.</i></p>
 
+<center>
+<a href="https://cedriccolas.com/piano-ivre-synesthesia/" target="_blank" rel="noopener noreferrer" class="btn">Recordings & Recipes</a>
+</center>
+
 <br>
 
 [//]: # (<center>)

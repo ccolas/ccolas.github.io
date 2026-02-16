@@ -1,31 +1,33 @@
 ---
 title: 'Wikipedia Visual Exploration'
 date: 2018-06-17 00:00:00
-description: Take a random walk in Wikipedia, one image a day.
+description: A random walk through Wikipedia, one illustration a day.
 featured_image: '/images/projects/wiki/wikipedia.webp'
 ---
 
 <img class="image" src="/images/projects/wiki/wikipedia.webp" alt=""/>
-<p class="legend">
-<i></i></p>
 
 <center>
-<a href="https://github.com/ccolas/wiki-calendar" target="_blank" rel="noopener noreferrer" class="btn">Code</a>
+<a href="https://x.com/wiki_voyager" target="_blank" rel="noopener noreferrer" class="btn">@wiki_voyager on X</a>
+<a href="https://github.com/ccolas/wiki_voyager" target="_blank" rel="noopener noreferrer" class="btn">Code</a>
 </center>
 
-The _**Wikipedia Visual Exploration**_ project embarks you on a _visual random exploration_ of Wikipedia. 
+Wikipedia is perhaps the most successful collaborative project on the Internet. Millions of contributors, millions of articles, covering almost everything. The problem isn't access, but where to start.
 
-Wikipedia is the result of the massive collaborative efforts of millions of Wikipedians --- perhaps the most successful collaborative project on the Internet. There, you can learn about almost everything, **EVERYTHING**. Scary, isn't it?
+So we start somewhere, anywhere. And we walk.
 
-When confronted to immensity, one can feel paralysed. Where should we start?
+_**Wikipedia Visual Exploration**_ is a random walk through Wikipedia. Each day, an autonomous bot follows a link from the previous day's page, writes a short thread about what it finds, and generates an original illustration. One step per day, one topic per day, forever.
 
-Well, we can start somewhere, anywhere. From there, we take a small step, in any direction. Then, another one. 
+### The Twitter bot
 
-This project proposes such random explorations of Wikipedia. Starting from the <a href="https://en.wikipedia.org/wiki/Wikipedia" target="_blank" rel="noopener noreferrer">Wikipedia page</a>, it takes a new step every day. Each day, it enters one of the links contained in the previous page and jumps to another, semantically related topic. Each day, it illustrates the topic with a corresponding image taken from a Google search. One after the other, for a year.
+The bot posts daily on X at <a href="https://x.com/wiki_voyager" target="_blank" rel="noopener noreferrer">@wiki_voyager</a>. It picks which link to follow, writes its own commentary, and generates each illustration in a consistent risograph-inspired style. The walk is genuinely random; it drifts from physics to jazz to colonial history without a plan.
 
-My sister <a href="https://julieecolas.com/">Julie Colas</a> gave a cool physical form of this project: a paper tear-off calendar!
+### The calendar (v1)
+
+The original version of this project ran for a full year, illustrating each day's topic with an image found via Google search. My sister <a href="https://www.instagram.com/julieecolas/"  target="_blank" rel="noopener noreferrer">Julie Colas</a> turned it into a physical tear-off calendar.
 
 <br>
+
 
 <div class="image-pair">
   <img class="image" src="/images/projects/wiki/P1060463.webp">

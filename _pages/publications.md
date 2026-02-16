@@ -30,32 +30,33 @@ Received the PhD Thesis Award 2022 from the French AI association.
 #### Intrinsically Motivated Open-Ended Learning
 
 * Gaven, L., Carta, T., Romac, C., **Colas, C.**, Lamprier, S., Sigaud, O., & Oudeyer, P-Y. (2025).  
- --- *<a href="https://arxiv.org/pdf/2502.07709" target="_blank" rel="noopener noreferrer">MAGELLAN: Metacognitive Predictions of Learning Progress Guide Autotelic LLM Agents in Large Goal Spaces.</a>* ICML 2025.
+ --- *<a href="https://arxiv.org/pdf/2502.07709" target="_blank" rel="noopener noreferrer">MAGELLAN: Metacognitive Predictions of Learning Progress Guide Autotelic LLM Agents in Large Goal Spaces.</a>* ICML.
 * Pourcel, J., **Colas, C.**, Oudeyer, P-Y. & Teodorescu, L. (2023).  
- --- *<a href="https://arxiv.org/pdf/2310.10692.pdf" target="_blank" rel="noopener noreferrer">ACES: Generating Diverse Programming Puzzles with Autotelic Language Models and Semantic Descriptors.</a>* NeurIPS 2024.
+ --- *<a href="https://arxiv.org/pdf/2310.10692.pdf" target="_blank" rel="noopener noreferrer">ACES: Generating Diverse Programming Puzzles with Autotelic Language Models and Semantic Descriptors.</a>* NeurIPS.
 * Du, Y., Watkins, O., Wang, Z., **Colas, C.**, Darrell, T., Abbeel, P., Gupta, A. & Andreas, J. (2023).  
---- *<a href="https://arxiv.org/pdf/2302.06692.pdf" target="_blank" rel="noopener noreferrer">Guiding Pretraining in Reinforcement Learning with Large Language Models.</a>* ICML 2023.
+--- *<a href="https://arxiv.org/pdf/2302.06692.pdf" target="_blank" rel="noopener noreferrer">Guiding Pretraining in Reinforcement Learning with Large Language Models.</a>* ICML.
 * **Colas, C.**, Teodorescu, L., Oudeyer, P.-Y., Xingdi Y. & Côté M-A. (2023).  
---- *<a href="https://arxiv.org/pdf/2305.12487.pdf" target="_blank" rel="noopener noreferrer">Augmenting Autotelic Agents with Large Language Models.</a>* CoLLAs 2023.
+--- *<a href="https://arxiv.org/pdf/2305.12487.pdf" target="_blank" rel="noopener noreferrer">Augmenting Autotelic Agents with Large Language Models.</a>* CoLLAs.
 * **Colas, C.**, Karch, T., Lair, N., Dussoux, J. M., Moulin-Frier, C., Dominey, P. F., & Oudeyer, P. Y. (2020).  
---- *<a href="https://arxiv.org/pdf/2002.09253.pdf" target="_blank" rel="noopener noreferrer">Language as a Cognitive Tool to Imagine Goals in Curiosity-Driven Exploration.</a>* NeurIPS 2020.  
+--- *<a href="https://arxiv.org/pdf/2002.09253.pdf" target="_blank" rel="noopener noreferrer">Language as a Cognitive Tool to Imagine Goals in Curiosity-Driven Exploration.</a>* NeurIPS.  
 [<a href="https://slideslive.com/38937386/language-as-a-cognitive-tool-to-imagine-goals-in-curiosity-driven-exploration?ref=speaker-28788-popular" target="_blank" rel="noopener noreferrer">Talk</a>] [<a href="https://github.com/flowersteam/imagine" target="_blank" rel="noopener noreferrer">Code</a>].
 * **Colas, C.**, Sigaud, O., Oudeyer, P. Y. (2018).  
---- *<a href="https://arxiv.org/abs/1810.06284" target="_blank" rel="noopener noreferrer">CURIOUS: Intrinsically Motivated Modular Multi-Goal Reinforcement Learning.</a>* ICML 2019.  
+--- *<a href="https://arxiv.org/abs/1810.06284" target="_blank" rel="noopener noreferrer">CURIOUS: Intrinsically Motivated Modular Multi-Goal Reinforcement Learning.</a>* ICML.  
 [<a href="https://www.youtube.com/watch?v=SLYeRDpWa5k" target="_blank" rel="noopener noreferrer">Video</a>] [<a href="https://youtube.videoken.com/embed/v-W4JSWUX28?tocitem=24" target="_blank" rel="noopener noreferrer">Talk</a>] [<a href="https://github.com/flowersteam/curious" target="_blank" rel="noopener noreferrer">Code</a>].
 
 <br>
 
 #### Social and Cultural Learning
-* **Colas, C.**, Mills, T., Prystawski, B., Tessler, M. H., Goodman, N., Andreas, J. & Tenenbaum, J. B. (2025).
---- *<a href="https://arxiv.org/pdf/2509.00074" target="_blank" rel="noopener noreferrer">Language and Experience: A Computational Model of Social Learning in Complex Tasks</a>*. CogSci 2025.
-
+* **Colas, C.**, Mills, T., Prystawski, B., Tessler, M. H., Goodman, N., Andreas, J. & Tenenbaum, J. B. (2025).  
+--- *<a href="https://arxiv.org/pdf/2509.00074" target="_blank" rel="noopener noreferrer">Language and Experience: A Computational Model of Social Learning in Complex Tasks</a>*. CogSci, ICLR.   
+[<a href="../demos/language_and_experience" target="_blank" rel="noopener noreferrer">Demo</a>].
 <br>
 
 #### Language Model Reasoning
-* Pourcel J., **Colas, C.**, & Oudeyer, P-Y. (2025).
---- *<a href="https://arxiv.org/pdf/2507.14172?" target="_blank" rel="noopener noreferrer">Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI</a>*. ICML 2025. <a href="https://arcprize.org/competitions/2025/" target="_blank" rel="noopener noreferrer">ARC-AGI - 2nd paper prize</a>. <a href="https://www.youtube.com/watch?v=9lIuoslCHWI" target="_blank" rel="noopener noreferrer">Video</a>.
-* Zhang C. E., **Colas, C.**, Poesia, G., Tenenbaum, J. B., & Andreas, J. (2025).
+* Pourcel J., **Colas, C.**, & Oudeyer, P-Y. (2025).   
+--- *<a href="https://arxiv.org/pdf/2507.14172?" target="_blank" rel="noopener noreferrer">Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI</a>*. ICML.   
+[<a href="https://arcprize.org/competitions/2025/" target="_blank" rel="noopener noreferrer">ARC-AGI - 2nd paper prize</a>] [<a href="https://www.youtube.com/watch?v=9lIuoslCHWI" target="_blank" rel="noopener noreferrer">Video</a>].
+* Zhang C. E., **Colas, C.**, Poesia, G., Tenenbaum, J. B., & Andreas, J. (2025).   
 --- *<a href="https://arxiv.org/pdf/2510.20909" target="_blank" rel="noopener noreferrer">Code-enabled language models can outperform reasoning models on diverse tasks</a>*. preprint.
 
 <br>
@@ -72,7 +73,7 @@ Received the PhD Thesis Award 2022 from the French AI association.
 * **Colas, C.**, Karch, T., Sigaud, O. & Oudeyer, P-Y.  (2021).  
 --- *<a href="https://arxiv.org/abs/2012.09830" target="_blank" rel="noopener noreferrer">Autotelic Agents with Intrinsically Motivated Goal-Conditioned Reinforcement Learning: a Short Survey.</a>* Journal of AI Research.
 * Portelas, R., **Colas, C.**, Weng, L., Hofmann, K., Oudeyer, P. Y. (2020).  
---- *<a href="https://arxiv.org/abs/2003.04664" target="_blank" rel="noopener noreferrer">Automatic Curriculum Learning For Deep RL: A Short Survey.</a>* IJCAI 2020.  
+--- *<a href="https://arxiv.org/abs/2003.04664" target="_blank" rel="noopener noreferrer">Automatic Curriculum Learning For Deep RL: A Short Survey.</a>* IJCAI.  
 [<a href="https://www.youtube.com/watch?v=MnvhEJIme6k&t=16s" target="_blank" rel="noopener noreferrer">Talk</a>].
 
 <br>
