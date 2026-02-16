@@ -152,7 +152,7 @@ var JspsychVGDLGameDemo = (function (jspsych) {
                 <button id="retry" class="jspsych-btn">Retry</button>
             </div>
         </div>
-      <div id='game-body' class='Flex-Container' style="width: 50%; display: flex; align-items: center; justify-content: flex-start;">
+      <div id='game-body' class='Flex-Container' style="display: flex; align-items: center; justify-content: center;">
         <div id="gjs-loader" style="color: rgba(224, 224, 255, 0.6);">
           <progress max=1 min=0 steps=0.1></progress>
           <br/>Loading...
@@ -167,7 +167,7 @@ var JspsychVGDLGameDemo = (function (jspsych) {
         <div id="message-output"
             style="margin-top: 15px; display: none;
                     padding: 12px; border-radius: 8px;
-                    max-width: 800px; margin-left: auto; margin-right: auto; font-size: 15px;
+                    max-width: 500px; margin-left: auto; margin-right: auto; font-size: 15px;
                     line-height: 1.3;">
         </div>
         <br>
