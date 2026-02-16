@@ -1,0 +1,18 @@
+BasicGame
+    SpriteSet
+    	floor > Immovable img=colors/LIGHTGRAY
+        apple > Immovable img=colors/GREEN
+        avatar > MovingAvatar img=colors/DARKBLUE speed=1
+        wall > Immovable img=colors/DARKGRAY
+    LevelMapping
+        . > floor
+        a > floor apple
+        w > floor wall
+        A > floor avatar
+    InteractionSet
+        apple avatar > killSprite scoreChange=1
+        avatar wall > stepBack
+    TerminationSet
+        SpriteCounter stype=avatar  limit=0 win=False
+        SpriteCounter stype=apple limit=0 win=True
+        Timeout limit=3000 win=False
