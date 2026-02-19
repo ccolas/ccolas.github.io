@@ -1,6 +1,6 @@
 ---
 title: Hello!
-featured_image: '/images/logo.png'
+featured_image: '/images/og-banner.png'
 ---
 
 <img class="about-photo" src="/images/general/me.jpeg" alt="Portrait photo of Cédric Colas"/>
