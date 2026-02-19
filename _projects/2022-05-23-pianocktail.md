@@ -5,14 +5,12 @@ description: A machine learning approach to taste-music synesthesia, inspired by
 featured_image: '/images/projects/pianocktail/piano_ivre_square.png'
 ---
 
-<img class="image" src="/images/projects/pianocktail/piano_ivre.png"  class="responsive-image">>
+<img class="responsive-image" src="/images/projects/pianocktail/piano_ivre.png" alt="Le Piano Ivre - taste music synesthesia">
 
 <center>
 <a href="https://cedriccolas.com/piano-ivre-synesthesia/" target="_blank" rel="noopener noreferrer" class="btn">Recordings & Recipes</a>
 <a href="https://piano-ivre.cedriccolas.com" target="_blank" rel="noopener noreferrer" class="btn">Demo</a>
 </center>
-
-<br>
 
 [//]: # (<center>)
 
@@ -33,46 +31,18 @@ In **L'Écume des Jours**, the French author, jazz musician, singer, and enginee
 
 What if we could actually create such a bridge between auditory and gustatory experiences? What if the melancholy of Chopin could be tasted, or the playfulness of Gershwin could be sipped?
 
-<br>
-
-<p style="text-align:center; font-style:italic; margin-bottom:8px;">
-  Here is a little demo!
-</p>
-
-<div
-  style="
-    width:525px;
-    height:840px;
-    overflow:hidden;
-    margin:0 auto -200px auto;
-  "
->
-  <video
-    width="525"
-    height="900"
-    controls
-    preload="metadata"
-    style="
-      display:block;
-      position:relative;
-      top:-270px;
-    "
-  >
-    <source src="/images/projects/pianocktail/piano_ivre.mp4" type="video/mp4">
-  </video>
-</div>
+<video width="100%" controls preload="metadata" style="max-width:700px;">
+  <source src="/images/projects/pianocktail/piano_ivre_demo_1080.mp4" type="video/mp4">
+</video>
+<p class="caption">A little demo!</p>
 
 
 ### Beyond One-Note-One-Drop
 
 Previous attempts to realize Vian's invention have typically used mechanical approaches --- mapping individual piano keys to specific ingredients; a few drops with each keystroke. While these <a href="https://www.youtube.com/watch?v=B9OYBkBXNi4" target="_blank" rel="noopener noreferrer">physical implementations</a> are impressive engineering feats, they typically produce "graveyard cocktails" --- chaotic mixtures containing traces of every ingredient corresponding to the notes used in the piece.
 
-<br>
-<p style="text-align:center; font-style:italic; margin-bottom:8px;">
-  Older prototype with cocktail machine but less meaningful mapping
-</p>
-
-<img class="image" src="/images/projects/pianocktail/prototype_demo.png" alt="Physical Pianocktail prototype demonstration" class="small-image"> 
+<img class="small-image" src="/images/projects/pianocktail/prototype_demo.png" alt="Physical Pianocktail prototype demonstration">
+<p class="caption">Older prototype with cocktail machine but less meaningful mapping</p>
 
   
 I wanted to create something more sophisticated --- a system that could generate harmonious, balanced cocktails reflecting the overall character of a musical piece rather than its note-by-note composition. The result is **Le Piano Ivre**, a digital pianocktail using machine learning to transform any piano composition into a unique, tailored cocktail recipe, printed by a thermal printer.
@@ -93,8 +63,7 @@ These principles guided the development of a sophisticated system that goes far 
 The system begins by learning to understand music. I collected 30,000 MIDI files of piano compositions and trained a self-supervised transformer model to embed musical pieces using techniques from natural language processing, including a specialized tokenizer, BERT with note-wise masking, and SentenceBERT fine-tuning. The system learns to embed musical structure, style, and emotion in a high-dimensional space. The following figure shows projections of the learned embeddings: pieces from the same composer cluster together in a meaningful way, and nearest neighbors of a piece often are pieces from the same composer!
 
 <img class="image" src="/images/projects/pianocktail/tsne_b128_r768_represented.png"  class="small-image">
-<p class="legend">
-<i>T-SNE visualization of the music representation space, showing how different composers and genres naturally cluster together.</i></p>
+<p class="caption">T-SNE visualization of the music representation space, showing how different composers and genres naturally cluster together.</p>
 
 ### The Language of Taste
 
@@ -115,9 +84,7 @@ The result is a complete cocktail specification --- ingredients, quantities, gla
 
 ### Experience Taste-Music Synesthesia
 
-The digital version of the Pianocktail is now available for anyone to experience. By providing a YouTube URL, an audio file, or a MIDI file of piano music, or recording piano from your microphone, you can discover what your favorite pieces taste like. Each recipe includes detailed preparation instructions, enabling you to craft these musical cocktails at home. 
-
-<br>
+The digital version of the Pianocktail is now available for anyone to experience. By providing a YouTube URL, an audio file, or a MIDI file of piano music, or recording piano from your microphone, you can discover what your favorite pieces taste like. Each recipe includes detailed preparation instructions, enabling you to craft these musical cocktails at home.
 
 [//]: # (<center>)
 

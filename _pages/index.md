@@ -2,23 +2,10 @@
 title: About me
 ---
 
-<br>
-<br>
-
-<style>
-.image {
-    width: 100%;
-    margin-bottom: 2em;
-    max-width: 600px; /* Optional: sets a maximum width */
-}
-</style>
-
-<img class="image" src="/images/general/me.jpeg" alt=""/>
+<img class="about-photo" src="/images/general/me.jpeg" alt="Portrait photo of Cédric Colas"/>
 
 
 Hi! I'm Cédric Colas, AI researcher exploring open-ended learning and computational creativity.
-
-<br>
 
 ### Research Interests
 
@@ -37,4 +24,3 @@ Beyond my research, I explore creative applications of algorithms through variou
 See some of these explorations <a href="/project/index.html" target="_blank" rel="noopener noreferrer"  >here</a>.
 
 
-<br>

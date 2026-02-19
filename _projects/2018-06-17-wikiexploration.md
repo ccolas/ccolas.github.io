@@ -5,7 +5,7 @@ description: A random walk through Wikipedia, one illustration a day.
 featured_image: '/images/projects/wiki/wikipedia.webp'
 ---
 
-<img class="image" src="/images/projects/wiki/wikipedia.webp" alt=""/>
+<img class="image" src="/images/projects/wiki/wikipedia.webp" alt="Wikipedia Visual Exploration project preview"/>
 
 <center>
 <a href="https://x.com/wiki_voyager" target="_blank" rel="noopener noreferrer" class="btn">@wiki_voyager on X</a>
@@ -25,8 +25,6 @@ The bot posts daily on X at <a href="https://x.com/wiki_voyager" target="_blank"
 ### The calendar (v1)
 
 The original version of this project ran for a full year, illustrating each day's topic with an image found via Google search. My sister <a href="https://www.instagram.com/julieecolas/"  target="_blank" rel="noopener noreferrer">Julie Colas</a> turned it into a physical tear-off calendar.
-
-<br>
 
 
 <div class="image-pair">

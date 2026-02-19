@@ -17,19 +17,15 @@ These visual universes aren't just random --- they're evolved through a process 
 
 Each universe is encoded by a specific **Compositional Pattern Producing Networks** (CPPNs): a mathematical functions mapping spatial coordinates to colors. In my implementation, CPPNs transform GPS coordinates (latitude, longitude, altitude) along with local positional data (x, y, z) into RGB color values.
 
-<img class="small-image" src="/images/projects/cppnworld/cppn2.png" alt=""/>
-<p class="legend">
-<i><b>Generating an image from a CPPN.</b> For each pixel (x, y) of a 2D image, the CPPN computes a corresponding color. (From the <a href="https://gwern.net/doc/ai/nn/fully-connected/2007-stanley.pdf" target="_blank" rel="noopener noreferrer">original paper</a>).</i></p>
+<img class="small-image" src="/images/projects/cppnworld/cppn2.png" alt="Generating an image from a CPPN"/>
+<p class="caption"><b>Generating an image from a CPPN.</b> For each pixel (x, y) of a 2D image, the CPPN computes a corresponding color. (From the <a href="https://gwern.net/doc/ai/nn/fully-connected/2007-stanley.pdf" target="_blank" rel="noopener noreferrer">original paper</a>).</p>
 
 What makes CPPNs particularly powerful is that they don't just map pixels independently --- they create coherent patterns respecting spatial relationships. Each universe defined by a CPPN contains an infinite space of colors with internally consistent patterns and structures. When we apply the CPPN to a specific set of coordinates, we're essentially opening a window to that mathematical universe, revealing what exists at that particular point in the computed space.
 
 Under the hood, CPPNs are computational graphs where each node processes its inputs (either coordinates or outputs from previous nodes) through an activation function:
 
-<img class="smaller-image" src="/images/projects/cppnworld/cppn.png" alt=""/>
-<center>
-<p class="legend">
-<i><b>CPPN as computational graphs.</b> (From <a href="https://towardsdatascience.com/understanding-compositional-pattern-producing-networks-810f6bef1b88" target="_blank" rel="noopener noreferrer">this post</a>).
-</i></p></center>
+<img class="smaller-image" src="/images/projects/cppnworld/cppn.png" alt="CPPN computational graph diagram"/>
+<p class="caption"><b>CPPN as computational graphs.</b> (From <a href="https://towardsdatascience.com/understanding-compositional-pattern-producing-networks-810f6bef1b88" target="_blank" rel="noopener noreferrer">this post</a>).</p>
 
 
 These functions can include waves, symmetrical patterns, or threshold operations --- each contributing different visual elements to the final output. The combination of these functions creates the intricate patterns seen in the generated worlds.

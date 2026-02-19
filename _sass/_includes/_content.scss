@@ -51,20 +51,20 @@
 
 .single {
 	margin-top: 0;
-	padding: 20px 0;
+	padding: 10px 0;
 	background: $background-alt-color;
 	min-height: 100vh;
 
 	@include mq(tabletp) {
-		padding: 40px 0;
+		padding: 20px 0;
 	}
 
 	@include mq(tabletl) {
-		padding: 40px $grid-spacing;
+		padding: 20px $grid-spacing;
 	}
 
 	@include mq(laptop) {
-		padding: 60px $grid-spacing;
+		padding: 30px $grid-spacing;
 	}
 
 	h1, h2, h3, h4, h5, h6, p, ul, ol {
@@ -119,8 +119,12 @@
 		padding: 0;
 	}
 
-	p a {
-		font-weight: $bold-weight;
+	p a,
+	li a {
+		font-weight: inherit;
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 2px;
 	}
 
 	p .button {
@@ -297,25 +301,26 @@
 	}
 }
 
-.image-wrap,
-.video-wrap {
+.image-wrap {
 	position: relative;
-	margin: 20px auto;
+	margin: 2em auto 2.5em;
 
-	@include mq(tabletp) {
-		margin: 30px auto;
-	}
-
-	@include mq(laptop) {
-		margin: 40px auto;
-	}
-
-	&:first-child {
-		margin-top: 0;
+	+ .caption, + p.caption, + p.legend {
+		margin-top: -2.2em;
 	}
 }
 
-.image-wrap img {
+.video-wrap {
+	position: relative;
+	margin: 2em auto 2.5em;
+
+	+ .caption, + p.caption, + p.legend {
+		margin-top: -2.2em;
+	}
+}
+
+.image-wrap img,
+.video-wrap img {
 	margin: 0 auto;
 }
 
@@ -335,44 +340,48 @@
 	}
 }
 
-.image {
+.single video {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
-  width: 65%;
+  margin: 2em auto 2.5em;
 
-  //@include mq(tabletp) {
-  //  width: 40%;
-  //}
-  //
-  //@include mq(laptop) {
-  //  width: 65%;
-  //}
+  + .caption, + p.caption, + p.legend {
+    margin-top: -2.2em;
+  }
 }
 
-.responsive-image {
+// Shared base for all content images and media
+.image,
+.responsive-image,
+.small-image,
+.smaller-image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;  // Full width on mobile (smallest screens)
-  max-width: calc(100% - 20px);  // Minimal margin on mobile
+  margin: 2em auto 2.5em;
 
-  @include mq(tabletp) {
-    width: 90%;  // Slightly reduced on tablets
+  // Tighten bottom margin when a caption follows
+  + .caption, + p.caption, + p.legend {
+    margin-top: -2.2em;
   }
+}
 
-  @include mq(tabletl) {
-    width: 80%;  // Further reduced on larger tablets
-  }
+.image { width: 65%; }
+.small-image { width: 40%; }
+.smaller-image { width: 20%; }
 
-  @include mq(laptop) {
-    width: 70%;  // 70% width on laptops as requested
-  }
+.responsive-image {
+  width: 100%;
+  max-width: calc(100% - 20px);
 
-  @media (min-width: 2000px) {  // 4K resolution threshold
-    width: 90%;  // 90% width on 4K screens as requested
-  }
+  @include mq(tabletp) { width: 90%; }
+  @include mq(tabletl) { width: 80%; }
+  @include mq(laptop) { width: 70%; }
+  @media (min-width: 2000px) { width: 90%; }
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2em;
 }
 
 .image-pair {
@@ -381,20 +390,18 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
-  margin-bottom: 1em;
+  margin: 0 auto 5px;
   width: 100%;
 
   img {
     height: auto;
-    width: calc(40% - 10px); // Each image takes half the space minus gap
-    max-height: 70vh; // Limit height to 70% of viewport height
+    width: calc(40% - 10px);
+    max-height: 70vh;
     object-fit: contain;
   }
 
-  // On very small screens, stack them
   @media (max-width: 480px) {
     flex-direction: column;
-
     img {
       width: 100%;
       max-width: calc(100% - 20px);
@@ -406,8 +413,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 900px; /* Constrain maximum width */
-  margin: 0 auto 20px auto; /* Center the container */
+  max-width: 900px;
+  margin: 0 auto 5px;
 }
 
 .image-pair-equal-height {
@@ -415,63 +422,22 @@
   justify-content: center;
   gap: 20px;
   width: 100%;
-}
 
-.image-pair-equal-height img {
-  height: 300px; /* Fixed same height for both images */
-  max-width: calc(50% - 10px); /* Ensure each image takes up to half the container width */
-  object-fit: contain; /* Ensures entire image is visible */
-}
+  img {
+    height: 300px;
+    max-width: calc(50% - 10px);
+    object-fit: contain;
+  }
 
-.image-pair-figure figcaption {
-  width: 100%;
-  text-align: center;
-  font-style: italic;
-  margin-top: 8px;
-}
-
-/* On mobile devices */
-@media (max-width: 768px) {
-  .image-pair-equal-height {
+  @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    img {
+      max-width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
   }
-
-  .image-pair-equal-height img {
-    max-width: 100%;
-    height: auto; /* Height becomes auto on mobile */
-    max-height: 300px; /* Maximum height on mobile */
-  }
-}
-
-.small-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-
-  //@include mq(tabletp) {
-  //  width: 60%;
-  //}
-  //
-  //@include mq(laptop) {
-  //  width: 40%;
-  //}
-}
-
-.smaller-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-
-  //@include mq(tabletp) {
-  //  width: 30%;
-  //}
-  //
-  //@include mq(laptop) {
-  //  width: 20%;
-  //}
 }
 
 .row {
@@ -494,30 +460,82 @@
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin: 4px 2px;
+  margin: 1.5em 2px 20px 2px;
   cursor: pointer;
   border-radius: 12px;
   &:hover {
-    background-color: adjust-hue($accent-color, 15%); // or a specific color like #ff5fa6
-    color: white; // optional: for contrast on hover
+    background-color: adjust-hue($accent-color, 15%);
+    color: white;
   }
 }
 
-
-.legend {
+.single p.legend,
+.single p.caption,
+.single figcaption.caption,
+p.legend,
+p.caption,
+figcaption.caption {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: small;
-  width: 60%;
-
-  //@include mq(tabletp) {
-  //  width: 70%;
-  //}
-  //
-  //@include mq(laptop) {
-  //  width: 50%;
-  //}
+  margin: 0 auto 2.5em;
+  font-size: 0.85em;
+  font-style: italic;
+  text-align: left;
+  width: fit-content;
+  max-width: 60%;
+  font-weight: 300;
 }
 
 .MathJax { font-weight: 100 !important; }
+
+// Collapsible publication sections
+details {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.5em;
+
+	@include mq(tabletl) {
+		max-width: 70%;
+	}
+
+	@include mq(laptop) {
+		max-width: 90%;
+	}
+
+	summary {
+		cursor: pointer;
+		padding: 0.4em 0;
+		list-style: none;
+
+		&::-webkit-details-marker {
+			display: none;
+		}
+
+		&::before {
+			content: '▸ ';
+			display: inline;
+			font-size: 0.8em;
+			transition: transform 0.2s;
+		}
+
+		h4 {
+			margin: 0;
+			max-width: 100%;
+		}
+	}
+
+	&[open] > summary::before {
+		content: '▾ ';
+	}
+
+	ul {
+		max-width: 100%;
+	}
+}
+
+.section-description {
+	font-style: italic;
+	font-size: 0.9em;
+	opacity: 0.75;
+	margin: 0.3em 0 0.8em;
+	max-width: 100%;
+}

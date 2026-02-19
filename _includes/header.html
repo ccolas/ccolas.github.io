@@ -2,31 +2,17 @@
 
 	<div class="header__content">
 
-		{% if site.data.settings.header_settings.logo_image %}
-<!--        <a href="/" class="header__title_bis">-->
-<!--            {{ site.data.settings.basic_settings.site_title }}-->
-<!--        </a>-->
-
-<!--		<a href="{{ site.baseurl }}/" class="header__logo">-->
-<!--			<img src="{{ site.data.settings.header_settings.logo_image | relative_url }}" class="header__logo__img">-->
-<!--		</a>-->
-<!--		<center>-->
 		<a href="/" class="header__title">
 			{{ site.data.settings.basic_settings.site_title }}
 		</a>
-        <a href="{{ site.baseurl }}/">
-            <img src="{{ site.data.settings.header_settings.logo_image | relative_url }}" class="header__logo__img">
-        </a>
-<!--        </center>-->
 
-		{% else %}
-		<a href="/" class="header__title">
-			{{ site.data.settings.basic_settings.site_title }}
+		{% if site.data.settings.header_settings.logo_image %}
+		<a href="{{ site.baseurl }}/">
+			<img src="{{ site.data.settings.header_settings.logo_image | relative_url }}" class="header__logo__img" alt="{{ site.data.settings.basic_settings.site_title }} logo">
 		</a>
 		{% endif %}
 
-
-        <h1 class="header__tagline">{{ site.data.settings.basic_settings.site_tagline }}</h1>
+		<h1 class="header__tagline">{{ site.data.settings.basic_settings.site_tagline }}</h1>
 
 		<div class="menu">
 			<div class="menu__toggle js-menu-toggle">
@@ -43,23 +29,12 @@
 			</div>
 		</div>
 
-<!--		<div class="projects-menu">-->
-<!--			<ul class="menu__list">-->
-<!--				{% for project in site.projects reversed %}-->
-<!--				<li class="menu__list__item">-->
-<!--					<a href="{{ project.url | relative_url }}" class="menu__list__item__link">{{ project.title }}</a>-->
-<!--				</li>-->
-<!--				{% endfor %}-->
-<!--			</ul>-->
-<!--		</div>-->
-
 		<div class="header__lower">
 
 			{% include socials.html %}
 
 			<div class="footer__copyright">
 				<span>© {{ 'now' | date: "%Y" }} {{ site.data.settings.basic_settings.site_title }}</span>
-				<a href="https://jekyllthemes.io" target="_blank">Jekyll Themes</a>
 			</div>
 
 		</div>

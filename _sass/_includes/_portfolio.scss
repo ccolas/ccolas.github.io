@@ -24,20 +24,29 @@
 	position: relative;
 	display: block;
 
-	@include mq(tabletl) {
+	&:hover {
 
-		&:hover {
+		.portfolio-item__content {
+			background: rgba($accent-color, 0.6);
+			align-items: center;
+			justify-content: center;
+		}
 
-			.portfolio-item__content {
-				opacity: 1;
-				visibility: visible;
-			}
+		.portfolio-item__info {
+			text-align: center;
 		}
 	}
 }
 
 .portfolio-item__image {
 	width: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+
+	img {
+		display: block;
+		width: 100%;
+	}
 }
 
 .portfolio-item__content {
@@ -47,17 +56,20 @@
 	bottom: 0;
 	left: 0;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba($overlay-background-color, $overlay-opacity);
+	align-items: flex-end;
+	justify-content: flex-start;
+	background: linear-gradient(to top, rgba($overlay-background-color, 0.85) 0%, rgba($overlay-background-color, 0) 60%);
+	padding: 20px;
+	border-radius: 8px;
 
-	opacity: 0;
-	visibility: hidden;
-	@include transition(all 0.2s ease-in-out);
+	opacity: 1;
+	visibility: visible;
+	@include transition(background 0.3s ease-in-out);
 }
 
 .portfolio-item__info {
-	text-align: center;
+	text-align: left;
+	@include transition(all 0.2s ease-in-out);
 }
 
 .portfolio-item__title {

@@ -16,13 +16,8 @@ The dirty mixer works by imperfectly combining video signals, creating glitches 
 
 It seems that it's primarily affected by the analog VHS signal, the digital to analog source does not merge very well with the analog signal here; it would likely work better with two analog inputs, but the digital/analog combination still produced cool results.
 
-<br>
-
-<center>
-<video width="80%" controls style="max-width:700px; margin:0 auto; display:block;">
+<video width="80%" controls style="max-width:700px;">
   <source src="/images/projects/dirty_mixer/dirty_mixer.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-<p class="legend" style="text-align:center; margin-top:1em;">
-<i>The dirty mixer in action, creating glitchy video effects</i></p>
-</center>
+<p class="caption">The dirty mixer in action, creating glitchy video effects</p>
