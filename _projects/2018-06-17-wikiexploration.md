@@ -3,7 +3,7 @@ title: 'Wikipedia Visual Exploration'
 subtitle: 'Taking a stroll through the web of human knowledge'
 date: 2018-06-17 00:00:00
 description: A random walk through Wikipedia, one illustration a day.
-featured_image: '/images/projects/wiki/wikipedia.webp'
+featured_image: '/images/projects/wiki/wiki_voyager_profile.png'
 ---
 
 <center>
