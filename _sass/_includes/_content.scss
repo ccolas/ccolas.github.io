@@ -168,6 +168,8 @@
 		font-size: $p-small*0.85;
 		line-height: $p-lineheight;
 		overflow: auto;
+		border: 1.5px solid $accent-color;
+		border-radius: 12px;
 
 		@include mq(tabletp) {
 			font-size: $p-medium*0.85;
