@@ -1,5 +1,6 @@
 ---
 title: 'Breeding Visual Universes'
+subtitle: 'Evolving worlds of colors'
 date: 2022-03-20 00:00:00
 description: Creating and evolving algorithmic universes of color through computational evolution.
 featured_image: '/images/projects/cppnworld/id1.jpg'

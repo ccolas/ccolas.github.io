@@ -1,5 +1,6 @@
 ---
 title: 'Light Impressions'
+subtitle: 'Long exposure photography'
 date: 2025-03-22 00:00:00
 description: Having fun with long exposure.
 featured_image: '/images/projects/light_impressions/img_17.webp'

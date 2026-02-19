@@ -1,5 +1,6 @@
 ---
 title: 'Evolutionary Color Search'
+subtitle: 'Visualizing evolutionary algorithms'
 date: 2022-01-11 00:00:00
 description: Exploring the intersection of evolutionary algorithms and visual patterns through color evolution.
 featured_image: '/images/projects/color_evolution/evo_18.webp'

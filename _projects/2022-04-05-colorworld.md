@@ -1,5 +1,6 @@
 ---
 title: "Chromatic Cartography"
+subtitle: 'Mapping geography to color'
 date: 2022-04-05 00:00:00
 description: Exploring the relationship between geographic coordinates and color perception through a visual mapping system.
 featured_image: '/images/projects/color_world/medley.webp'

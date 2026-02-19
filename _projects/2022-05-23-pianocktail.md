@@ -1,5 +1,6 @@
 ---
 title: 'Taste Music with Le Piano Ivre'
+subtitle: 'Music-to-cocktail synesthetic machine'
 date: 2022-05-23 00:00:00
 description: A machine learning approach to taste-music synesthesia, inspired by Boris Vian's fictional invention.
 featured_image: '/images/projects/pianocktail/piano_ivre_square.png'

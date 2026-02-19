@@ -1,5 +1,6 @@
 ---
 title: 'Tangible Dreams'
+subtitle: 'Interactive neural network installation'
 date: 2025-04-25 11:21:29
 description: "Exploring Visual Worlds Through Physical Neural Networks"
 featured_image: '/images/posts/tangible_dreams/exhibition/exhibition_004.jpg'
@@ -60,31 +61,25 @@ Each node in the network is a physical box. Cables between boxes are connections
 
 With support from the <a href="https://arts.mit.edu/camit/funding/" target="_blank" rel="noopener noreferrer">Council for the Arts at MIT (CAMIT)</a>, *Tangible Dreams* was exhibited **August 25–29, 2025** in MIT's Stata Center (R&D Commons, 4th floor).
 
-<div id="exhibition-gallery" style="
-  display:flex; overflow-x:auto; scroll-snap-type:x mandatory;
-  gap:12px; padding:10px 0; margin:2em 0;
-  -webkit-overflow-scrolling:touch;
-"></div>
+<div id="exhibition-gallery" style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:2em auto; max-width:1000px;"></div>
 
 <script>
 (function(){
-  const FOLDER = "/images/posts/tangible_dreams/exhibition/";
-  const COUNT = 14;
-  const container = document.getElementById("exhibition-gallery");
+  var FOLDER = "/images/posts/tangible_dreams/exhibition/";
+  var COUNT = 14;
+  var container = document.getElementById("exhibition-gallery");
+  var urls = [];
 
-  for(let i = 1; i <= COUNT; i++){
-    const img = document.createElement("img");
-    img.src = `${FOLDER}exhibition_${String(i).padStart(3,"0")}.jpg`;
+  for(var i = 1; i <= COUNT; i++){
+    var src = FOLDER + "exhibition_" + String(i).padStart(3,"0") + ".jpg";
+    urls.push(src);
+    var img = document.createElement("img");
+    img.src = src;
     img.alt = "Tangible Dreams exhibition photo " + i;
     img.loading = "lazy";
-    Object.assign(img.style, {
-      flex: "0 0 auto",
-      height: "55vh",
-      maxHeight: "500px",
-      borderRadius: "10px",
-      scrollSnapAlign: "center",
-      cursor: "pointer"
-    });
+    img.dataset.idx = i - 1;
+    img.style.cssText = "width:240px; border-radius:8px; cursor:pointer;";
+    img.addEventListener("click", function(){ window.openLightbox(urls, +this.dataset.idx); });
     container.appendChild(img);
   }
 })();
@@ -96,74 +91,39 @@ With support from the <a href="https://arts.mit.edu/camit/funding/" target="_bla
 
 These are the patterns discovered and saved by visitors during the exhibition.
 
-<div id="gallery"></div>
-
-<div id="lightbox" style="
-  display:none; position:fixed; inset:0; background:rgba(0,0,0,.9);
-  align-items:center; justify-content:center; z-index:1000;">
-  <img id="lightbox-img" src="" alt="Visitor-created pattern from Tangible Dreams" style="max-width:95vw; max-height:95vh; border-radius:12px; box-shadow:0 0 30px #000;">
-  <div id="lightbox-close" style="position:absolute; top:10px; right:20px; font-size:32px; color:#fff; cursor:pointer;">&#10005;</div>
-  <div id="lightbox-prev" style="position:absolute; left:20px; top:50%; transform:translateY(-50%); font-size:48px; color:#fff; cursor:pointer;">&#9664;</div>
-  <div id="lightbox-next" style="position:absolute; right:20px; top:50%; transform:translateY(-50%); font-size:48px; color:#fff; cursor:pointer;">&#9654;</div>
-</div>
+<div id="visitor-gallery"></div>
 
 <script>
-const OWNER   = "ccolas";
-const REPO    = "tangible_dreams";
-const FOLDER  = "outputs/mit_stata";
-const BRANCH  = "main";
+(function(){
+  var OWNER   = "ccolas";
+  var REPO    = "tangible_dreams";
+  var FOLDER  = "outputs/mit_stata";
+  var BRANCH  = "main";
 
-const EXT = [".png", ".jpg", ".jpeg", ".gif", ".webp"];
-function isImage(name){ return EXT.some(ext => name.toLowerCase().endsWith(ext)); }
-function cdnUrl(path){ return `https://cdn.jsdelivr.net/gh/${OWNER}/${REPO}@${BRANCH}/${path}`; }
+  var EXT = [".png", ".jpg", ".jpeg", ".gif", ".webp"];
+  function isImage(name){ return EXT.some(function(ext){ return name.toLowerCase().endsWith(ext); }); }
+  function cdnUrl(path){ return "https://cdn.jsdelivr.net/gh/" + OWNER + "/" + REPO + "@" + BRANCH + "/" + path; }
 
-let images = [], currentIndex = -1;
+  fetch("https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + FOLDER + "?ref=" + BRANCH)
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      var images = data
+        .filter(function(x){ return x.type==="file" && isImage(x.name); })
+        .sort(function(a, b){ return b.name.localeCompare(a.name); })
+        .map(function(x){ return cdnUrl(x.path); });
 
-(async function(){
-  const r = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${FOLDER}?ref=${BRANCH}`);
-  const data = await r.json();
-  images = data
-    .filter(x => x.type==="file" && isImage(x.name))
-    .sort((a, b) => b.name.localeCompare(a.name))
-    .map(x => cdnUrl(x.path));
+      var html = images.map(function(url, i){
+        return '<img src="' + url + '" data-idx="' + i + '" style="width:260px;margin:6px;border-radius:8px;cursor:pointer" loading="lazy">';
+      }).join("");
 
-  const html = images.map((url,i)=>
-    `<img src="${url}" data-idx="${i}"
-          style="width:260px;margin:6px;border-radius:8px;cursor:pointer"
-          loading="lazy">`
-  ).join("");
-  document.getElementById("gallery").innerHTML =
-    `<div style="display:flex; flex-wrap:wrap; gap:5px; max-width:1000px; margin:0 auto; justify-content:center;">
-      ${html}
-    </div>`;
+      document.getElementById("visitor-gallery").innerHTML =
+        '<div style="display:flex; flex-wrap:wrap; gap:5px; max-width:1000px; margin:0 auto; justify-content:center;">' + html + '</div>';
 
-  document.querySelectorAll("#gallery img").forEach(img=>{
-    img.addEventListener("click", ()=>openLightbox(+img.dataset.idx));
-  });
+      document.querySelectorAll("#visitor-gallery img").forEach(function(img){
+        img.addEventListener("click", function(){ window.openLightbox(images, +this.dataset.idx); });
+      });
+    });
 })();
-
-const lb = document.getElementById("lightbox");
-const lbImg = document.getElementById("lightbox-img");
-
-function openLightbox(i){
-  currentIndex = i;
-  lbImg.src = images[i];
-  lb.style.display="flex";
-}
-function closeLightbox(){ lb.style.display="none"; lbImg.src=""; }
-function prev(){ if(currentIndex>0) openLightbox(currentIndex-1); }
-function next(){ if(currentIndex<images.length-1) openLightbox(currentIndex+1); }
-
-document.getElementById("lightbox-close").onclick = closeLightbox;
-document.getElementById("lightbox-prev").onclick = prev;
-document.getElementById("lightbox-next").onclick = next;
-
-document.addEventListener("keydown", e=>{
-  if(lb.style.display==="none") return;
-  if(e.key==="Escape") closeLightbox();
-  if(e.key==="ArrowLeft") prev();
-  if(e.key==="ArrowRight") next();
-});
 </script>
 
-Follow me on Twitter <a href="https://x.com/cedcolas/" target="_blank" rel="noopener noreferrer">@cedcolas</a> for updates!
+Follow me on <a href="https://x.com/cedcolas/" target="_blank" rel="noopener noreferrer">X (@cedcolas)</a> for updates!

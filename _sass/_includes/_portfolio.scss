@@ -28,12 +28,6 @@
 
 		.portfolio-item__content {
 			background: rgba($accent-color, 0.6);
-			align-items: center;
-			justify-content: center;
-		}
-
-		.portfolio-item__info {
-			text-align: center;
 		}
 	}
 }
@@ -93,6 +87,9 @@
 	font-size: $grid-item-subtitle-small;
 	font-weight: $grid-item-subtitle-weight;
 	letter-spacing: $grid-item-subtitle-spacing;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 
 	@include mq(tabletp) {
 		font-size: $grid-item-subtitle-medium;

@@ -1,5 +1,6 @@
 ---
 title: 'Dirty Video Mixer'
+subtitle: 'Analog video signal glitching'
 date: 2025-03-05 00:00:00
 description: Exploring analog video manipulation through a custom-built dirty mixer.
 featured_image: '/images/projects/dirty_mixer/dirty_mixer.png'

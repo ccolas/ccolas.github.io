@@ -25,14 +25,12 @@ layout: default
 
 
 {% if page.use_math %}
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  CommonHTML: {
-    scale: 90
-  }
-});
+<script>
+MathJax = {
+  chtml: { scale: 0.9 }
+};
 </script>
 <script type="text/javascript" async
-        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 {% endif %}

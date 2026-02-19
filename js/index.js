@@ -98,11 +98,11 @@
 				$(this).wrapAll('<div class="gallery__item"><a href="' + imageSrc + '" class="gallery__item__link"></div></div>').appendTo();
 			});
 
-			// Wait for images to load
-			$this.imagesLoaded( function() {
+			// If it's a single column gallery
+			if ( galleryCols === '1' ) {
 
-				// If it's a single column gallery
-				if ( galleryCols === '1' ) {
+				// Wait for images to load (carousels need all images)
+				$this.imagesLoaded( function() {
 
 					// Add carousel class to gallery
 					$this.addClass('gallery--carousel');
@@ -130,18 +130,10 @@
 						handler: function(direction) {
 
 							if ( direction === 'down') {
-
-								// console.log('pause');
-							
-								// Pause this carousel
 								$this.children('.gallery__wrap').trigger('stop.owl.autoplay');
 							}
 
 							if ( direction === 'up') {
-
-								// console.log('play');
-								
-								// Play this carousel
 								$this.children('.gallery__wrap').trigger('play.owl.autoplay');
 							}
 						},
@@ -154,46 +146,55 @@
 						handler: function(direction) {
 
 							if ( direction === 'down') {
-
-								// console.log('play');
-								
-								// Play this carousel
 								$this.children('.gallery__wrap').trigger('play.owl.autoplay');
 							}
 
 							if ( direction === 'up') {
-
-								// console.log('pause');
-							
-								// Pause this carousel
 								$this.children('.gallery__wrap').trigger('stop.owl.autoplay');
 							}
 						},
 						offset: '100%'
 					});
 
-				}
+					// Show gallery once initialized
+					$this.addClass('gallery--on');
+				});
 
-				else {
+			}
 
-					$this.addClass('gallery--grid');
+			else {
 
-					// Use masonry layout
-					$this.children('.gallery__wrap').masonry({
-						itemSelector: '.gallery__item',
-						transitionDuration: 0
+				$this.addClass('gallery--grid');
+
+				// Init masonry immediately, re-layout as lazy images load
+				var $wrap = $this.children('.gallery__wrap');
+				$wrap.masonry({
+					itemSelector: '.gallery__item',
+					transitionDuration: 0
+				});
+
+				// Re-layout masonry as each image loads
+				$wrap.imagesLoaded().progress( function() {
+					$wrap.masonry('layout');
+				});
+
+				// Collect images for lightbox and bind click
+				(function(gallery) {
+					var urls = [];
+					gallery.find('.gallery__item__link').each(function() {
+						urls.push($(this).attr('href'));
 					});
-							
-					// Init fluidbox
-					$this.find('.gallery__item__link').fluidbox({
-						loader: true
+					gallery.find('.gallery__item__link').each(function(i) {
+						$(this).on('click', function(e) {
+							e.preventDefault();
+							window.openLightbox(urls, i);
+						});
 					});
-
-				}
+				})($this);
 
 				// Show gallery once initialized
 				$this.addClass('gallery--on');
-			});
+			}
 
 		});
 
@@ -309,8 +310,82 @@
 			e.preventDefault();
 		}
 
-	});	
-	
-	
-	
+	});
+
+
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Lightbox
+
+	var lb = document.getElementById('lightbox');
+	var lbImg = document.getElementById('lightbox-img');
+	var lbCounter = document.getElementById('lightbox-counter');
+	var lbImages = [];
+	var lbIndex = -1;
+
+	function showLightbox(images, index) {
+		lbImages = images;
+		lbIndex = index;
+		lbImg.src = lbImages[lbIndex];
+		lbCounter.textContent = (lbIndex + 1) + ' / ' + lbImages.length;
+		lb.style.display = 'flex';
+		document.body.style.overflow = 'hidden';
+		updateArrows();
+	}
+
+	function closeLightbox() {
+		lb.style.display = 'none';
+		lbImg.src = '';
+		document.body.style.overflow = '';
+	}
+
+	function lbPrev() {
+		if (lbIndex > 0) showLightbox(lbImages, lbIndex - 1);
+	}
+
+	function lbNext() {
+		if (lbIndex < lbImages.length - 1) showLightbox(lbImages, lbIndex + 1);
+	}
+
+	function updateArrows() {
+		document.getElementById('lightbox-prev').style.display = lbIndex > 0 ? '' : 'none';
+		document.getElementById('lightbox-next').style.display = lbIndex < lbImages.length - 1 ? '' : 'none';
+	}
+
+	// Expose globally so inline scripts (tangible dreams etc.) can use it
+	window.openLightbox = showLightbox;
+
+	document.getElementById('lightbox-close').onclick = closeLightbox;
+	document.getElementById('lightbox-prev').onclick = lbPrev;
+	document.getElementById('lightbox-next').onclick = lbNext;
+
+	// Close on background click
+	lb.addEventListener('click', function(e) {
+		if (e.target === lb) closeLightbox();
+	});
+
+	// Keyboard nav
+	document.addEventListener('keydown', function(e) {
+		if (lb.style.display === 'none') return;
+		if (e.key === 'Escape') closeLightbox();
+		if (e.key === 'ArrowLeft') lbPrev();
+		if (e.key === 'ArrowRight') lbNext();
+	});
+
+	// Touch swipe support
+	(function() {
+		var startX = 0;
+		lb.addEventListener('touchstart', function(e) {
+			startX = e.changedTouches[0].screenX;
+		}, {passive: true});
+		lb.addEventListener('touchend', function(e) {
+			var diff = e.changedTouches[0].screenX - startX;
+			if (Math.abs(diff) > 50) {
+				if (diff > 0) lbPrev();
+				else lbNext();
+			}
+		}, {passive: true});
+	})();
+
+
+
 }(jQuery));

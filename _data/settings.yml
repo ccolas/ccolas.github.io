@@ -13,7 +13,7 @@ menu_settings:
   menu_items:
     - title: 'About me'
       url: '/'
-    - title: 'Fun projects'
+    - title: 'Art Projects'
       url: '/project/'
     - title: 'Photography'
       url: '/photographs'
@@ -26,12 +26,6 @@ menu_settings:
 grid_settings:
   overlay_opacity: 0.7
   grid_spacing: 20
-
-contact_settings:
-  form_action: ''
-  confirmation_url: '/thanks'
-  email_subject: 'Contact form submission'
-  send_button_text: 'Send Message'
 
 social_settings:
   facebook_url: ''
