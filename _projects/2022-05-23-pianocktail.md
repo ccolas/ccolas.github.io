@@ -2,15 +2,14 @@
 title: 'Taste Music with Le Piano Ivre'
 date: 2022-05-23 00:00:00
 description: A machine learning approach to taste-music synesthesia, inspired by Boris Vian's fictional invention.
-featured_image: '/images/projects/pianocktail/pianocktail.jpg'
+featured_image: '/images/projects/pianocktail/piano_ivre_square.png'
 ---
 
-<img class="image" src="/images/projects/pianocktail/pianocktail.jpg"  class="responsive-image">>
-<p class="legend" style="text-align:center; margin-top:1em;">
-<i>Pianocktail from Cie La Rumeur.</i></p>
+<img class="image" src="/images/projects/pianocktail/piano_ivre.png"  class="responsive-image">>
 
 <center>
 <a href="https://cedriccolas.com/piano-ivre-synesthesia/" target="_blank" rel="noopener noreferrer" class="btn">Recordings & Recipes</a>
+<a href="https://piano-ivre.cedriccolas.com" target="_blank" rel="noopener noreferrer" class="btn">Demo</a>
 </center>
 
 <br>
@@ -117,8 +116,6 @@ The result is a complete cocktail specification --- ingredients, quantities, gla
 ### Experience Taste-Music Synesthesia
 
 The digital version of the Pianocktail is now available for anyone to experience. By providing a YouTube URL, an audio file, or a MIDI file of piano music, or recording piano from your microphone, you can discover what your favorite pieces taste like. Each recipe includes detailed preparation instructions, enabling you to craft these musical cocktails at home. 
-
-**Coming soon!**
 
 <br>
 
