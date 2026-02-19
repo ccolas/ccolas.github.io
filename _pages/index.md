@@ -1,5 +1,6 @@
 ---
 title: Hello!
+featured_image: '/images/logo.pngp'
 ---
 
 <img class="about-photo" src="/images/general/me.jpeg" alt="Portrait photo of Cédric Colas"/>
