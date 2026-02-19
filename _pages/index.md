@@ -1,26 +1,18 @@
 ---
-title: About me
+title: Hello!
 ---
 
 <img class="about-photo" src="/images/general/me.jpeg" alt="Portrait photo of Cédric Colas"/>
 
+I'm Cédric Colas, AI researcher and bricoleur.
 
-Hi! I'm Cédric Colas, AI researcher exploring open-ended learning and computational creativity.
+#### Research
 
-### Research Interests
+I work at Inria and MIT on artificial curiosity and open-ended learning. My research started with curiosity-driven reinforcement learning agents that set their own goals (<a href="https://arxiv.org/abs/2012.09830" target="_blank" rel="noopener noreferrer">autotelic agents</a>), and has grown into questions about <a href="https://arxiv.org/abs/2206.01134" target="_blank" rel="noopener noreferrer">language as a cognitive tool for agents</a>, <a href="https://arxiv.org/abs/2509.00074" target="_blank" rel="noopener noreferrer">social learning in hybrid human-AI populations</a>, and how cultural dynamics might sustain open-ended innovation. More recently, I've been working on <a href="https://arxiv.org/pdf/2507.14172" target="_blank" rel="noopener noreferrer">LLM-guided program synthesis</a> and <a href="https://proceedings.mlr.press/v232/colas23a/colas23a.pdf" target="_blank" rel="noopener noreferrer">LLM-based agents</a> that learn to code and reason. I did my PhD at Inria's Flowers Lab, where I studied <a href="/data/cedric_colas_manuscript.pdf" target="_blank" rel="noopener noreferrer">language-guided autotelic agents</a>.
 
+#### Art
 
-I'm interested in the study of **artificial open-ended skill discovery** --- how an artificial agent can continuously grow a repertoire of skills throughout its lifetime. This interest led me to focus on **intrinsically motivated agents** that set their own goals, also known as <a href="https://arxiv.org/abs/2012.09830" target="_blank" rel="noopener noreferrer">autotelic agents</a>.
+The rest of the time, I make things. I've built a <a href="/project/pianocktail" target="_blank" rel="noopener noreferrer">pianocktail</a> that translates piano music into cocktail recipes, a <a href="/project/chit" target="_blank" rel="noopener noreferrer">thermal-printer spirit</a> with its own inner life, and an <a href="/project/tangible-dreams" target="_blank" rel="noopener noreferrer">interactive installation</a> where visitors rewire neural networks by hand. I make <a href="/project/dirty-mixer" target="_blank" rel="noopener noreferrer">dirty video mixers</a>, generate <a href="/project/charabia" target="_blank" rel="noopener noreferrer">imaginary French words</a>, map <a href="/project/chromatic-cartography" target="_blank" rel="noopener noreferrer">geography to color</a>, and <a href="/project/cppnworld" target="_blank" rel="noopener noreferrer">breed visual universes</a> through artificial evolution. I also shoot <a href="/photographs" target="_blank" rel="noopener noreferrer">film photography</a>.
 
-I believe that for agents to develop such open-ended capabilities, they must be embedded in **rich socio-cultural environments** --- interacting with peers, engaging with humans, and participating in a shared process of cultural evolution. We explore this idea further in our <a href="https://arxiv.org/pdf/2206.01134.pdf" target="_blank" rel="noopener noreferrer">perspective article</a>.
-
-I completed my PhD at the <a href="https://flowers.inria.fr/" target="_blank" rel="noopener noreferrer">Flowers Lab</a> under the supervision of <a href="http://www.pyoudeyer.com/" target="_blank" rel="noopener noreferrer">Pierre-Yves Oudeyer</a> and <a href="https://www.isir.upmc.fr/personnel/sigaud/" target="_blank" rel="noopener noreferrer">Olivier Sigaud</a>. My thesis, <strong>Towards Vygotskian Autotelic Agents: Learning Skills with Goals, Language and Intrinsically Motivated Deep Reinforcement Learning</strong>, is available <a href="/data/cedric_colas_manuscript.pdf" target="_blank" rel="noopener noreferrer">here</a> (also <a href="https://www.youtube.com/watch?v=x4vS557rhAM" target="_blank" rel="noopener noreferrer">defense video</a>).
-
-I'm currently working at MIT with <a href="https://mitibmwatsonailab.mit.edu/people/joshua-tenenbaum/" target="_blank" rel="noopener noreferrer">Joshua Tenenbaum</a> and <a href="https://www.mit.edu/~jda/" target="_blank" rel="noopener noreferrer">Jacob Andreas</a>, developing autotelic agents that learn from humans and others using <strong>program synthesis</strong> methods.
-
-### Artistic explorations
-
-Beyond my research, I explore creative applications of algorithms through various hobby and artistic projects.  
-See some of these explorations <a href="/project/index.html" target="_blank" rel="noopener noreferrer"  >here</a>.
-
+<br><br>
 

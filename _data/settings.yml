@@ -11,7 +11,7 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'About me'
+    - title: 'Hello!'
       url: '/'
     - title: 'Art Projects'
       url: '/project/'
