@@ -2,7 +2,7 @@ basic_settings:
   site_title: Cédric Colas
   site_tagline: ''
   favicon_image: /images/favicon.png
-  site_description: ''
+  site_description: 'AI researcher exploring open-ended learning and computational creativity.'
   default_featured_image: '/images/logo.png'
 
 header_settings:

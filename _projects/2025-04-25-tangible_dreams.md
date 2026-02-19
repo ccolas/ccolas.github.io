@@ -6,11 +6,11 @@ description: "Exploring Visual Worlds Through Physical Neural Networks"
 featured_image: '/images/posts/tangible_dreams/exhibition/exhibition_004.jpg'
 ---
 
-<img class="image" src="/images/posts/tangible_dreams/exhibition/exhibition_004.jpg" style="width:100%" alt="Tangible Dreams interactive art installation at MIT Stata Center">
+<img class="responsive-image" src="/images/posts/tangible_dreams/exhibition/exhibition_004.jpg" alt="Tangible Dreams interactive art installation at MIT Stata Center">
 
-*Tangible Dreams* is an interactive art installation where visitors physically interact with a neural network—plugging cables, turning knobs, and flipping switches to generate colorful visuals in real time.
+*Tangible Dreams* is an interactive art installation where visitors physically interact with a neural network — plugging cables, turning knobs, and flipping switches to generate colorful visuals in real time.
 
-Funded by the <a href="https://arts.mit.edu/camit/funding/" target="_blank" rel="noopener noreferrer">Council for the Arts at MIT (CAMIT)</a>, it was exhibited in August 2025 at MIT's Stata Center. 
+Funded by the <a href="https://arts.mit.edu/camit/funding/" target="_blank" rel="noopener noreferrer">Council for the Arts at MIT (CAMIT)</a>, it was exhibited in August 2025 at MIT's Stata Center.
 
 **See the patterns visitors created below!**
 
@@ -19,19 +19,13 @@ Funded by the <a href="https://arts.mit.edu/camit/funding/" target="_blank" rel=
   <a href="/images/posts/tangible_dreams/poster_BAT.pdf" target="_blank" rel="noopener noreferrer" class="btn">Poster</a>
 </p>
 
+### The Idea
 
+I first explored interactive evolution in <a href="/project/cppnworld">CPPNWorld</a>, breeding visual worlds on a screen. But clicking felt distant. I wanted to *feel* the process and shape the system with my hands.
 
-## The Idea
+### How It Works
 
-During my PhD I discovered a kind of interactive evolution experiment called <a href="https://nbenko1.github.io/#/" target="_blank" rel="noopener noreferrer">Picbreeder</a>. The idea is simple: you see a grid of images, pick the ones you prefer, and the computer breeds new variations from your favorites. Repeating this process over and over, you end up with images neither you nor the machine would have created alone. I liked it so much I made my own version: <a href="/project/cppnworld" target="_blank" rel="noopener noreferrer">CPPNWorld</a>.
-
-But clicking on a screen felt distant. I wanted to *feel* the process—to shape the system with my hands. What if you could plug cables and turn knobs to sculpt these images in real-time?
-
-
-
-## How It Works
-
-The images come from a small network of mathematical functions called a <a href="https://link.springer.com/content/pdf/10.1007/s10710-007-9028-8.pdf" target="_blank" rel="noopener noreferrer">CPPN</a>. You feed it pixel coordinates, it returns a color. Chain a few simple functions together (sine, cosine, gaussian) and you get complex, organic patterns.
+The visuals come from a <a href="https://link.springer.com/content/pdf/10.1007/s10710-007-9028-8.pdf" target="_blank" rel="noopener noreferrer">CPPN</a>: a small network that maps pixel coordinates to colors by composing simple functions (sine, cosine, gaussian).
 
 <figure class="image-pair-figure">
   <div class="image-pair-equal-height">
@@ -42,22 +36,19 @@ The images come from a small network of mathematical functions called a <a href=
   <p class="caption">A CPPN maps each pixel's (x, y) coordinates through composed functions to produce a color.</p>
 </figure>
 
-In *Tangible Dreams*, each piece of that network becomes something you can touch. Plug a cable between two boxes—you've added a connection. Turn a knob—you've changed the connection's strength. Flip a switch—you've swapped out the math function. The image on the wall morphs instantly.
+In *Tangible Dreams*, each piece of that network becomes something you can touch. Plug a cable between two boxes and you've added a connection. Turn a knob and you've changed the connection's strength. Flip a switch and you've swapped out the function. The image on the wall transforms instantly.
 
 <iframe style="display:block; margin:2em auto 10px;" width="560" height="315" src="https://www.youtube.com/embed/Cy-_3Mp53cI?si=2Mm0s5J-B1_CbNVW" title="Tangible Dreams demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p class="caption">A first prototype with a MIDI controller</p>
 
-
-## The Hardware
+### The Hardware
 
 Each node in the network is a physical box. Cables between boxes are connections; knobs control weights and biases; switches select activation functions. The boxes send their state to a computer, which renders the image in real time.
 
 <img class="image" src="/images/posts/tangible_dreams/tangible_dreams_setup.png" alt="Tangible Dreams hardware setup diagram">
 <p class="caption">Players turn knobs and reconnect cables to shape the neural network and generate new patterns.</p>
 
-
-
-## The Exhibition
+### The Exhibition
 
 With support from the <a href="https://arts.mit.edu/camit/funding/" target="_blank" rel="noopener noreferrer">Council for the Arts at MIT (CAMIT)</a>, *Tangible Dreams* was exhibited **August 25–29, 2025** in MIT's Stata Center (R&D Commons, 4th floor).
 
@@ -85,12 +76,12 @@ With support from the <a href="https://arts.mit.edu/camit/funding/" target="_bla
 })();
 </script>
 
+### Patterns Created by Visitors
 
+These are the patterns discovered and saved by visitors during the exhibition. Find others <a href="https://github.com/ccolas/tangible_dreams/tree/main/outputs" target="_blank" rel="noopener noreferrer">here</a>.
 
-## Patterns Created by Visitors
-
-These are the patterns discovered and saved by visitors during the exhibition.
-
+<br> 
+ok ama
 <div id="visitor-gallery"></div>
 
 <script>
@@ -125,5 +116,3 @@ These are the patterns discovered and saved by visitors during the exhibition.
     });
 })();
 </script>
-
-Follow me on <a href="https://x.com/cedcolas/" target="_blank" rel="noopener noreferrer">X (@cedcolas)</a> for updates!

@@ -4,3 +4,7 @@ _site/404.html
 .sass-cache/
 .jekyll-cache/
 .claude
+
+.DS_Store
+.idea/
+**/save/

@@ -6,75 +6,62 @@ description: Creating and evolving algorithmic universes of color through comput
 featured_image: '/images/projects/cppnworld/id1.jpg'
 ---
 
-<img src="/images/projects/cppnworld/id2.jpg"  class="responsive-image">
+<img src="/images/projects/cppnworld/id2.jpg" class="responsive-image">
 
-### Creating Algorithmic Universes
+### The Idea
 
-In this project, I explore the intersection of evolutionary algorithms and generative art by breeding alternative universes made entirely of colors. Each universe exists as a mathematical function, waiting to be visualized through windows that open at specific coordinates in our world.
+A few years ago I discovered <a href="https://nbenko1.github.io/#/" target="_blank" rel="noopener noreferrer">Picbreeder</a>: you see a grid of images, pick your favorites, and the computer breeds new variations from them. Repeat, and you end up with images neither you nor the machine would have created alone.
 
-These visual universes aren't just random --- they're evolved through a process mimicking natural selection, where aesthetic qualities determine which universes reproduce and which features are passed on to the next generation.
+I wanted to build my own version and push it further. What if each image was a window into a mathematical universe, and instead of breeding images you could breed entire worlds?
 
-### The Architecture of Alternative Worlds
+### How It Works
 
-Each universe is encoded by a specific **Compositional Pattern Producing Networks** (CPPNs): a mathematical functions mapping spatial coordinates to colors. In my implementation, CPPNs transform GPS coordinates (latitude, longitude, altitude) along with local positional data (x, y, z) into RGB color values.
-
-<img class="small-image" src="/images/projects/cppnworld/cppn2.png" alt="Generating an image from a CPPN"/>
-<p class="caption"><b>Generating an image from a CPPN.</b> For each pixel (x, y) of a 2D image, the CPPN computes a corresponding color. (From the <a href="https://gwern.net/doc/ai/nn/fully-connected/2007-stanley.pdf" target="_blank" rel="noopener noreferrer">original paper</a>).</p>
-
-What makes CPPNs particularly powerful is that they don't just map pixels independently --- they create coherent patterns respecting spatial relationships. Each universe defined by a CPPN contains an infinite space of colors with internally consistent patterns and structures. When we apply the CPPN to a specific set of coordinates, we're essentially opening a window to that mathematical universe, revealing what exists at that particular point in the computed space.
-
-Under the hood, CPPNs are computational graphs where each node processes its inputs (either coordinates or outputs from previous nodes) through an activation function:
-
-<img class="smaller-image" src="/images/projects/cppnworld/cppn.png" alt="CPPN computational graph diagram"/>
-<p class="caption"><b>CPPN as computational graphs.</b> (From <a href="https://towardsdatascience.com/understanding-compositional-pattern-producing-networks-810f6bef1b88" target="_blank" rel="noopener noreferrer">this post</a>).</p>
+The images come from small networks called Compositional Pattern Producing Networks (<a href="https://gwern.net/doc/ai/nn/fully-connected/2007-stanley.pdf" target="_blank" rel="noopener noreferrer">CPPNs</a>). A CPPN does two things. It maps pixel coordinates to colors — feed it a position, it returns a color; feed it all positions and you get an image (left). And it builds complexity by composing simple functions (sine, cosine, gaussian) into a deeper computational graph (right).    
 
 
-These functions can include waves, symmetrical patterns, or threshold operations --- each contributing different visual elements to the final output. The combination of these functions creates the intricate patterns seen in the generated worlds.
 
-### Computational Evolution of Aesthetics
+<figure class="image-pair-figure">
+  <div class="image-pair-equal-height">
+  <img src="/images/projects/cppnworld/cppn2.png" alt="Generating an image from a CPPN">
+  <img src="/images/projects/cppnworld/cppn.png" alt="CPPN computational graph diagram">
+  </div>
+<br>
+  <p class="caption">A CPPN maps each pixel's (x, y) coordinates through composed functions to produce a color. <a href="https://gwern.net/doc/ai/nn/fully-connected/2007-stanley.pdf" target="_blank" rel="noopener noreferrer">Left</a>, <a href="https://towardsdatascience.com/understanding-compositional-pattern-producing-networks-810f6bef1b88" target="_blank" rel="noopener noreferrer">Right</a>.</p>
+</figure>
 
-The development of these visual universes follows an evolutionary trajectory. I begin by generating a population of random computational graphs, each defining its own universe with unique properties and aesthetics. Then comes the fascinating part: **breeding universes**.
+### Windows Into Other Worlds
 
-Using the **NeuroEvolution of Augmenting Topologies** (NEAT) algorithm, I implemented a selective breeding process where:
+But why stop at pixel coordinates? In this project, each CPPN takes geographic coordinates too; latitude, longitude, altitude, on top of local pixel positions. The same CPPN produces a different image depending on *where* you open a window into it. Nearby locations produce similar views, distant ones reveal different patterns. A single CPPN defines an entire visual universe: you just need to decide where to look.
 
-1. An initial population of random CPPNs is generated
-2. Each CPPN is visualized as a color pattern at selected coordinates
-3. I manually select the most visually appealing patterns (acting as the selection pressure)
-4. The selected networks reproduce, combining their computational structures
-5. Occasional mutations introduce new nodes or connections
-6. The process repeats with each generation progressively developing more complex and aesthetically interesting patterns
+I opened windows at my own place and at friends' houses closer and further away, creating a set of viewpoints into each universe.
 
+### Breeding Universes
 
-### Geospatial Windows Between Worlds
+I start with a population of random CPPNs, each one encoding a small, unique universe. For each of them I look through the 9 windows, then I pick my favorites. The selected networks reproduce: their structures combine, mutations add new nodes or connections, and the next generation appears. Repeat over many generations, and the patterns become increasingly intricate and beautiful.
 
-A key aspect of this project is the relationship between real-world locations and the generated visuals. Each color universe exists as a complete mathematical entity, but we can only peek into it through "windows" placed at specific coordinates.
+This is interactive evolution: I act as the selection pressure, and the algorithm handles variation and reproduction.
 
-When opening windows at nearby locations, we observe similar patterns --- just as nearby windows in a physical building would reveal similar views. Windows opened in more distant locations show more different patterns, reflecting their separation in the input space of the generating function.
+### Gallery
 
-For this project, I opened windows located at my own residence and at the homes of friends, creating a network of openings into these alternative realities. The resulting collection of images forms a kind of visual geography --- a mapping between our physical world and these computational color spaces.
-
-### Gallery of Evolved Visual Universes
-
-Below are eighteen evolved universes, each shown through nine different windows. The diversity of patterns demonstrates how the evolutionary process generates a wide range of visual aesthetics --- from organic, flowing forms to geometric, structured patterns.
+Eighteen evolved universes, each shown through nine windows placed ok at different locations:
 
 <div class="gallery" data-columns="3">
-    <img src="/images/projects/cppnworld/id2.jpg">
-    <img src="/images/projects/cppnworld/id3.jpg">
-    <img src="/images/projects/cppnworld/id4.jpg">
-    <img src="/images/projects/cppnworld/id5.jpg">
-    <img src="/images/projects/cppnworld/id6.jpg">
-    <img src="/images/projects/cppnworld/id7.jpg">
-    <img src="/images/projects/cppnworld/id8.jpg">
-    <img src="/images/projects/cppnworld/id9.jpg">
-    <img src="/images/projects/cppnworld/id10.jpg">
-    <img src="/images/projects/cppnworld/id11.jpg">
-    <img src="/images/projects/cppnworld/id12.jpg">
-    <img src="/images/projects/cppnworld/id13.jpg">
-    <img src="/images/projects/cppnworld/id14.jpg">
-    <img src="/images/projects/cppnworld/id15.jpg">
-    <img src="/images/projects/cppnworld/id16.jpg">
-    <img src="/images/projects/cppnworld/id17.jpg">
-    <img src="/images/projects/cppnworld/id18.jpg">
-    <img src="/images/projects/cppnworld/id19.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id2.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id3.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id4.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id5.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id6.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id7.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id8.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id9.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id10.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id11.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id12.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id13.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id14.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id15.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id16.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id17.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id18.jpg">
+    <img loading="lazy" src="/images/projects/cppnworld/id19.jpg">
 </div>
-

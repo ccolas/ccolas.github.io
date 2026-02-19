@@ -6,35 +6,37 @@ description: A random walk through Wikipedia, one illustration a day.
 featured_image: '/images/projects/wiki/wikipedia.webp'
 ---
 
-<img class="image" loading="lazy" src="/images/projects/wiki/wikipedia.webp" alt="Wikipedia Visual Exploration project preview"/>
-
 <center>
 <a href="https://x.com/wiki_voyager" target="_blank" rel="noopener noreferrer" class="btn">@wiki_voyager on X</a>
 <a href="https://github.com/ccolas/wiki_voyager" target="_blank" rel="noopener noreferrer" class="btn">Code</a>
 </center>
 
-Wikipedia is perhaps the most successful collaborative project on the Internet. Millions of contributors, millions of articles, covering almost everything. The problem isn't access, but where to start.
+Wikipedia is perhaps the most successful collaborative project on the Internet. Millions of contributors, millions of articles, covering almost everything. In this web of human knowledge, where should we start?
 
-So we start somewhere, anywhere. And we walk.
+Somewhere, anywhere. And from there, we wander.
 
-_**Wikipedia Visual Exploration**_ is a random walk through Wikipedia. Each day, an autonomous bot follows a link from the previous day's page, writes a short thread about what it finds, and generates an original illustration. One step per day, one topic per day, forever.
+This project takes a stroll through Wikipedia — one page a day, every day. There are two versions: a physical ephemeride in 2018, and an autonomous X bot in 2025.
 
-### The Twitter bot
+### The Ephemeride (2018)
 
-The bot posts daily on X at <a href="https://x.com/wiki_voyager" target="_blank" rel="noopener noreferrer">@wiki_voyager</a>. It picks which link to follow, writes its own commentary, and generates each illustration in a consistent risograph-inspired style. The walk is genuinely random; it drifts from physics to jazz to colonial history without a plan.
-
-### The calendar (v1)
-
-The original version of this project ran for a full year, illustrating each day's topic with an image found via Google search. My sister <a href="https://www.instagram.com/julieecolas/"  target="_blank" rel="noopener noreferrer">Julie Colas</a> turned it into a physical tear-off calendar.
-
+The original version ran for a full year. Each day, a script followed a random link from the previous article and found an illustration via Google Image Search. My sister <a href="https://www.instagram.com/julieecolas/" target="_blank" rel="noopener noreferrer">Julie Colas</a> turned the 365 entries into a physical tear-off ephemeride.
 
 <div class="image-pair">
-  <img class="image" loading="lazy" src="/images/projects/wiki/P1060463.webp">
-  <img class="image" loading="lazy" src="/images/projects/wiki/P1060465.webp">
+  <img loading="lazy" src="/images/projects/wiki/P1060463.webp">
+  <img loading="lazy" src="/images/projects/wiki/P1060465.webp">
 </div>
+<p class="caption">Physical ephemeride printed and edited by <a href="https://www.instagram.com/julieecolas/" target="_blank" rel="noopener noreferrer">Julie Colas</a>.</p>
 
-### A year of wandering through Wikipedia
+### The Bot (2025)
 
+<img class="image" loading="lazy" src="/images/projects/wiki/wiki_voyager.png" alt="Wiki Voyager bot on X."/>
+
+Seven years later, the walk resumed, this time fully autonomously. An LLM picks which link to follow, writes a short thread about what it finds, and generates an original illustration in a consistent risograph-inspired style. The bot posts daily on X at <a href="https://x.com/wiki_voyager" target="_blank" rel="noopener noreferrer">@wiki_voyager</a>. It drifts from page to page following its own curiosity.
+
+### 365 days of the original ephemeride
+
+Here are the 365 pages of the original ephemeride starting from a random Wikipedia page. 
+ok 
 <div class="gallery" data-columns="3">
 	<img loading="lazy" src="/images/projects/wiki/calendar/Day_0.webp">
 	<img loading="lazy" src="/images/projects/wiki/calendar/Day_1.webp">

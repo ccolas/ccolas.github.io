@@ -6,19 +6,21 @@ description: Exploring analog video manipulation through a custom-built dirty mi
 featured_image: '/images/projects/dirty_mixer/dirty_mixer.png'
 ---
 
+### The Idea
 
+I built a dirty video mixer, a simple device that intentionally corrupts video signals to create unpredictable visual glitches. One potentiometer, two switches, two inputs, one output. That's it (instructions <a href="https://www.youtube.com/watch?v=iSRWvQf3u2c" target="_blank" rel="noopener noreferrer">here</a>).
 
+<img class="small-image" src="/images/projects/dirty_mixer/dirty_mixer_box.jpeg" alt="Dirty video mixer box">
 
-I recently built a dirty video mixer --- a simple but effective device that intentionally corrupts and glitches video signals to create unpredictable and cool visual effects. It's a very simple device: just one potentiometer, two switches, two inputs, and one output (see instructions <a href="https://www.youtube.com/watch?v=iSRWvQf3u2c" target="_blank" rel="noopener noreferrer">here</a>).
+It works by imperfectly combining two video signals. The glitches emerge precisely because it's *not* mixing them properly.
 
-<img class="image" src="/images/projects/dirty_mixer/dirty_mixer_box.jpeg" class="small-image"/>
+### First Test
 
-The dirty mixer works by imperfectly combining video signals, creating glitches precisely because it's not doing the job of mixing properly. To try it out, I mixed two sources: a digital HDMI signal from my laptop and an analog source from a Lion King VHS tape, with the output displayed on an analog TV. The results were interesting: distorted colors, images that shifted position, horizontal stripe glitches, and others (see video below).
+I mixed a digital HDMI signal from my laptop with an analog Lion King VHS tape, displayed on an analog TV. The results: distorted colors, shifting images, horizontal stripes.
 
-It seems that it's primarily affected by the analog VHS signal, the digital to analog source does not merge very well with the analog signal here; it would likely work better with two analog inputs, but the digital/analog combination still produced cool results.
+The mixer responds mostly to the analog VHS signal; the digital-to-analog conversion doesn't merge as cleanly. Two analog inputs would probably work better, but the digital/analog combination still produced cool results.
 
-<video width="80%" controls style="max-width:700px;">
+<video width="80%" controls preload="metadata" style="max-width:700px;">
   <source src="/images/projects/dirty_mixer/dirty_mixer.mp4" type="video/mp4">
-  Your browser does not support the video tag.
 </video>
-<p class="caption">The dirty mixer in action, creating glitchy video effects</p>
+<p class="caption">The dirty mixer in action</p>
