@@ -858,14 +858,24 @@ function showDistrictPanel(name) {
     bindMatchHover(panel);
   }
   panel.classList.remove("hidden");
-  document.getElementById("close-panel").addEventListener("click", () => {
-    panel.classList.add("hidden");
-    selectedDistrict = null;
-    if (_matchMarker) { map.removeLayer(_matchMarker); _matchMarker = null; }
-    applyStyling();
-    renderTable();
-  });
 }
+
+// Panel close + per-match clicks are delegated on the panel itself so we
+// don't depend on re-binding after each innerHTML replace.
+(function bindPanelDelegation() {
+  const panel = document.getElementById("district-panel");
+  if (!panel || panel.dataset.boundClose) return;
+  panel.dataset.boundClose = "1";
+  panel.addEventListener("click", (e) => {
+    if (e.target.closest("#close-panel")) {
+      panel.classList.add("hidden");
+      selectedDistrict = null;
+      if (_matchMarker) { map.removeLayer(_matchMarker); _matchMarker = null; }
+      applyStyling();
+      renderTable();
+    }
+  });
+})();
 
 // ---------------- CSV ----------------
 
