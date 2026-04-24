@@ -8,3 +8,17 @@ _site/404.html
 .DS_Store
 .idea/
 **/save/
+
+# Ruby / Bundler
+vendor/
+.bundle/
+
+# Node
+node_modules/
+
+# Large media — host externally (YouTube/Vimeo/Drive) and link instead
+*.mp4
+*.mov
+*.webm
+*.avi
+*.mkv

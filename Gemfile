@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 gem "github-pages", "~> 228"  # Update to a newer version
 gem "nokogiri", ">= 1.13.6"
 gem "kramdown"
-gem "tzinfo", "~> 1.2.10"
+gem "tzinfo", "~> 2.0"
+gem "activesupport", "7.2.3.1"
 gem "jekyll-redirect-from"
 gem "webrick", "~> 1.8"  # Required for Ruby 3.x
 
