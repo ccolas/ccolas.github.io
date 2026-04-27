@@ -330,6 +330,13 @@ function renderDistrictLayer(geo) {
       layerByName[name] = layer;
       layer.bindTooltip(name, { sticky: true, className: "district-tooltip" });
       layer.on("click", () => {
+        // Clear any leftover interaction state from a previous match
+        // click. The yellow circleMarker renders on the same canvas as
+        // the district polygons (preferCanvas:true) and can otherwise
+        // be hit-tested ahead of the district at certain pixels.
+        hideTooltipNow();
+        if (_matchMarker) { map.removeLayer(_matchMarker); _matchMarker = null; }
+        if (map) map.closePopup();
         selectedDistrict = name;
         showDistrictPanel(name);
         renderTable();
@@ -517,12 +524,12 @@ function runQuery() {
   const exKws = parseExcludeKeywords();
   const mode = document.querySelector('input[name="mode"]:checked').value;
 
-  // Clear lingering UI state from previous interactions: the per-match
-  // tooltip can otherwise stay anchored to a soon-to-be-stale .match-item
-  // at z-index 10000 and block all map clicks. Same for the yellow match
-  // marker — its results were tied to the previous query.
+  // Clear lingering UI state from previous interactions. Anything left
+  // over here can sit above the map at high z-index and silently swallow
+  // the next click.
   hideTooltipNow();
   if (_matchMarker) { map.removeLayer(_matchMarker); _matchMarker = null; }
+  if (map) map.closePopup();  // any other lingering Leaflet popup
 
   const t0 = performance.now();
   const matcher = buildMatcher(kws, mode);
@@ -834,22 +841,24 @@ let _matchMarker = null;
 function showMatchOnMap(m) {
   if (!map || typeof m.lat !== "number" || typeof m.lon !== "number") return;
   if (_matchMarker) { map.removeLayer(_matchMarker); _matchMarker = null; }
+  if (map) map.closePopup();
+  // Render the marker in its own SVG renderer (NOT the shared canvas
+  // used by the district polygons). With preferCanvas:true, putting the
+  // marker on the canvas means Leaflet hit-tests it ahead of the
+  // districts at any nearby pixel, which silently swallows clicks the
+  // user thinks are landing on a district.
   _matchMarker = L.circleMarker([m.lat, m.lon], {
     radius: 7,
     color: "#1a1e2c",
     weight: 2,
     fillColor: "#ffd24a",
     fillOpacity: 0.95,
-    pane: "markerPane",
+    interactive: false,        // marker itself is not clickable
+    renderer: L.svg(),         // separate SVG layer, not the district canvas
   }).addTo(map);
-  const altLine = m.ns ? `<div class="popup-alt">${esc(m.ns)}</div>` : "";
-  _matchMarker.bindPopup(
-    `<div class="popup-name">${esc(m.n)}</div>` +
-    `<div class="popup-cat">${esc(m.c || "")}</div>` +
-    altLine,
-    { closeButton: true, autoClose: false }
-  ).openPopup();
-  // Pan (don't zoom) so the user keeps their context.
+  // No popup — the panel already shows the match's name, category, and
+  // alt names. A popup here would also sit at z-index 700 above the
+  // panel and block clicks even after autoClose triggers.
   map.panTo([m.lat, m.lon], { animate: true });
 }
 
@@ -894,6 +903,20 @@ function showDistrictPanel(name) {
   panel.classList.remove("hidden");
 }
 
+// Global safety net: any mousedown that lands outside both the tooltip
+// and any .match-item proves the tooltip is no longer being interacted
+// with. Hide it immediately so it can't silently sit at z-index 10000
+// and block subsequent clicks. mousedown (not click) so we run BEFORE
+// the click reaches its target — even though the tooltip is now
+// pointer-events:none, this also prevents stale links inside the
+// tooltip from intercepting clicks.
+document.addEventListener("mousedown", (e) => {
+  if (!_tooltipEl || _tooltipEl.classList.contains("hidden")) return;
+  if (e.target.closest(".match-tooltip")) return;
+  if (e.target.closest(".match-item")) return;
+  hideTooltipNow();
+}, true);  // capture phase so we run first
+
 // All panel events (close, match-item hover, match-item click) are
 // delegated on the panel container exactly once. We deliberately don't
 // re-bind after each innerHTML replace — that previously accumulated
@@ -911,7 +934,8 @@ function showDistrictPanel(name) {
       panel.classList.add("hidden");
       selectedDistrict = null;
       if (_matchMarker) { map.removeLayer(_matchMarker); _matchMarker = null; }
-      if (_tooltipEl) { _tooltipEl.classList.add("hidden"); _tooltipEl.dataset.for = ""; }
+      if (map) map.closePopup();
+      hideTooltipNow();
       applyStyling();
       renderTable();
       return;
