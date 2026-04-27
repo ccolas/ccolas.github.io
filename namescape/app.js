@@ -25,6 +25,7 @@ let selectedDistrict = null;
 let layerByName = {};
 
 const MODE_HINTS = {
+  exact:     "Whole-word match (case/diacritic-insensitive). One of the words in the name must equal a keyword exactly — 'fetih' hits 'Fetih Camii' but not 'Fetihspor'.",
   substring: "Diacritic-insensitive substring match on the full name. Fastest, loosest.",
   root:      "Loose root matching against pre-computed Snowball stems. Catches suffix variants in inflected languages (kitap → kitapçı, kitaplar, kitabı).",
   regex:     "User regex, case-insensitive, applied to the original name (with diacritics).",
@@ -409,6 +410,22 @@ function buildMatcher(keywords, mode) {
   const kws = (keywords || []).map(k => k.trim()).filter(Boolean);
   if (!kws.length) return () => false;
 
+  if (mode === "exact") {
+    // Match when one of the *words* in the name equals a keyword exactly
+    // (case + diacritic-insensitive). So "fetih" matches "Fetih Camii"
+    // but not "Fetihspor" or "Mehmet Fetihoğlu".
+    const nk = new Set(kws.map(normalize));
+    return (el) => {
+      const n = el._nn || (el._nn = normalize(el.ns ? `${el.n} | ${el.ns}` : el.n));
+      // Tokenize on anything that isn't a letter/number — Unicode-aware so
+      // we don't shred non-Latin scripts.
+      for (const tok of n.split(/[^\p{L}\p{N}]+/u)) {
+        if (tok && nk.has(tok)) return true;
+      }
+      return false;
+    };
+  }
+
   if (mode === "substring") {
     const nk = kws.map(normalize);
     return (el) => {
@@ -463,6 +480,23 @@ function parseKeywords() {
     .split(/[\n,]/).map(s => s.trim()).filter(Boolean);
 }
 
+function parseExcludeKeywords() {
+  const el = document.getElementById("exclude");
+  if (!el) return [];
+  return el.value.split(/[\n,]/).map(s => s.trim()).filter(Boolean);
+}
+
+// Diacritic-insensitive substring excluder. Returns a fn that's true when
+// the record should be DROPPED. Empty list → no-op (returns false).
+function buildExcluder(keywords) {
+  const nk = (keywords || []).map(k => normalize(k.trim())).filter(Boolean);
+  if (!nk.length) return () => false;
+  return (el) => {
+    const n = el._nn || (el._nn = normalize(el.ns ? `${el.n} | ${el.ns}` : el.n));
+    return nk.some(k => n.indexOf(k) !== -1);
+  };
+}
+
 function setStatus(text, cls = "") {
   const el = document.getElementById("status");
   el.textContent = text;
@@ -480,10 +514,19 @@ function runQuery() {
     return;
   }
   const kws = parseKeywords();
+  const exKws = parseExcludeKeywords();
   const mode = document.querySelector('input[name="mode"]:checked').value;
+
+  // Clear lingering UI state from previous interactions: the per-match
+  // tooltip can otherwise stay anchored to a soon-to-be-stale .match-item
+  // at z-index 10000 and block all map clicks. Same for the yellow match
+  // marker — its results were tied to the previous query.
+  hideTooltipNow();
+  if (_matchMarker) { map.removeLayer(_matchMarker); _matchMarker = null; }
 
   const t0 = performance.now();
   const matcher = buildMatcher(kws, mode);
+  const excluder = buildExcluder(exKws);
 
   // init per-district stats
   const per = {};
@@ -493,6 +536,7 @@ function runQuery() {
 
   for (const el of currentCityBundle.elements) {
     if (!specSet.has(el.s)) continue;
+    if (excluder(el)) continue;  // drop excluded places from the denominator too
     const stats = per[el.d];
     if (!stats) continue;
     stats.count++;
@@ -720,6 +764,18 @@ function scheduleHide() {
   }, 180);
 }
 
+// Force-hide immediately. Use this whenever the .match-item the tooltip
+// is anchored to is about to be destroyed (panel re-render, runQuery,
+// city load) — otherwise the tooltip is left visible at z-index 10000
+// and silently swallows clicks meant for the map underneath.
+function hideTooltipNow() {
+  cancelHide();
+  if (_tooltipEl) {
+    _tooltipEl.classList.add("hidden");
+    _tooltipEl.dataset.for = "";
+  }
+}
+
 function renderTooltipForItem(m, itemEl) {
   const el = tooltipEl();
   const rows = [];
@@ -766,38 +822,12 @@ function positionBesideItem(el, itemEl) {
   el.style.top = Math.max(4, ny) + "px";
 }
 
-function bindMatchHover(root) {
-  root.addEventListener("mouseover", (e) => {
-    const li = e.target.closest(".match-item");
-    if (!li) return;
-    const el = tooltipEl();
-    cancelHide();
-    // Avoid flicker: if we're already showing this item's tooltip, do nothing.
-    if (el.dataset.for === li.dataset.match) return;
-    try {
-      const m = JSON.parse(decodeURIComponent(li.dataset.match));
-      renderTooltipForItem(m, li);
-      el.dataset.for = li.dataset.match;
-    } catch {}
-  });
-  root.addEventListener("mouseout", (e) => {
-    const li = e.target.closest(".match-item");
-    if (!li) return;
-    // If cursor is moving into the tooltip, don't hide.
-    if (e.relatedTarget && _tooltipEl && _tooltipEl.contains(e.relatedTarget)) return;
-    scheduleHide();
-  });
-  root.addEventListener("click", (e) => {
-    // Don't hijack clicks on the embedded OSM link.
-    if (e.target.closest("a")) return;
-    const li = e.target.closest(".match-item");
-    if (!li) return;
-    try {
-      const m = JSON.parse(decodeURIComponent(li.dataset.match));
-      showMatchOnMap(m);
-    } catch {}
-  });
-}
+// No-op kept for backwards compat — the real binding is the single
+// delegation block at the bottom of this file. Re-binding per render
+// caused listener accumulation, which (combined with the fact that each
+// listener creates a fresh tooltip via tooltipEl()) led to lingering
+// tooltips that could swallow clicks meant for the underlying map.
+function bindMatchHover(_root) { /* see bindPanelDelegation IIFE */ }
 
 let _matchMarker = null;
 
@@ -825,6 +855,10 @@ function showMatchOnMap(m) {
 
 function showDistrictPanel(name) {
   const panel = document.getElementById("district-panel");
+  // The tooltip is anchored to a specific .match-item that we're about
+  // to destroy by replacing innerHTML — if we don't kill it now it
+  // floats over the page intercepting clicks.
+  hideTooltipNow();
   const per = (lastResult && lastResult.per_district) || {};
   const s = per[name];
   if (!s) {
@@ -860,20 +894,56 @@ function showDistrictPanel(name) {
   panel.classList.remove("hidden");
 }
 
-// Panel close + per-match clicks are delegated on the panel itself so we
-// don't depend on re-binding after each innerHTML replace.
+// All panel events (close, match-item hover, match-item click) are
+// delegated on the panel container exactly once. We deliberately don't
+// re-bind after each innerHTML replace — that previously accumulated
+// listeners and could leave stale tooltips around that intercepted
+// clicks meant for the map underneath.
 (function bindPanelDelegation() {
   const panel = document.getElementById("district-panel");
   if (!panel || panel.dataset.boundClose) return;
   panel.dataset.boundClose = "1";
+
   panel.addEventListener("click", (e) => {
+    // Close button: hide panel + clean up selection state.
     if (e.target.closest("#close-panel")) {
+      e.stopPropagation();
       panel.classList.add("hidden");
       selectedDistrict = null;
       if (_matchMarker) { map.removeLayer(_matchMarker); _matchMarker = null; }
+      if (_tooltipEl) { _tooltipEl.classList.add("hidden"); _tooltipEl.dataset.for = ""; }
       applyStyling();
       renderTable();
+      return;
     }
+    // Match item: drop a marker on the map. Embedded links pass through.
+    if (e.target.closest("a")) return;
+    const li = e.target.closest(".match-item");
+    if (!li) return;
+    try {
+      const m = JSON.parse(decodeURIComponent(li.dataset.match));
+      showMatchOnMap(m);
+    } catch {}
+  });
+
+  panel.addEventListener("mouseover", (e) => {
+    const li = e.target.closest(".match-item");
+    if (!li) return;
+    const el = tooltipEl();
+    cancelHide();
+    if (el.dataset.for === li.dataset.match) return;
+    try {
+      const m = JSON.parse(decodeURIComponent(li.dataset.match));
+      renderTooltipForItem(m, li);
+      el.dataset.for = li.dataset.match;
+    } catch {}
+  });
+
+  panel.addEventListener("mouseout", (e) => {
+    const li = e.target.closest(".match-item");
+    if (!li) return;
+    if (e.relatedTarget && _tooltipEl && _tooltipEl.contains(e.relatedTarget)) return;
+    scheduleHide();
   });
 })();
 
