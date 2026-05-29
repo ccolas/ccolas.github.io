@@ -13,12 +13,12 @@ menu_settings:
   menu_items:
     - title: 'Hello!'
       url: '/'
-    - title: 'Art Projects'
+    - title: 'Explorations'
       url: '/project/'
+    - title: 'Research'
+      url: '/publications'
     - title: 'Photography'
       url: '/photographs'
-    - title: 'Publications'
-      url: '/publications'
     - title: 'Contact'
       url: '/contact'
 
