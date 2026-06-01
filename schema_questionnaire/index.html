@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Questionnaire des Schémas de Young</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="questionnaire">
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">YSQ-L3</p>
+        <h1>Questionnaire des Schémas de Young</h1>
+      </div>
+    </header>
+
+    <main class="shell">
+      <form id="questionnaire-form" novalidate>
+        <section class="instructions-panel" aria-labelledby="instructions-title">
+          <h2 id="instructions-title">Instructions</h2>
+          <p>
+            Lisez chaque affirmation et indiquez dans quelle mesure elle vous décrit.
+            Si vous hésitez, répondez en fonction de ce que vous ressentez
+            émotionnellement, plutôt que de ce qui vous semble rationnellement vrai.
+            Choisissez ensuite la réponse de 1 à 6 qui vous correspond le mieux.
+          </p>
+          <p>
+            Vous pouvez quitter cette page et revenir plus tard sur le même navigateur :
+            vos réponses sont sauvegardées automatiquement. Ajoutez un commentaire
+            seulement si une précision vous semble vraiment nécessaire.
+          </p>
+        </section>
+
+        <section class="respondent-panel" aria-labelledby="identity-title">
+          <h2 id="identity-title">Informations</h2>
+          <div class="field-grid">
+            <label>
+              Prénom
+              <input id="respondent-first-name" name="respondentFirstName" autocomplete="given-name" placeholder="Votre prénom">
+            </label>
+            <label>
+              Nom
+              <input id="respondent-last-name" name="respondentLastName" autocomplete="family-name" placeholder="Votre nom">
+            </label>
+          </div>
+        </section>
+
+        <section class="scale-panel" aria-labelledby="scale-title">
+          <h2 id="scale-title">Échelle de cotation</h2>
+          <ul id="scale-list" class="scale-list"></ul>
+        </section>
+
+        <div class="progress-bar" aria-live="polite">
+          <span id="page-text">Page 1</span>
+          <span id="progress-text">0 / 232 réponses</span>
+          <span id="comment-text">0 commentaires</span>
+        </div>
+
+        <section id="items-container" class="items-container" aria-label="Questions"></section>
+
+        <nav class="page-nav" aria-label="Navigation du questionnaire">
+          <button id="previous-page" class="secondary-button" type="button">Précédent</button>
+          <button id="next-page" class="primary-button" type="button">Suivant</button>
+        </nav>
+
+        <section id="submit-panel" class="submit-panel">
+          <button class="primary-button" type="submit">Télécharger le fichier de réponses</button>
+          <p id="validation-message" class="validation-message" role="alert"></p>
+        </section>
+
+        <section class="reset-panel">
+          <button id="show-reset-confirmation" class="reset-link-button" type="button">Effacer mes réponses</button>
+        </section>
+      </form>
+
+      <div id="reset-confirmation" class="modal-backdrop" hidden>
+        <section class="confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="reset-title">
+          <h2 id="reset-title">Effacer les réponses ?</h2>
+          <p>Cette action effacera toutes les réponses et commentaires sauvegardés dans ce navigateur.</p>
+          <div class="reset-actions">
+            <button id="cancel-reset" class="secondary-button" type="button">Annuler</button>
+            <button id="confirm-reset" class="danger-button" type="button">Oui, effacer</button>
+          </div>
+        </section>
+      </div>
+
+      <section id="completion-panel" class="completion-panel" hidden>
+        <h2>Fichier de réponses téléchargé</h2>
+        <p>Veuillez envoyer le fichier téléchargé par email.</p>
+        <dl class="email-instructions">
+          <div>
+            <dt>Adresse</dt>
+            <dd>elisebrotteauxleal@gmail.com</dd>
+          </div>
+          <div>
+            <dt>Objet</dt>
+            <dd>Réponses au questionnaire</dd>
+          </div>
+          <div>
+            <dt>Pièce jointe</dt>
+            <dd>Joignez le fichier de réponses téléchargé.</dd>
+          </div>
+        </dl>
+        <button id="download-again" class="secondary-button" type="button">Télécharger à nouveau</button>
+      </section>
+    </main>
+
+    <script src="ysq-client-data.js"></script>
+    <script src="questionnaire.js"></script>
+  </body>
+</html>
