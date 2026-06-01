@@ -1,0 +1,1189 @@
+{
+  "fileType": "ysq-l3-responses",
+  "fileVersion": "1.0.0",
+  "questionnaire": {
+    "id": "ysq-l3-fr",
+    "name": "Questionnaire des Schémas de Young",
+    "version": "YSQ-L3",
+    "language": "fr",
+    "sourceFile": "YSQ.pdf",
+    "itemOrder": "standard"
+  },
+  "administration": {
+    "itemOrder": "standard",
+    "scoringVisibleToRespondent": false,
+    "completedAt": "2026-06-01T12:13:06.549Z",
+    "totalItems": 232
+  },
+  "respondent": {
+    "firstName": "Camille",
+    "lastName": "Exemple",
+    "name": "Camille Exemple"
+  },
+  "answers": [
+    {
+      "itemId": 1,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 2,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 3,
+      "value": 3,
+      "comment": "Commentaire fictif pour l'item 3."
+    },
+    {
+      "itemId": 4,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 5,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 6,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 7,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 8,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 9,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 10,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 11,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 12,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 13,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 14,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 15,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 16,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 17,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 18,
+      "value": 6,
+      "comment": "Commentaire fictif pour l'item 18."
+    },
+    {
+      "itemId": 19,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 20,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 21,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 22,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 23,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 24,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 25,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 26,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 27,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 28,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 29,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 30,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 31,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 32,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 33,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 34,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 35,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 36,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 37,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 38,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 39,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 40,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 41,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 42,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 43,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 44,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 45,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 46,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 47,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 48,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 49,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 50,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 51,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 52,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 53,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 54,
+      "value": 6,
+      "comment": "Commentaire fictif pour l'item 54."
+    },
+    {
+      "itemId": 55,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 56,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 57,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 58,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 59,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 60,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 61,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 62,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 63,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 64,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 65,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 66,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 67,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 68,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 69,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 70,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 71,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 72,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 73,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 74,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 75,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 76,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 77,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 78,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 79,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 80,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 81,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 82,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 83,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 84,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 85,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 86,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 87,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 88,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 89,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 90,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 91,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 92,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 93,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 94,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 95,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 96,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 97,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 98,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 99,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 100,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 101,
+      "value": 5,
+      "comment": "Commentaire fictif pour l'item 101."
+    },
+    {
+      "itemId": 102,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 103,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 104,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 105,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 106,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 107,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 108,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 109,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 110,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 111,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 112,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 113,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 114,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 115,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 116,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 117,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 118,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 119,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 120,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 121,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 122,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 123,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 124,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 125,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 126,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 127,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 128,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 129,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 130,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 131,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 132,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 133,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 134,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 135,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 136,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 137,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 138,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 139,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 140,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 141,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 142,
+      "value": 4,
+      "comment": "Commentaire fictif pour l'item 142."
+    },
+    {
+      "itemId": 143,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 144,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 145,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 146,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 147,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 148,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 149,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 150,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 151,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 152,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 153,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 154,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 155,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 156,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 157,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 158,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 159,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 160,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 161,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 162,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 163,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 164,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 165,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 166,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 167,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 168,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 169,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 170,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 171,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 172,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 173,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 174,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 175,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 176,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 177,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 178,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 179,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 180,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 181,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 182,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 183,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 184,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 185,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 186,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 187,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 188,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 189,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 190,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 191,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 192,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 193,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 194,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 195,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 196,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 197,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 198,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 199,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 200,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 201,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 202,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 203,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 204,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 205,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 206,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 207,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 208,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 209,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 210,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 211,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 212,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 213,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 214,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 215,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 216,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 217,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 218,
+      "value": 2,
+      "comment": "Commentaire fictif pour l'item 218."
+    },
+    {
+      "itemId": 219,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 220,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 221,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 222,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 223,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 224,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 225,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 226,
+      "value": 4,
+      "comment": ""
+    },
+    {
+      "itemId": 227,
+      "value": 5,
+      "comment": ""
+    },
+    {
+      "itemId": 228,
+      "value": 6,
+      "comment": ""
+    },
+    {
+      "itemId": 229,
+      "value": 1,
+      "comment": ""
+    },
+    {
+      "itemId": 230,
+      "value": 2,
+      "comment": ""
+    },
+    {
+      "itemId": 231,
+      "value": 3,
+      "comment": ""
+    },
+    {
+      "itemId": 232,
+      "value": 4,
+      "comment": ""
+    }
+  ],
+  "scoring": {
+    "included": false,
+    "note": "Scores are computed locally in the therapist review page."
+  }
+}

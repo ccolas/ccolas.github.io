@@ -667,6 +667,36 @@ th {
   }
 }
 
+@media (min-width: 1080px) {
+  body[data-page="questionnaire"] .shell {
+    width: min(1040px, calc(100% - 48px));
+  }
+
+  body[data-page="questionnaire"] #questionnaire-form {
+    display: grid;
+    grid-template-columns: 236px minmax(0, 760px);
+    gap: 18px 24px;
+    align-items: start;
+  }
+
+  body[data-page="questionnaire"] .scale-panel {
+    position: sticky;
+    top: 18px;
+    grid-column: 1;
+    grid-row: 1 / span 8;
+  }
+
+  body[data-page="questionnaire"] .instructions-panel,
+  body[data-page="questionnaire"] .respondent-panel,
+  body[data-page="questionnaire"] .progress-bar,
+  body[data-page="questionnaire"] .items-container,
+  body[data-page="questionnaire"] .page-nav,
+  body[data-page="questionnaire"] .submit-panel,
+  body[data-page="questionnaire"] .reset-panel {
+    grid-column: 2;
+  }
+}
+
 @media (max-width: 560px) {
   .app-header {
     align-items: flex-start;
