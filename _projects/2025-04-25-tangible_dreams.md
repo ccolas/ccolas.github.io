@@ -82,6 +82,7 @@ These are the patterns discovered and saved by visitors during the exhibition. F
 
 <br> 
 
+
 <div id="visitor-gallery"></div>
 
 <script>
