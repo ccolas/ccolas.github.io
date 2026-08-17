@@ -81,7 +81,7 @@ With support from the <a href="https://arts.mit.edu/camit/funding/" target="_bla
 These are the patterns discovered and saved by visitors during the exhibition. Find others <a href="https://github.com/ccolas/tangible_dreams/tree/main/outputs" target="_blank" rel="noopener noreferrer">here</a>.
 
 <br> 
-ok ama
+
 <div id="visitor-gallery"></div>
 
 <script>
