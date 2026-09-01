@@ -36,9 +36,9 @@ Then open the address printed by the preview command. Press Ctrl+C to stop it.
 
 Easy rollback
 -------------
-The Astro website is on the main branch:
+The Astro website is on the default branch:
 
-  main
+  master
 
 The original Jekyll website is permanently preserved on:
 
@@ -50,7 +50,7 @@ Return to the Jekyll version at any time with:
 
 Return to the Astro version with:
 
-  git switch main
+  git switch master
 
 The jekyll_archive branch remains the exact pre-migration website. To restore
 it publicly, merge that branch or revert the Astro migration's merge commit
