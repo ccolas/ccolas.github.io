@@ -16,4 +16,9 @@
   .gallery--carousel .owl-stage {
     touch-action: pan-y;
   }
+
+  #lightbox-prev,
+  #lightbox-next {
+    display: none !important;
+  }
 }
