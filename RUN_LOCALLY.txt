@@ -40,8 +40,15 @@ The Astro migration is isolated on the branch:
 
   codex/astro-migration
 
-The original Jekyll website remains unchanged on master. Before this migration
-is merged, return to it with:
+The original Jekyll website is permanently preserved on:
+
+  codex/jekyll-archive
+
+Return to the Jekyll version at any time with:
+
+  git switch codex/jekyll-archive
+
+Before the migration is merged, master also still contains the Jekyll version:
 
   git switch master
 
@@ -49,5 +56,6 @@ Return to the Astro version with:
 
   git switch codex/astro-migration
 
-If the migration is later merged and must be undone, revert the migration's
-merge commit with git rather than deleting files manually.
+After the migration is merged, codex/jekyll-archive remains available as the
+exact pre-migration website. To restore it publicly, merge that branch or
+revert the Astro migration's merge commit rather than deleting files manually.
