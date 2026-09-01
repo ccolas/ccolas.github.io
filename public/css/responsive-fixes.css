@@ -10,14 +10,7 @@
   }
 
   .portfolio-item__subtitle {
-    display: -webkit-box;
-    margin-top: 3px;
-    overflow: hidden;
-    font-size: 12px;
-    line-height: 1.25;
-    white-space: normal;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    display: none;
   }
 
   .gallery--carousel .owl-stage {
