@@ -1,0 +1,11 @@
+---
+import { site } from "../config";
+import Socials from "./Socials.astro";
+---
+
+<footer class="footer">
+  <Socials />
+  <div class="footer__copyright">
+    <span>© {new Date().getFullYear()} {site.title}</span>
+  </div>
+</footer>

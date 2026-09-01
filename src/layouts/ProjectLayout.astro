@@ -1,0 +1,37 @@
+---
+import DefaultLayout from "./DefaultLayout.astro";
+
+interface Props {
+  title: string;
+  subtitle: string;
+  description: string;
+  featuredImage: string;
+  useMath?: boolean;
+}
+
+const { title, subtitle, description, featuredImage, useMath = false } = Astro.props;
+---
+
+<DefaultLayout title={title} description={description} featuredImage={featuredImage}>
+  <section class="intro">
+    <div class="wrap">
+      <h1>{title}</h1>
+      <p>{subtitle}</p>
+    </div>
+  </section>
+
+  <section class="single">
+    <div class="wrap">
+      <slot />
+    </div>
+  </section>
+
+  {useMath && (
+    <>
+      <script is:inline>
+        MathJax = { chtml: { scale: 0.9 } };
+      </script>
+      <script is:inline type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </>
+  )}
+</DefaultLayout>

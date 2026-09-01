@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import { projectSlug } from "../../utils/projects";
+
+const projects = (await getCollection("projects"))
+  .sort((a, b) => {
+    const dateDifference = b.data.date.getTime() - a.data.date.getTime();
+    return dateDifference || b.id.localeCompare(a.id);
+  });
+---
+
+<DefaultLayout
+  title="Art Projects"
+  description="Art projects"
+  featuredImage="/images/social.png"
+>
+  <section class="portfolio">
+    <div class="content-wrap portfolio-wrap">
+      {projects.map((project) => (
+        <div class="portfolio-item">
+          <a class="portfolio-item__link" href={`/project/${projectSlug(project)}`}>
+            <div class="portfolio-item__image">
+              <img loading="lazy" src={project.data.featured_image} alt={`Preview image for ${project.data.title} project`}>
+            </div>
+            <div class="portfolio-item__content">
+              <div class="portfolio-item__info">
+                <h2 class="portfolio-item__title">{project.data.title}</h2>
+                <p class="portfolio-item__subtitle">{project.data.subtitle}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</DefaultLayout>

@@ -1,0 +1,17 @@
+{
+  "name": "ccolas-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build && node scripts/create-directory-aliases.mjs",
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview"
+  },
+  "dependencies": {
+    "astro": "7.1.6"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  }
+}

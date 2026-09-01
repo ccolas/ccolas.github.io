@@ -1,0 +1,36 @@
+---
+import { site } from "../config";
+import Socials from "./Socials.astro";
+---
+
+<header class="header">
+  <div class="header__content">
+    <a href="/" class="header__title">{site.title}</a>
+
+    <a href="/">
+      <img src={site.logoImage} class="header__logo__img" alt={`${site.title} logo`}>
+    </a>
+
+    <div class="menu">
+      <div class="menu__toggle js-menu-toggle">
+        <div class="menu__toggle__icon"><span></span></div>
+      </div>
+      <div class="menu__wrap">
+        <ul class="menu__list">
+          {site.menuItems.map((item) => (
+            <li class="menu__list__item">
+              <a href={item.url} class="menu__list__item__link">{item.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <div class="header__lower">
+      <Socials />
+      <div class="footer__copyright">
+        <span>© {new Date().getFullYear()} {site.title}</span>
+      </div>
+    </div>
+  </div>
+</header>

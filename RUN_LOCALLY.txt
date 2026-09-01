@@ -1,0 +1,53 @@
+RUN THE ASTRO SITE LOCALLY
+==========================
+
+Requirements
+------------
+- Node.js 24 is recommended (Node.js 22.19 or newer also works).
+- npm is included with Node.js.
+
+First-time setup
+----------------
+From this repository's root directory, run:
+
+  npm install
+
+Start the local development site
+--------------------------------
+Run:
+
+  npm run dev
+
+Then open the address printed in the terminal, normally:
+
+  http://localhost:4321
+
+Changes to pages and components reload automatically. Press Ctrl+C in the
+terminal to stop the local server.
+
+Test the production build locally
+---------------------------------
+Run:
+
+  npm run build
+  npm run preview
+
+Then open the address printed by the preview command. Press Ctrl+C to stop it.
+
+Easy rollback
+-------------
+The Astro migration is isolated on the branch:
+
+  codex/astro-migration
+
+The original Jekyll website remains unchanged on master. Before this migration
+is merged, return to it with:
+
+  git switch master
+
+Return to the Astro version with:
+
+  git switch codex/astro-migration
+
+If the migration is later merged and must be undone, revert the migration's
+merge commit with git rather than deleting files manually.
