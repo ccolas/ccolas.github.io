@@ -36,26 +36,22 @@ Then open the address printed by the preview command. Press Ctrl+C to stop it.
 
 Easy rollback
 -------------
-The Astro migration is isolated on the branch:
+The Astro website is on the main branch:
 
-  codex/astro-migration
+  main
 
 The original Jekyll website is permanently preserved on:
 
-  codex/jekyll-archive
+  jekyll_archive
 
 Return to the Jekyll version at any time with:
 
-  git switch codex/jekyll-archive
-
-Before the migration is merged, master also still contains the Jekyll version:
-
-  git switch master
+  git switch jekyll_archive
 
 Return to the Astro version with:
 
-  git switch codex/astro-migration
+  git switch main
 
-After the migration is merged, codex/jekyll-archive remains available as the
-exact pre-migration website. To restore it publicly, merge that branch or
-revert the Astro migration's merge commit rather than deleting files manually.
+The jekyll_archive branch remains the exact pre-migration website. To restore
+it publicly, merge that branch or revert the Astro migration's merge commit
+rather than deleting files manually.
