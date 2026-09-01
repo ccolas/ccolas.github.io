@@ -121,7 +121,16 @@
 						autoplay: false,
 						autoplayTimeout: 6000,
 						autoHeight: true,
-						animateOut: 'fadeOut'
+						responsive: {
+							0: {
+								animateOut: false,
+								smartSpeed: 250,
+								dragEndSpeed: 250
+							},
+							768: {
+								animateOut: 'fadeOut'
+							}
+						}
 					});
 
 					// When scrolling over the bottom

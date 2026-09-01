@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+  .portfolio-item__content {
+    padding: 12px;
+  }
+
+  .portfolio-item__title {
+    font-size: 16px;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  .portfolio-item__subtitle {
+    display: -webkit-box;
+    margin-top: 3px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.25;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .gallery--carousel .owl-stage {
+    touch-action: pan-y;
+  }
+}
