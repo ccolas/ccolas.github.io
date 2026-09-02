@@ -8,7 +8,7 @@ featured_image: '/images/projects/light_impressions/img_17.webp'
 
 Keep the shutter open and the camera captures everything it sees at once: movements and light trails; patterns invisible to the naked eye.
 
-Most of these were shot on my phone with the darkest settings available: minimum ISO, smallest aperture, shutter speed between 1/8 and 1/2 sec. Some also use diffracting paper to split light into rainbowsyes.
+Most of these were shot on my phone with the darkest settings available: minimum ISO, smallest aperture, shutter speed between 1/8 and 1/2 sec. Some also use diffracting paper to split light into rainbows.
 
 <div class="gallery" data-columns="3">
     <img loading="lazy" src="/images/projects/light_impressions/img_1.webp">

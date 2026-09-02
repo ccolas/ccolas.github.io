@@ -22,3 +22,17 @@
     display: none !important;
   }
 }
+
+.about-photo {
+  border-radius: 16px;
+}
+
+.single p.home-cv {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .about-photo {
+    max-width: 460px;
+  }
+}

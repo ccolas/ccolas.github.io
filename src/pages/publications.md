@@ -5,8 +5,9 @@ permalink: /publications/
 tags: publications
 ---
 
-The most up-to-date list of publications can be found on my <a href="https://scholar.google.fr/citations?hl=fr&user=VBz8gZ4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar page</a>.  
-My extended CV is <a href="https://cedriccolas.com/data/CV_Cedric_Colas.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+
+My CV is <a href="https://cedriccolas.com/data/CV_Cedric_Colas.pdf" target="_blank" rel="noopener noreferrer">here</a>. The most up-to-date list of publications can be found on <a href="https://scholar.google.fr/citations?hl=fr&user=VBz8gZ4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
+
 
 ## Thesis
 
@@ -47,14 +48,16 @@ Received the PhD Thesis Award 2022 from the French AI association.
 
 
 #### Social and Cultural Learning
-<p class="section-description">Modeling how humans learn to solve new tasks from experience and advice from other humans or AIs.</p>
+<p class="section-description">Studying how information and skills spread through human and human–AI populations, and how these dynamics shape collective learning and innovation.</p>
 
+* **Colas, C.**, Perez, J., Nisioti, E., Mocherla, A., Oudeyer, P.-Y., Moulin-Frier, C., & Derex, M. (2026).
+--- *<a href="https://arxiv.org/abs/2608.24545" target="_blank" rel="noopener noreferrer">Discovering Adaptive Transmission Programs for Collective Innova  tion</a>.* CogSci. [<a href="https://anonymous.4open.science/r/open-interaction-evol-D3DD/README.md" target="_blank" rel="noopener noreferrer">Code</a>].
 * **Colas, C.**, Mills, T., Prystawski, B., Tessler, M. H., Goodman, N., Andreas, J. & Tenenbaum, J. B. (2025).
 --- *<a href="https://arxiv.org/pdf/2509.00074" target="_blank" rel="noopener noreferrer">Language and Experience: A Computational Model of Social Learning in Complex Tasks</a>*. CogSci, ICLR.
 [<a href="../demos/language_and_experience" target="_blank" rel="noopener noreferrer">Demo</a>].
 
 
-#### Language Model Reasoning
+#### Language Models, Reasoning and Program Synthesis
 <p class="section-description">Investigating how language models can self-improve and reason through code to solve novel problems.</p>
 
 * Pourcel J., **Colas, C.**, & Oudeyer, P-Y. (2025).
@@ -67,6 +70,8 @@ Received the PhD Thesis Award 2022 from the French AI association.
 #### Perspectives and Reviews
 <p class="section-description">Surveys and position papers on autotelic agents, open-ended learning and the role of language and culture in AI.</p>
 
+* Perez, J., **Colas, C.**, Molinaro, G., Oudeyer, P.-Y., Derex, M., & Moulin-Frier, C. (2026).
+--- *<a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/tops.70078" target="_blank" rel="noopener noreferrer">The Cultural Evolution of Human Goals</a>.* Topics in Cognitive Science.
 * Sigaud, O., Baldassarre, G., **Colas, C.**, Doncieux, S., Duro, R., Oudeyer, P-Y., Perrin-Gilbert, N. & Santucci, V.G. (2023).
 --- *<a href="https://arxiv.org/pdf/2311.00344.pdf" target="_blank" rel="noopener noreferrer">A Definition of Open-Ended Learning Problems for Goal-Conditioned Agents</a>.* preprint.
 * Sigaud, O., Caselles-Dupré, H., **Colas, C.**, Akakzia A., Oudeyer, P-Y. & Chetouani, M. (2021).
@@ -87,9 +92,6 @@ Received the PhD Thesis Award 2022 from the French AI association.
 * **Colas, C.**, Sigaud, O., Oudeyer, P-Y. (2019).
 --- *<a href="https://openreview.net/forum?id=ryx0N3IaIV" target="_blank" rel="noopener noreferrer">A Hitchhiker's Guide to Statistical Comparisons of Reinforcement Learning Algorithms</a>.* preprint.
 [<a href="https://github.com/flowersteam/rl_stats" target="_blank" rel="noopener noreferrer">Code</a>].
-* **Colas, C.**, Sigaud, O., Oudeyer, P-Y. (2018).
---- *<a href="https://arxiv.org/abs/1806.08295" target="_blank" rel="noopener noreferrer">How Many Random Seeds? Statistical Power Analysis in Deep Reinforcement Learning Experiments</a>.* preprint.
-
 
 #### Digital Art
 <p class="section-description">Exploring creative applications of algorithms at the intersection of art and computation.</p>

@@ -1,8 +1,9 @@
 import { copyFile, mkdir, writeFile } from "node:fs/promises";
 
 // Jekyll historically served these directory URLs. Astro's file-format build
-// also emits project.html/blog.html, so keep directory indexes as aliases.
-for (const route of ["project", "blog"]) {
+// emits matching .html files, so keep directory indexes as aliases. This also
+// makes extensionless links work with simple local static-file servers.
+for (const route of ["project", "blog", "publications", "photographs", "contact", "home-original"]) {
   await mkdir(`dist/${route}`, { recursive: true });
   await copyFile(`dist/${route}.html`, `dist/${route}/index.html`);
 }

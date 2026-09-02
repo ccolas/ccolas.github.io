@@ -35,8 +35,7 @@ Seven years later, the walk resumed, this time fully autonomously. An LLM picks 
 
 ### 365 days of the original ephemeride
 
-Here are the 365 pages of the original ephemeride starting from a random Wikipedia page. 
-ok 
+Here are the 365 pages of the original ephemeride starting from a random Wikipedia page.
 <div class="gallery" data-columns="3">
 	<img loading="lazy" src="/images/projects/wiki/calendar/Day_0.webp">
 	<img loading="lazy" src="/images/projects/wiki/calendar/Day_1.webp">
@@ -404,5 +403,4 @@ ok
 	<img loading="lazy" src="/images/projects/wiki/calendar/Day_363.webp">
 	<img loading="lazy" src="/images/projects/wiki/calendar/Day_364.webp">
 </div>
-
 
