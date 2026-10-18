@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#010138" />
+    <title>Bilateral stimulation</title>
+    <link rel="icon" href="/favicon-32x32.png" />
+  </head>
+  <body>
+    <main id="stage" aria-label="Bilateral stimulation">
+      <p class="landscape-hint">For a wider view, rotate your phone to landscape.</p>
+      <div id="track" class="track" aria-hidden="true">
+        <div class="line"></div>
+        <div id="ball" class="ball"></div>
+      </div>
+      <div class="session-controls">
+        <div class="transport">
+          <button id="start" class="run">Run</button>
+          <button id="stop" hidden aria-label="Stop and reset">Stop</button>
+        </div>
+        <div id="duration-choice" class="duration-choice" role="group" aria-label="Next session length">
+          <input id="duration" type="hidden" value="30" />
+          <button data-duration="30" aria-pressed="true">30s</button>
+          <button data-duration="45" aria-pressed="false">45s</button>
+          <button data-duration="60" aria-pressed="false">1min</button>
+          <button data-duration="90" aria-pressed="false">1min30</button>
+          <button data-duration="120" aria-pressed="false">2min</button>
+        </div>
+        <p id="remaining" class="remaining" hidden></p>
+      </div>
+    </main>
+
+    <div id="drawer-rail" class="drawer-rail">
+      <button id="settings-toggle" class="settings-toggle" aria-label="Open settings" aria-controls="settings-panel" aria-expanded="false" title="Settings">
+        <svg width="18" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 3v18M12 3v18M19 3v18"/><path d="M2 8h6M9 16h6M16 9h6" stroke-width="4"/></svg>
+      </button>
+      <aside id="settings-panel" class="settings-panel" aria-label="Session settings" inert>
+        <div class="panel-heading"><h1>Settings</h1><button id="settings-close" class="icon-button" aria-label="Close settings">×</button></div>
+        <p id="feedback" class="sr-only" role="status" aria-live="polite"></p>
+        <div class="settings">
+          <fieldset>
+            <legend>Stimuli</legend>
+            <label class="choice"><input type="checkbox" id="visual" checked />Visual <span>Moving ball</span></label>
+            <label class="choice"><input type="checkbox" id="audio" />Audio <span>Alternating tones</span></label>
+          </fieldset>
+          <fieldset>
+            <legend>Visual & rhythm</legend>
+            <div class="parameter-heading"><label class="range-label" for="speed">Tracking pace <output id="speed-value">0.50 cycles/s</output></label><button id="default-speed" class="default-button" aria-label="Default tracking pace">Default</button></div>
+            <input type="range" id="speed" min="0.1" max="1.5" step="0.05" value="0.5" />
+            <p class="helper" id="pace-detail">2 seconds for left → right → left.</p>
+            <p class="helper">Pause to adjust. Choose a pace you can comfortably follow without strain. This sets round trips per second; a wider path means faster travel.</p>
+            <div class="parameter-heading"><label class="range-label" for="width">Travel width <output id="width-value">100%</output></label><button id="default-width" class="default-button" aria-label="Default travel width">Default</button></div>
+            <input id="width" type="range" min="50" max="100" value="100" step="5" />
+          </fieldset>
+          <fieldset>
+            <legend>Audio</legend>
+            <p class="helper"><strong>Muted wood</strong><br />A soft, low marimba recording with a natural decay.</p>
+            <button id="preview-sound" class="preview-sound">Preview · left → right</button>
+            <label class="range-label" for="volume">Tone volume <output id="volume-value">20%</output></label>
+            <input type="range" id="volume" min="0" max="60" value="20" />
+            <p class="helper">Start with your device volume low.</p>
+            <details id="audio-guide"><summary>Headphone setup</summary>
+              <ol><li>Use stereo headphones, with L on your left ear.</li><li>Choose them in your device’s sound output. Turn off mono audio, spatial audio, and head tracking.</li><li>Test each side below. The tone should play only in the named ear.</li></ol>
+              <p class="helper">If both ears hear the same tone, check mono audio in your accessibility settings. This page cannot detect your physical audio routing.</p>
+            </details>
+            <div class="test-buttons"><button id="test-left">← Test left</button><button id="test-right">Test right →</button></div>
+            <p id="audio-status" class="helper" role="status">Click Preview to listen.</p>
+            <details><summary>No sound?</summary><p>Test and Run activate browser audio directly; no microphone permission is needed. Check that this tab is unmuted and your headphones are the selected system output.</p><p>In Chrome, open the controls beside the address bar → Site settings → Sound → Allow. If the embedded preview stays silent, open this same local URL in a regular Chrome tab and test there.</p><p>The tests play the same pulse as the session. Increase the volume gradually if needed. If sound still feels late over Bluetooth, try wired headphones; the browser may not report all wireless delay.</p></details>
+          </fieldset>
+        </div>
+        <div class="panel-extras"><button id="fullscreen">Full screen ↗</button><p>Space: run / pause · Esc: stop<br />While paused, Restart begins a fresh set.</p></div>
+        <details><summary>Before you begin</summary><p>This is a bilateral stimulus tool, not guided EMDR treatment. Trauma processing should be done with a trained therapist. For independent use, stay with your present surroundings rather than deliberately recalling distressing memories. Stop if you feel dizzy, overwhelmed, or disconnected.</p><p id="stage-hint">Sit comfortably. Let your eyes follow the ball.</p><p>Each set ends automatically. Take time to look around and check how you feel before choosing to continue.</p><a href="https://www.emdria.org/about-emdr-therapy/" target="_blank" rel="noreferrer">About EMDR therapy ↗</a></details>
+        <details><summary>About the pace</summary><p>There is no universal clinically established speed for independent use. One laboratory study compared 0.8 and 1.2 full eye-movement cycles per second. These experimental settings are not a prescription for self-treatment.</p><p>The default of 0.5 cycles/s is an interface setting, not a therapeutic dose. One cycle means left → right → left; a tone plays at each endpoint. Use a comfortable pace or your clinician’s settings.</p><a href="https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2015.00045/full" target="_blank" rel="noreferrer">Read the study ↗</a></details>
+        <details><summary>Other stimuli, privacy & credits</summary><p>Alternating tactile taps and handheld vibrating devices are also used in EMDR. This tool provides visual and audio cues only.</p><p>Everything runs in your browser. No account or session recordings. Settings reset when you leave.</p><p>Instrument recordings: Sam Gossner & Simon Dalzell, VSCO 2 Community Edition (CC0). Edited for this tool. <a href="/audio/emdr/CREDITS.md" target="_blank">Sample credits</a>.</p></details>
+      </aside>
+    </div>
+    <script>
+      import '../scripts/emdr';
+    </script>
+  </body>
+</html>
+
+<style>
+  :global(*) { box-sizing: border-box; }
+  :global(astro-dev-toolbar) { display: none; }
+  :global(html), :global(body) { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #010138; color: #e0e0ff; font-family: Inter, Arial, sans-serif; color-scheme: dark; }
+  :global(button), :global(input), :global(select) { font: inherit; }
+  :global(button) { cursor: pointer; border: 1px solid #ffffff24; border-radius: 8px; color: #e0e0ff; background: #ffffff06; padding: 10px 14px; }
+  :global(button:hover:not(:disabled)) { background: #ffffff10; border-color: #fe479180; }
+  :global(button:disabled) { opacity: .4; cursor: default; }
+  :global([hidden]) { display: none !important; }
+  :global(:focus-visible) { outline: 2px solid #fe4791; outline-offset: 4px; }
+  :global(a) { color: #ff85b5; }
+  :global(input) { accent-color: #fe4791; }
+  :global(input[type=range]) { width: 100%; margin: 12px 0 4px; cursor: pointer; }
+  :global(input[type=checkbox]) { width: 17px; height: 17px; margin: 0; flex-shrink: 0; }
+  #stage { position: fixed; inset: 0; background: #010138; }
+  .landscape-hint { display: none; }
+  @media (max-width: 600px) and (orientation: portrait) {
+    .landscape-hint { display: block; position: absolute; top: max(30px, env(safe-area-inset-top)); left: 52px; right: 24px; margin: 0; color: #aaa6cb; font-size: 12px; line-height: 1.6; text-align: center; }
+  }
+  .track { position: absolute; width: 100%; top: 50%; height: 80px; transform: translateY(-50%); }
+  .line { position: absolute; top: 50%; left: 50%; width: calc(100% - 88px); height: 14px; border-radius: 999px; transform: translate(-50%, -50%); background: #e0e0ff26; }
+  .ball { position: absolute; top: 50%; left: 50%; width: 64px; height: 64px; border-radius: 50%; background: #fe4791; transform: translate(-50%, -50%); box-shadow: 0 0 35px #fe47911c; will-change: left; }
+  .session-controls { position: absolute; bottom: max(15vh, 110px); left: 50%; transform: translateX(-50%); width: min(280px, calc(100vw - 80px)); }
+  .transport { display: flex; justify-content: center; gap: 10px; }
+  .duration-choice { position: absolute; top: calc(100% + 18px); width: 100%; display: flex; justify-content: center; gap: 6px; }
+  .duration-choice button { flex: 1; min-width: 0; padding: 8px 3px; font-size: 11px; border-color: #e0e0ff24; color: #b7b3d5; background: transparent; }
+  .duration-choice button[aria-pressed="true"] { color: #ff8cbb; border-color: #fe4791; background: #fe47911a; }
+  .remaining { position: absolute; top: calc(100% + 62px); width: 100%; margin: 0; font-size: 12px; color: #aaa6cb; text-align: center; font-variant-numeric: tabular-nums; }
+  .transport button { border-radius: 8px; min-width: 104px; padding: 12px 25px; font-size: 14px; letter-spacing: .02em; }
+  .transport .run { background: #fe4791; border-color: #fe4791; color: #010138; font-weight: 600; }
+  .transport .run:hover:not(:disabled) { background: #ff71a9; }
+  .drawer-rail { position: fixed; z-index: 2; left: 0; top: 0; bottom: 0; width: min(360px, calc(100vw - 36px)); transform: translateX(-100%); transition: transform .22s ease; pointer-events: none; }
+  .settings-toggle { position: absolute; left: 100%; top: 28px; width: 28px; height: 48px; padding: 4px; border-left: 0; border-radius: 0 9px 9px 0; background: #141346; color: #b5b3dc; pointer-events: auto; }
+  .settings-panel { position: absolute; inset: 0; width: 100%; padding: 27px; overflow-y: auto; overscroll-behavior: contain; background: #10103d; border-right: 1px solid #ffffff16; visibility: hidden; transition: visibility .22s; scrollbar-width: thin; scrollbar-color: #44416c transparent; box-shadow: 15px 0 50px #00000018; }
+  .drawer-rail.open { transform: translateX(0); pointer-events: auto; }
+  .drawer-rail.open .settings-panel { visibility: visible; }
+  .panel-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+  h1 { font-size: 18px; font-weight: 500; margin: 0; }
+  .icon-button { border: 0; padding: 0 6px; font-size: 25px; line-height: 1; background: none; color: #aaa8d0; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  fieldset { border: 0; border-top: 1px solid #ffffff12; padding: 21px 0 24px; margin: 0; min-width: 0; }
+  legend { float: left; width: 100%; padding: 0; margin-bottom: 18px; font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: #a6a2d1; }
+  fieldset > legend + * { clear: both; }
+  .choice { display: flex; gap: 10px; align-items: center; padding: 10px 0; font-size: 14px; cursor: pointer; }
+  .choice span { margin-left: auto; font-size: 11px; color: #8e8ab7; }
+  .range-label { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; }
+  .parameter-heading { display: flex; align-items: center; gap: 10px; }
+  .parameter-heading label { flex: 1; }
+  .default-button { padding: 4px 7px; border-radius: 5px; font-size: 10px; color: #b7b3d5; }
+  output { color: #ff85b5; font-size: 11px; }
+  .helper { color: #9591bc; font-size: 11px; line-height: 1.6; margin: 6px 0 21px; }
+  .test-buttons { display: flex; gap: 8px; margin: 15px 0; }
+  .preview-sound { width: 100%; font-size: 12px; margin-bottom: 24px; }
+  .test-buttons button { flex: 1; padding: 9px 5px; font-size: 12px; }
+  details { border-top: 1px solid #ffffff12; padding: 15px 0; font-size: 12px; line-height: 1.7; color: #aaa6cb; }
+  summary { cursor: pointer; color: #c8c4e4; font-size: 12px; }
+  details p { margin: 13px 0; }
+  details ol { padding-left: 17px; }
+  details li { margin-bottom: 10px; }
+  details a { font-size: 11px; }
+  .panel-extras { margin-bottom: 22px; }
+  .panel-extras button { width: 100%; font-size: 12px; }
+  .panel-extras p { font-size: 11px; color: #8e8ab7; text-align: center; margin: 13px 0; }
+  @media (max-width: 600px) { .ball { width: 56px; height: 56px; } .settings-panel { padding: 23px; } }
+  @media (prefers-reduced-motion: reduce) { .drawer-rail, .settings-panel { transition: none; } }
+</style>
