@@ -146,7 +146,9 @@ async function prepareAudio() {
 function render() {
   const seconds = position();
   const remaining = Math.max(0, Math.ceil(limit() - seconds));
-  el('remaining').textContent = `${String(Math.floor(remaining / 60)).padStart(2, '0')}:${String(remaining % 60).padStart(2, '0')} remaining`;
+  el('remaining').textContent = Number.isFinite(remaining)
+    ? `${String(Math.floor(remaining / 60)).padStart(2, '0')}:${String(remaining % 60).padStart(2, '0')} remaining`
+    : 'No time limit';
   // Start on the left; cosine gives a gentle turn at each endpoint.
   const offset = (running || elapsed > 0) ? -Math.cos(seconds * rate() * 2 * Math.PI) : 0;
   // Leave the collapsed settings handle plus a small gap clear on both sides.

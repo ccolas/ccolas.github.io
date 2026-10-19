@@ -27,6 +27,7 @@
           <button data-duration="60" aria-pressed="false">1min</button>
           <button data-duration="90" aria-pressed="false">1min30</button>
           <button data-duration="120" aria-pressed="false">2min</button>
+          <button data-duration="Infinity" aria-pressed="false" aria-label="No time limit" title="Run until stopped">∞</button>
         </div>
         <p id="remaining" class="remaining" hidden></p>
       </div>
@@ -104,7 +105,7 @@
   .track { position: absolute; width: 100%; top: 50%; height: 80px; transform: translateY(-50%); }
   .line { position: absolute; top: 50%; left: 50%; width: calc(100% - 88px); height: 14px; border-radius: 999px; transform: translate(-50%, -50%); background: #e0e0ff26; }
   .ball { position: absolute; top: 50%; left: 50%; width: 64px; height: 64px; border-radius: 50%; background: #fe4791; transform: translate(-50%, -50%); box-shadow: 0 0 35px #fe47911c; will-change: left; }
-  .session-controls { position: absolute; bottom: max(15vh, 110px); left: 50%; transform: translateX(-50%); width: min(280px, calc(100vw - 80px)); }
+  .session-controls { position: absolute; bottom: max(15vh, 110px); left: 50%; transform: translateX(-50%); width: min(320px, calc(100vw - 48px)); }
   .transport { display: flex; justify-content: center; gap: 10px; }
   .duration-choice { position: absolute; top: calc(100% + 18px); width: 100%; display: flex; justify-content: center; gap: 6px; }
   .duration-choice button { flex: 1; min-width: 0; padding: 8px 3px; font-size: 11px; border-color: #e0e0ff24; color: #b7b3d5; background: transparent; }
@@ -146,5 +147,12 @@
   .panel-extras button { width: 100%; font-size: 12px; }
   .panel-extras p { font-size: 11px; color: #8e8ab7; text-align: center; margin: 13px 0; }
   @media (max-width: 600px) { .ball { width: 56px; height: 56px; } .settings-panel { padding: 23px; } }
+  @media (orientation: landscape) and (max-height: 600px) {
+    .track { top: 32%; height: 64px; }
+    .session-controls { bottom: max(76px, calc(env(safe-area-inset-bottom) + 66px)); }
+    .transport button { padding: 8px 22px; }
+    .duration-choice { top: calc(100% + 10px); }
+    .remaining { top: calc(100% + 52px); }
+  }
   @media (prefers-reduced-motion: reduce) { .drawer-rail, .settings-panel { transition: none; } }
 </style>
